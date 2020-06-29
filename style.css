@@ -439,6 +439,10 @@ body{
     .fa-times-circle:hover{
         transform: rotate(360deg);
     }
+
+    .menu span{
+        display: none;
+    }
     
     .wrap{
     position: relative;
