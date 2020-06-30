@@ -220,6 +220,7 @@ body{
     margin-bottom: 50px;
     color: #005551;
     line-height: 30px;
+    font-size: 25px;
 }
 
 .box2 p{
@@ -304,6 +305,7 @@ body{
 .mlmtxt p{
     line-height: 30px;
     text-align: left;
+    font-size: 25px;
 }
 
 .mlm2{
@@ -539,7 +541,12 @@ body{
     .mlm2{
         margin-top: 30px;
         max-height: auto;
+        padding-bottom: 20px;
+    }
 
+    .mlm2 h2{
+        position: relative;
+        bottom: -20px;
     }
 
     .mlmimg2{
@@ -547,8 +554,8 @@ body{
     }
 
     .mlmtxt ul{
-        line-height: 25px;
-        font-size: 18px;
+        line-height: 30px;
+        font-size: 25px;
     }
 
     .mlm3{
@@ -557,10 +564,11 @@ body{
 
     .mlm4{
         margin-top: 10px;
+        margin-bottom: 30px;
     }
 
     .mlm4 p{
-        font-size: 30px;
+        font-size: 40px;
     }
 
 
