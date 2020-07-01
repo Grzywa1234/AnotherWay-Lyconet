@@ -197,8 +197,12 @@
     .store a{
         position: relative;
         right: 60px;
+        padding: 0;
     }
 
+    .store img{ 
+        padding: 10px 30px;
+    }
 
 
 

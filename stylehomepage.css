@@ -229,11 +229,6 @@ body{
 }
 
 .download a{
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 30px;
-    transition: .3s;
     background-color: #005551;
     padding-left: 4px;
     padding-right: 5px;
