@@ -1,9 +1,8 @@
 .cashbackapp{
     position: relative;
     top: 100px;
-    overflow: hidden;
     display: none;
-}
+}   
 
 .appvideo{
     display: flex;
@@ -11,6 +10,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .appvideo h1{
@@ -70,6 +70,77 @@
     border: 3px solid #005551;
 }
 
+.appstore{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.store{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.storeimg{
+    max-width: 80%;
+}
+
+.store img{
+    padding: 50px;
+    cursor: pointer;
+}
+
+.faq{
+    width: 90%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    padding: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.faq h2{
+    color: #005551;
+    font-size: 40px;
+    margin-top: 20px;
+    max-width: 90%;
+}
+
+.faq a{
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 60px;
+    color: #f29533;
+    background-color: #005551;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .3s;
+    max-width: 90%;
+    text-transform: uppercase;
+    
+}
+
+.faqlink:hover{
+    background: #f29533;
+    color: #005551;
+}
+
+
+
 @media screen and (max-width: 767px){
     .cashbackapp{
         top: 50px
@@ -100,6 +171,35 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
+    .faq a{
+        font-size: 30px;
+    }
+
+    .faq h2{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .faq{
+        overflow: hidden;
+        margin: auto;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .appstore{
+        width: 100%;
+        padding: 0;
+       
+    }
+
+    .store a{
+        position: relative;
+        right: 60px;
+    }
+
+
 
 
 }
