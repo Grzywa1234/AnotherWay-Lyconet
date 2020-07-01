@@ -1,0 +1,95 @@
+.cashbackapp{
+    position: relative;
+    top: 100px;
+    overflow: hidden;
+}
+
+.appvideo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.appvideo h1{
+    background: #005551;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    color: #fff;
+    width: 100%;
+}
+
+.videoframe{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    background: #fff;
+    padding: 40px;
+    width: 90%;
+}
+
+.video{
+    width: 70%;
+    height: auto;
+    /*
+    width: 1274px;
+    height: 720px;
+    */
+}
+
+.source{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+
+}
+
+.source p{
+    background-color: #005551;
+    color: #fff;
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    border: 3px solid #005551;
+    transition: .3s;
+    font-family: 'Open Sans', sans-serif;;
+}
+
+.sourcetxt:hover{
+    background: #fff;
+    color: #005551;
+    border: 3px solid #005551;
+}
+
+@media screen and (max-width: 767px){
+    .cashbackapp{
+        top: 40px
+    }
+
+    .videoframe{
+        flex-direction: column-reverse;
+        margin-top: 10px;
+        width: 100%;
+        padding: 5px;
+    }
+    
+    .video{
+        width: 100%;
+        height: 300px;
+    }
+
+    .source p{
+        margin-top: 20px;
+    }
+
+
+}
+

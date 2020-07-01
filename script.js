@@ -72,6 +72,7 @@ menu display
 const homepageWrap = document.querySelector('.wrap');
 const homepagecbApp = document.querySelector('.cbApp');
 const homepagemlm = document.querySelector('.mlm');
+const appTab = document.querySelector('.cashbackapp');
 
 menuBtn2.addEventListener('click', hideHomepage)
 menuBtn.addEventListener('click', showHomepage)
@@ -80,12 +81,14 @@ function hideHomepage () {
     homepageWrap.style.display = "none";
     homepagecbApp.style.display = "none";
     homepagemlm.style.display = "none";
+    appTab.style.display = "block";
 }
 
 function showHomepage () {
     homepageWrap.style.display = "block";
     homepagecbApp.style.display = "block";
     homepagemlm.style.display = "block";
+    appTab.style.display = "none";
 }
 
 
