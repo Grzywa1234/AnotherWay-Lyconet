@@ -91,11 +91,35 @@ function showHomepage () {
     appTab.style.display = "none";
 }
 
+/* video */
+
+const sourceBtn1 = document.querySelector('.source1');
+const sourceBtn2 = document.querySelector('.source2');
+const sourceBtn3 = document.querySelector('.source3');
+const sourceBtn4 = document.querySelector('.source4');
+
+sourceBtn1.addEventListener('click', changeUrl);
+sourceBtn2.addEventListener('click', changeUrl2)
+sourceBtn3.addEventListener('click', changeUrl3)
+sourceBtn4.addEventListener('click', changeUrl4)
+
+function changeUrl () {
+    document.querySelector('.video').src = 'https://www.youtube-nocookie.com/embed/GJRj78sU0_o';
+}
+
+function changeUrl2 () {
+    document.querySelector('.video').src = 'https://www.youtube-nocookie.com/embed/MyY7AmMD8OM';
+}
+
+function changeUrl3 () {
+    document.querySelector('.video').src = 'https://www.youtube.com/embed/DUJEbQ43By4';
+}
 
 
-/*
-wrap 
- */
+function changeUrl4 () {
+    document.querySelector('.video').src = 'https://www.youtube.com/embed/2Un8DbwjeTA';
+}
+/* wrap */
 
 let sliderImages = document.querySelectorAll('.slide'),
     arrowLeft = document.querySelector('#arrow-left'),
