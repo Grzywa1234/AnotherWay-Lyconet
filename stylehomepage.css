@@ -355,10 +355,44 @@ body{
     width: 100%;
 }
 
-@media screen and (max-width: 1410px){
-    .wrap{
-        top: 64px;
+@media screen and (max-width: 1440px){
+    .header{
+        height: 70px;
     }
+
+    .logo{
+        height: 100px;
+    }
+
+    .wrap{
+        top: 30px;
+    }
+
+    .menu{
+        line-height: 70px;
+    }
+
+    .appBox{
+        margin-top: 30px;
+    }
+
+    .mlm{
+        top: 100px;
+    }
+
+    .mlm2{
+        max-height: 600px;
+    }
+
+    .mlm4 p{
+        font-size: 40px;
+    }
+
+    .mlm4 img{
+        max-height: 400px;
+    }
+
+
 }
 
 @media screen and (max-width: 1110px){
