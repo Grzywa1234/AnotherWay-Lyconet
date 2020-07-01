@@ -99,7 +99,7 @@ body{
 
 .wrap{
     position: relative;
-    top: 80px;
+    top: 40px;
 }
 
 #slider, .wrap, .slide-content{
@@ -108,9 +108,6 @@ body{
     transition: .4s;
 }
 
-.wrap{
-    position: relative;
-}
 
 .slide{
     background-size: cover;
@@ -231,7 +228,7 @@ body{
     text-align: right;
 }
 
-.download{
+.download a{
     color: #fff;
     text-transform: uppercase;
     font-size: 30px;
@@ -240,6 +237,14 @@ body{
     padding-left: 4px;
     padding-right: 5px;
     cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.download{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -351,6 +356,12 @@ body{
     width: 100%;
 }
 
+@media screen and (max-width: 1410px){
+    .wrap{
+        top: 64px;
+    }
+}
+
 @media screen and (max-width: 1110px){
     .appBox{
         width: 100%;
@@ -358,6 +369,10 @@ body{
 
     .mlm{
         max-width: 100%;
+    }
+
+    .wrap{
+        top: 100px;
     }
 
 }
@@ -373,6 +388,10 @@ body{
 
     .imgBox3{
         max-width: 50%;
+    }
+
+    .wrap{
+        top: 100px;
     }
 }
 
@@ -475,6 +494,8 @@ body{
         margin-top: 30px;
     }
 
+
+
     .boxtxt h1, .boxtxt h2, .boxtxt h3{
         margin-bottom: 20px;
         font-size: 20px;
@@ -483,7 +504,6 @@ body{
     .boxtxt{
         height: 100%;
         max-width: 100%;
-        
     }
 
     .boxtxt p{
@@ -564,7 +584,7 @@ body{
 
     .mlm4{
         margin-top: 10px;
-        margin-bottom: 30px;
+        padding-bottom: 50px;
     }
 
     .mlm4 p{
