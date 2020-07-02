@@ -267,9 +267,9 @@
     }
 
     .faqlink{
-        width: 400px;
-        position: relative;
-        top: 30px;
+        width: 300px;
+        max-height: 100px;
+        margin: 0;
     }
 
 }
