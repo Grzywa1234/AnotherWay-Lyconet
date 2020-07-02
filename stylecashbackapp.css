@@ -120,25 +120,52 @@
     max-width: 90%;
 }
 
-.faq a{
+.faqlink{
     text-decoration: none;
     margin-top: 20px;
-    font-size: 60px;
-    color: #f29533;
-    background-color: #005551;
     text-align: center;
     cursor: pointer;
-    border-radius: 10px;
     transition: .3s;
-    max-width: 90%;
-    text-transform: uppercase;
-    
+    width: 500px;
+    height: 200px;
 }
 
 .faqlink:hover{
-    background: #f29533;
-    color: #005551;
+    transform: scale(1.2);
 }
+
+.follow{
+    display: block;
+}
+
+
+.socialmedia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.socialmedia a{
+    margin: 20px;
+    
+}
+
+.socialimg{
+    max-height: 100px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.socialimg:hover{
+    transform: scale(1.2);
+}
+
+
+
+
 
 @media screen and (max-width: 1440px){
     .cashbackapp{
@@ -155,6 +182,14 @@
     .videoframe{
         margin-top: 30px;
         max-height: 500px;
+    }
+
+    .appBox p{
+        font-size: 20px;
+    }
+
+    .mlm1 p{
+        font-size: 20px;
     }
 }
 
@@ -223,7 +258,19 @@
         padding: 10px 30px;
     }
 
+    .socialmedia a{
+        margin: 10px;
+    }
 
+    .socialimg{
+        max-height: 60px;
+    }
+
+    .faqlink{
+        width: 400px;
+        position: relative;
+        top: 30px;
+    }
 
 }
 
