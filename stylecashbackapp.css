@@ -15,8 +15,8 @@
 
 .appvideo h1{
     background: #005551;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 50px;
     color: #fff;
     width: 100%;
@@ -30,6 +30,7 @@
     padding-top: 100px;
     padding: 40px;
     width: 90%;
+    height: 800px;
 }
 
 .video{
@@ -39,6 +40,7 @@
     width: 1274px;
     height: 720px;
     */
+    margin: 10px;
 }
 
 .source{
@@ -48,21 +50,25 @@
     justify-content: center;
     text-align: center;
     background-color: #fff;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .source p{
     background-color: #005551;
     color: #fff;
     width: 90%;
-    margin-top: 30px;
-    margin-bottom: 30px;
     border-radius: 10px;
     font-size: 40px;
     cursor: pointer;
     border: 3px solid #005551;
     transition: .3s;
-    font-family: 'Open Sans', sans-serif;;
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+}
+
+.sourcetxt {
+    min-width: 500px;
 }
 
 .sourcetxt:hover{
@@ -174,14 +180,14 @@
     }
 
     .appvideo h1{
-        padding-bottom: 15px;
-        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-top: 10px;
         font-size: 30px;
     }
 
     .videoframe{
-        margin-top: 30px;
-        max-height: 500px;
+        margin-top: 10px;
+        max-height: 400px;
     }
 
     .appBox p{
@@ -191,6 +197,19 @@
     .mlm1 p{
         font-size: 20px;
     }
+
+    .source{
+        width: 300px;
+    }
+
+    .sourcetxt{
+        min-width: 230px;
+    }
+
+    .source p{
+        font-size: 30px;
+    }
+
 }
 
 
@@ -219,6 +238,7 @@
     .video{
         width: 100%;
         height: 300px;
+        margin: 0;
     }
 
     .source p{
