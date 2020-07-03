@@ -1,0 +1,68 @@
+html{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body{
+    background-color: #f1f2f7;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300px;
+    color: #e68928;
+    overflow: hidden;
+    width: 700px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #fff;
+    height: 100vh;
+    
+}
+
+.login p{
+    font-size: 40px;
+    margin: 20px;
+}
+
+.login img{
+    max-width: 500px;
+}
+
+.password{
+    border: 3px solid #e68928;
+    border-radius: 7px;
+    width: 60%;
+    height: 40px;
+}
+
+@media screen and (max-width: 767px){
+    .login{
+        width: 300px;
+
+    }
+
+    .login p{
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .login img{
+        max-width: 300px;
+    }
+
+    .password{
+        width: 90%;
+    }
+}
