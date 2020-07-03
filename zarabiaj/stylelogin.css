@@ -1,8 +1,16 @@
+*{
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+}
+
 html{
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
+
+
 
 body{
     background-color: #f1f2f7;
@@ -12,7 +20,8 @@ body{
 }
 
 .login {
-    display: flex;
+    display: flex; 
+
     flex-direction: column;
     align-items: center;
     align-content: center;
