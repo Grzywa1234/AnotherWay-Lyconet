@@ -1,5 +1,5 @@
 .content{
-    display: none;
+    display: block;
 }
 
 header{
@@ -28,6 +28,8 @@ header .logo{
 header nav{
     float: right;
     line-height: 100px;
+    position: relative;
+    
 }
 
 .hamburger{
@@ -35,6 +37,53 @@ header nav{
     height: 100px;
     float: right;
     display: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.hamburger:hover{
+    transform: rotate(360deg);
+}
+
+.sub{
+    position: absolute;
+    display: block;
+    border: 2px solid #f29533;
+    border-radius: 10px;
+    background: #2d3033;
+}
+
+
+
+.sub1{
+    display: none;
+    position: absolute;
+    right: 525px;
+    transition: .4s;
+}
+
+.sub2{
+    display: none;
+    position: absolute;
+    right: 350px;
+    transition: .4s;
+}
+
+.sub3{
+    display: none;
+    position: absolute;
+    right: 200px;
+    transition: .4s;
+}
+
+.subclose{
+    display: none;
+}
+
+.sub a{
+    height: 60px;
+    text-align: center;
+    line-height: 50px;
 }
 
 header nav ul{
@@ -75,38 +124,115 @@ header nav ul li a{
 }
 
 .arrone{
-    top: 70px;
-    right: 530px;
+    top: 80px;
+    right: 570px;
 }
 
 .arrtwo{
-    right: 380px;
-    top: 70px;
+    right: 420px;
+    top: 80px;
 }
 
 .arrthree{
-    right: 240px;
-    top: 70px;
+    right: 280px;
+    top: 80px;
 
 }
 
 .arrfour{
-    top: 70px;
-    right: 125px;
+    top: 80px;
+    right: 165px;
 }
 
 .arrfive{
-    right: 27px;
-    top: 70px;
+    right: 67px;
+    top: 80px;
 }
 
-@media screen and (max-width: 767px) {
+.test{
+    height: 3000px;
+    background: ;
+}
+
+@media screen and (max-width: 900px) {
+    header{
+        height: 70px;
+    }
+
+    header .logo{
+        height: 100px;
+
+    }
+
     .hamburger{
         display: block;
-
+        width: 70px;
+        height: 70px;
     }
 
     nav{
         display: none;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: -70px;
+        background: #2d3033;
+        transition: 1s;
     }
+
+    .navul{
+        display: block;
+        text-align: center;
+    }
+
+    .navul li{
+        margin: 30px 10px;
+    }
+
+    .navul li a{
+        border: 3px solid #f29533;
+        border-radius: 10px;
+        height: 40px;
+        line-height: 40px;
+        font-weight: 100;
+    }
+
+    .subarrow{
+        display: none;
+    }
+
+    .menuBtn6{
+        width: 100px;
+        height: 100px;
+    }
+
+    .sub{
+        height: 100vh;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .sub1{
+        display: none;
+    }
+
+    .sub2{
+        display: none;
+    }
+
+    .sub3{
+        display: none;
+    }
+
+    .subclose{
+        width: 100px;
+        height: 100px;
+    }
+
+ 
+
+
 }
