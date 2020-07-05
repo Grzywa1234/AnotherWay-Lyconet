@@ -81,6 +81,23 @@ function opacityFiveZero(){
 }
 
 
+/* menu show & hide  */
+
+const showBtn = document.querySelector('.hamburger');
+const hideBtn = document.querySelector('.menuBtn6')
+const menu = document.querySelector('nav')
+
+
+showBtn.addEventListener('click', showMenu);
+hideBtn.addEventListener('click', hideMenu)
+
+function showMenu() {
+    menu.style.transform = 'translateX(0)'
+}
+
+function hideMenu() {
+    menu.style.transform = 'translateX(-100%)';
+}
 
 
 /* login display */ 

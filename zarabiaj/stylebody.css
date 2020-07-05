@@ -45,6 +45,7 @@ header nav{
     transform: rotate(360deg);
 }
 
+
 .sub{
     position: absolute;
     display: block;
@@ -151,7 +152,7 @@ header nav ul li a{
 
 .test{
     height: 3000px;
-    background: ;
+    
 }
 
 @media screen and (max-width: 900px) {
@@ -171,13 +172,14 @@ header nav ul li a{
     }
 
     nav{
-        display: none;
+        display: block;
         position: absolute;
         width: 100%;
         height: 100vh;
         top: -70px;
         background: #2d3033;
         transition: 1s;
+        transform: translateX(-100%);
     }
 
     .navul{
