@@ -18,7 +18,7 @@ body{
 }
 
 .login {
-    display: none; 
+    display: flex; /* flex!! */
 
     flex-direction: column;
     align-items: center;
@@ -30,8 +30,6 @@ body{
     overflow: hidden;
     width: 700px;
     margin: auto;
-    margin-top: 0;
-    margin-bottom: 0;
     background-color: #fff;
     height: 100vh;
     
