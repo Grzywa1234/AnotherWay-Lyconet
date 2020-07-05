@@ -84,21 +84,34 @@ function opacityFiveZero(){
 /* menu show & hide  */
 
 const showBtn = document.querySelector('.hamburger');
-const hideBtn = document.querySelector('.menuBtn6')
-const menu = document.querySelector('nav')
+const hideBtn = document.querySelector('.menuBtn6');
+const subBtn = document.querySelector('.subclose2');
+const subBtn2 = document.querySelector('.subclose1');
+const subBtn3 = document.querySelector('.subclose3');
+const menu = document.querySelector('nav');
+
 
 
 showBtn.addEventListener('click', showMenu);
-hideBtn.addEventListener('click', hideMenu)
+hideBtn.addEventListener('click', hideMenu);
+subBtn.addEventListener('click', hideSub);
+subBtn2.addEventListener('click', hideSub);
+subBtn3.addEventListener('click', hideSub);
 
 function showMenu() {
-    menu.style.transform = 'translateX(0)'
+    menu.style.transform = 'translateX(100%)';
 }
 
 function hideMenu() {
     menu.style.transform = 'translateX(-100%)';
 }
 
+function hideSub() {
+    subOne.style.display = 'none';
+    subTwo.style.display = 'none';
+    subThree.style.display = 'none';
+}
+ 
 
 /* login display */ 
 const password = document.querySelector('.password');

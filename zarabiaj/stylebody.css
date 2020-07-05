@@ -177,9 +177,9 @@ header nav ul li a{
         width: 100%;
         height: 100vh;
         top: -70px;
+        left: -100%;
         background: #2d3033;
         transition: 1s;
-        transform: translateX(-100%);
     }
 
     .navul{
@@ -215,6 +215,7 @@ header nav ul li a{
         top: 0;
         right: 0;
         width: 100%;
+        text-align: center;
     }
 
     .sub1{
@@ -229,9 +230,12 @@ header nav ul li a{
         display: none;
     }
 
-    .subclose{
+    .subclose1, .subclose2, .subclose3{
         width: 100px;
         height: 100px;
+        display: block;
+        text-align: center;
+        margin: auto;
     }
 
  
