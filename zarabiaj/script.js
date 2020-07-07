@@ -16,23 +16,6 @@ const subOne = document.querySelector('.sub1');
 const subTwo = document.querySelector('.sub2');
 const subThree = document.querySelector('.sub3');
 
-menuBtn.addEventListener('mouseover', opacityArrOne);
-menuBtn.addEventListener('mouseout', opacityOneZero);
-menuBtn2.addEventListener('mouseover', opacityArrTwo);
-menuBtn2.addEventListener('mouseout', opacityTwoZero);
-menuBtn3.addEventListener('mouseover', opacityArrThree);
-menuBtn3.addEventListener('mouseout', opacityThreeZero);
-menuBtn4.addEventListener('mouseover', opacityArrFour);
-menuBtn4.addEventListener('mouseout', opacityFourZero);
-menuBtn5.addEventListener('mouseover', opacityArrFive);
-menuBtn5.addEventListener('mouseout', opacityFiveZero);
-
-subOne.addEventListener('mouseover', opacityArrOne);
-subOne.addEventListener('mouseout', opacityOneZero);
-subTwo.addEventListener('mouseover', opacityArrTwo);
-subTwo.addEventListener('mouseout', opacityTwoZero);
-subThree.addEventListener('mouseover', opacityArrThree);
-subThree.addEventListener('mouseout', opacityThreeZero);
 
 function opacityArrOne() {
     arrone.style.opacity = '1';
@@ -85,33 +68,114 @@ function opacityFiveZero(){
 
 const showBtn = document.querySelector('.hamburger');
 const hideBtn = document.querySelector('.menuBtn6');
+
 const subBtn = document.querySelector('.subclose2');
 const subBtn2 = document.querySelector('.subclose1');
 const subBtn3 = document.querySelector('.subclose3');
 const menu = document.querySelector('nav');
 
 
+/* media queries for menu */
 
-showBtn.addEventListener('click', showMenu);
-hideBtn.addEventListener('click', hideMenu);
-subBtn.addEventListener('click', hideSub);
-subBtn2.addEventListener('click', hideSub);
-subBtn3.addEventListener('click', hideSub);
+let mql = window.matchMedia("(max-width: 900px)");
+let maxql = window.matchMedia("(min-width: 901px)")
 
-function showMenu() {
-    menu.style.transform = 'translateX(100%)';
+mql.addEventListener("change", (e) =>{
+
+    if(e.matches){
+
+        query()
+    }
+});
+
+maxql.addEventListener("change", (e) => {
+
+    if(e.matches){
+        queryBig()
+    }
+});
+
+function query() {
+    if(mql.matches){
+
+        showBtn.addEventListener('click', showMenu);
+        hideBtn.addEventListener('click', hideMenu);
+        subBtn.addEventListener('click', hideSub);
+        subBtn2.addEventListener('click', hideSub);
+        subBtn3.addEventListener('click', hideSub);
+
+        function showMenu() {
+         menu.style.transform = 'translateX(100%)';
+        }
+
+        function hideMenu() {
+          menu.style.transform = 'translateX(0)';
+        }
+
+        function hideSub() {
+         subOne.style.display = 'none';
+          subTwo.style.display = 'none';
+          subThree.style.display = 'none';
+        }
+
+        menuBtn.removeEventListener('mouseover', opacityArrOne);
+        menuBtn.removeEventListener('mouseout', opacityOneZero);
+        menuBtn2.removeEventListener('mouseover', opacityArrTwo);
+        menuBtn2.removeEventListener('mouseout', opacityTwoZero);
+        menuBtn3.removeEventListener('mouseover', opacityArrThree);
+        menuBtn3.removeEventListener('mouseout', opacityThreeZero);
+        menuBtn4.removeEventListener('mouseover', opacityArrFour);
+        menuBtn4.removeEventListener('mouseout', opacityFourZero);
+        menuBtn5.removeEventListener('mouseover', opacityArrFive);
+        menuBtn5.removeEventListener('mouseout', opacityFiveZero);
+
+        subOne.removeEventListener('mouseover', opacityArrOne);
+        subOne.removeEventListener('mouseout', opacityOneZero);
+        subTwo.removeEventListener('mouseover', opacityArrTwo);
+        subTwo.removeEventListener('mouseout', opacityTwoZero);
+        subThree.removeEventListener('mouseover', opacityArrThree);
+        subThree.removeEventListener('mouseout', opacityThreeZero);
+
+
+    }
 }
 
-function hideMenu() {
-    menu.style.transform = 'translateX(-100%)';
+
+
+function queryBig(){
+    if(maxql.matches){
+        subBtn.style.display = 'none';
+        subBtn2.style.display = 'none';
+        subBtn3.style.display = 'none'; 
+        
+        menuBtn.addEventListener('mouseover', opacityArrOne);
+        menuBtn.addEventListener('mouseout', opacityOneZero);
+        menuBtn2.addEventListener('mouseover', opacityArrTwo);
+        menuBtn2.addEventListener('mouseout', opacityTwoZero);
+        menuBtn3.addEventListener('mouseover', opacityArrThree);
+        menuBtn3.addEventListener('mouseout', opacityThreeZero);
+        menuBtn4.addEventListener('mouseover', opacityArrFour);
+        menuBtn4.addEventListener('mouseout', opacityFourZero);
+        menuBtn5.addEventListener('mouseover', opacityArrFive);
+        menuBtn5.addEventListener('mouseout', opacityFiveZero);
+
+        subOne.addEventListener('mouseover', opacityArrOne);
+        subOne.addEventListener('mouseout', opacityOneZero);
+        subTwo.addEventListener('mouseover', opacityArrTwo);
+        subTwo.addEventListener('mouseout', opacityTwoZero);
+        subThree.addEventListener('mouseover', opacityArrThree);
+        subThree.addEventListener('mouseout', opacityThreeZero);
+
+        
+    }
 }
 
-function hideSub() {
-    subOne.style.display = 'none';
-    subTwo.style.display = 'none';
-    subThree.style.display = 'none';
-}
- 
+
+
+
+
+
+
 
 /* login display */ 
 const password = document.querySelector('.password');
@@ -128,4 +192,5 @@ function hideLogin(e) {
     }
 }
 
-
+query();
+queryBig();
