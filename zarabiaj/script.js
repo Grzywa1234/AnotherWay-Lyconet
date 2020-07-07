@@ -68,7 +68,6 @@ function opacityFiveZero(){
 
 const showBtn = document.querySelector('.hamburger');
 const hideBtn = document.querySelector('.menuBtn6');
-
 const subBtn = document.querySelector('.subclose2');
 const subBtn2 = document.querySelector('.subclose1');
 const subBtn3 = document.querySelector('.subclose3');
@@ -103,6 +102,11 @@ function query() {
         subBtn.addEventListener('click', hideSub);
         subBtn2.addEventListener('click', hideSub);
         subBtn3.addEventListener('click', hideSub);
+
+        menuBtn.addEventListener('click', opacityArrOne);
+        menuBtn2.addEventListener('click', opacityArrTwo);
+        menuBtn3.addEventListener('click', opacityArrThree)
+
 
         function showMenu() {
          menu.style.transform = 'translateX(100%)';
