@@ -102,10 +102,11 @@ function query() {
         subBtn.addEventListener('click', hideSub);
         subBtn2.addEventListener('click', hideSub);
         subBtn3.addEventListener('click', hideSub);
+        
 
-        menuBtn.addEventListener('click', opacityArrOne);
-        menuBtn2.addEventListener('click', opacityArrTwo);
-        menuBtn3.addEventListener('click', opacityArrThree)
+        menuBtn.addEventListener('click', showSub1);
+        menuBtn2.addEventListener('click', showSub2);
+        menuBtn3.addEventListener('click', showSub3);
 
 
         function showMenu() {
@@ -121,6 +122,20 @@ function query() {
           subTwo.style.display = 'none';
           subThree.style.display = 'none';
         }
+
+        function showSub1() {
+            subOne.style.display = 'block';
+        }
+
+        function showSub2() {
+            subTwo.style.display = 'block';
+        }
+
+        function showSub3() {
+            subThree.style.display = 'block';
+        }
+
+
 
         menuBtn.removeEventListener('mouseover', opacityArrOne);
         menuBtn.removeEventListener('mouseout', opacityOneZero);
@@ -169,6 +184,12 @@ function queryBig(){
         subTwo.addEventListener('mouseout', opacityTwoZero);
         subThree.addEventListener('mouseover', opacityArrThree);
         subThree.addEventListener('mouseout', opacityThreeZero);
+
+        
+        menuBtn.removeEventListener('click', opacityArrOne);
+        menuBtn2.removeEventListener('click', opacityArrTwo);
+        menuBtn3.removeEventListener('click', opacityArrThree)
+
 
         
     }

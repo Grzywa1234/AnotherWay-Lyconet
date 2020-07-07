@@ -41,9 +41,11 @@ header nav{
     transition: 1s;
 }
 
+
 .hamburger:hover{
     transform: rotate(360deg);
 }
+
 
 
 .sub{
@@ -206,6 +208,11 @@ header nav ul li a{
     .menuBtn6{
         width: 100px;
         height: 100px;
+        transition: 1s;
+    }
+
+    .menuBtn6:hover{
+        transform: rotate(360deg);
     }
 
     .sub{
@@ -236,6 +243,11 @@ header nav ul li a{
         display: block;
         text-align: center;
         margin: auto;
+        transition: 1s;
+    }
+
+    .subclose1:hover, .subclose2:hover, .subclose3:hover{
+        transform: rotate(360deg);
     }
 
  
