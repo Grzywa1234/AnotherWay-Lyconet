@@ -1,5 +1,5 @@
 .content{
-    display: none;
+    display: block;
 }
 
 header{
@@ -87,6 +87,10 @@ header nav{
     height: 60px;
     text-align: center;
     line-height: 50px;
+}
+
+.sub a:hover {
+    color: #e68928;
 }
 
 header nav ul{
@@ -201,6 +205,11 @@ header nav ul li a{
         font-weight: 100;
     }
 
+    .navul li a:hover{
+        transform: scale(1.2);
+        color: #f29533;
+    }
+
     .subarrow{
         display: none;
     }
@@ -223,6 +232,10 @@ header nav ul li a{
         right: 0;
         width: 100%;
         text-align: center;
+    }
+
+    .sub a:hover{
+        transform: scale(1.2);
     }
 
     .sub1{
