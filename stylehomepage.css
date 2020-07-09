@@ -100,14 +100,16 @@ body{
 .wrap{
     position: relative;
     top: 40px;
+    overflow: visible;
+    width: 85%;
+    margin: auto;
 }
 
-#slider, .wrap, .slide-content{
+#slider, .slide-content{
     width: 100%;
     overflow-x: hidden;
     transition: .4s;
 }
-
 
 .slide{
     background-size: cover;
@@ -164,6 +166,7 @@ body{
     transition: .2s;
 }
 
+/*
 #arrow-left{
     border-width: 30px 40px 30px 0;
     left: 0;
@@ -171,15 +174,30 @@ body{
     border-color: transparent #e68928 transparent transparent;
 }
 
-#arrow-left:hover, #arrow-right:hover{
-    animation: scale 1s;
-}
-
 #arrow-right{
     border-width: 30px 0px 30px 40px;
     right: 0;
     margin-right: 30px;
     border-color: transparent transparent transparent #e68928;
+}
+*/
+
+#arrow-left{
+    left: -50px;
+    margin-left: 0px;
+    border-color: transparent #e68928 transparent transparent;
+    border-width: 30px 40px 30px 0;
+}
+
+#arrow-right{
+    right: -50px;
+    margin-right: 0px;
+    border-color: transparent transparent transparent #e68928;
+    border-width: 30px 0px 30px 40px;
+}
+
+#arrow-left:hover, #arrow-right:hover{
+    animation: scale 1s;
 }
 
 .cbApp{
@@ -366,10 +384,22 @@ body{
 
     .wrap{
         top: 30px;
+        width: 90%;
+        overflow: visible;
     }
 
     .menu{
         line-height: 70px;
+    }
+
+    #arrow-left{
+        left: -50px;
+        margin-left: 0px;
+    }
+    
+    #arrow-right{
+        right: -50px;
+        margin-right: 0px;
     }
 
     .appBox{
@@ -406,6 +436,18 @@ body{
 
     .wrap{
         top: 70px;
+        width: 100%;
+    }
+
+    #arrow-left{
+        left: 0;
+        margin-left: 30px;
+    }
+
+    
+    #arrow-right{
+        right: 0;
+        margin-right: 30px;
     }
 
 }
@@ -425,6 +467,7 @@ body{
 
     .wrap{
         top: 70px;
+        width: 100%;
     }
 }
 
