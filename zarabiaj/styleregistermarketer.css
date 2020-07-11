@@ -1,11 +1,8 @@
-.content2 {
+.content2{
     display: none;
 }
 
 .reg{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 90%;
     height: 80vh;
     position: relative;
@@ -30,10 +27,6 @@
 .regcontainer iframe{
     width: 100%;
     height: 100%;
-    /*
-    width: 700px;
-    height: 395px;
-    */
 }
 
 
