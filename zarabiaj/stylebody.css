@@ -1,5 +1,5 @@
 .content{
-    display: block;
+    display: none;
 }
 
 header{
@@ -14,6 +14,7 @@ header{
     padding: 0;
     height: 100px;
     font-size: 18px;
+    z-index: 11111;
 }
 
 header .logo{
@@ -23,6 +24,7 @@ header .logo{
     height: 130px;
     top: -10px;
     left: 10px;
+    cursor: pointer;
 }
 
 header nav{
@@ -156,9 +158,26 @@ header nav ul li a{
     top: 80px;
 }
 
-.test{
-    height: 3000px;
-    
+.content1{
+    position: relative;
+    top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    height: 90vh;
+}
+
+.content1 p{
+    color: #e68928;
+    font-weight: 300px;
+    margin: 0;
+}
+
+.content1 img{
+    max-height: 400px;
 }
 
 @media screen and (max-width: 900px) {

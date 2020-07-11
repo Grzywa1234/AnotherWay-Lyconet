@@ -195,6 +195,38 @@ function queryBig(){
     }
 }
 
+/* submenu */
+
+const sub1btn1 = document.querySelector('.sub1btn1');
+const sub1btn2 = document.querySelector('.sub1btn2')
+
+const homelogo = document.querySelector('.logo')
+const content1 = document.querySelector('.content1');
+const content2 = document.querySelector('.content2');
+const content3 = document.querySelector('.content3');
+
+
+homelogo.addEventListener('click', homepageContainer)
+sub1btn1.addEventListener('click', changeContainer1);
+sub1btn2.addEventListener('click', changeContainer2);
+
+function homepageContainer() {
+    content1.style.display = 'flex';
+    content2.style.display = 'none';
+    content3.style.display = 'none';
+}
+
+function changeContainer1() {
+    content1.style.display = 'none';
+    content2.style.display = 'block';
+    content3.style.display = 'none';
+}
+
+function changeContainer2() {
+    content1.style.display = 'none';
+    content2.style.display = 'none';
+    content3.style.display = 'block';
+}
 
 
 
