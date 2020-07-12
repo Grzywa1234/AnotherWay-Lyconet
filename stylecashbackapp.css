@@ -216,7 +216,7 @@
 
 @media screen and (max-width: 767px){
     .cashbackapp{
-        top: 50px
+        top: 60px
     }
 
     .appvideo h1{
@@ -232,7 +232,9 @@
         flex-direction: column-reverse;
         margin-top: 10px;
         width: 100%;
-        padding: 5px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        margin-bottom: 40px;
     }
     
     .video{

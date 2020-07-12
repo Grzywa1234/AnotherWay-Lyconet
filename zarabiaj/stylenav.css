@@ -1,0 +1,311 @@
+.content{
+    display: block;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background-image: linear-gradient(to right,#e68928 ,#4b2011);
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    font-size: 18px;
+    z-index: 11111;
+}
+
+header .logo{
+    float: left;
+    position: absolute;
+    color: #fff;
+    height: 130px;
+    top: -10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+header nav{
+    float: right;
+    line-height: 100px;
+    position: relative;
+    
+}
+
+.hamburger{
+    width: 100px;
+    height: 100px;
+    float: right;
+    display: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+.hamburger:hover{
+    transform: rotate(360deg);
+}
+
+
+
+.sub{
+    position: absolute;
+    display: block;
+    border: 2px solid #f29533;
+    border-radius: 10px;
+    background: #2d3033;
+}
+
+
+
+.sub1{
+    display: none;
+    position: absolute;
+    right: 525px;
+    transition: .4s;
+}
+
+.sub2{
+    display: none;
+    position: absolute;
+    right: 350px;
+    transition: .4s;
+}
+
+.sub3{
+    display: none;
+    position: absolute;
+    right: 200px;
+    transition: .4s;
+}
+
+.subclose{
+    display: none;
+}
+
+.sub a{
+    height: 60px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.sub a:hover {
+    color: #e68928;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+header nav ul li{
+    list-style: none;
+    display: block;
+    margin: 0 20px;
+}
+
+header nav ul li a{
+    text-transform: none;
+    text-decoration: none;
+    transition: .4s;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: block;
+}
+
+
+.subarrow{
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    opacity: 0;
+    transition: .4s;
+}
+
+.arrone{
+    top: 80px;
+    right: 570px;
+}
+
+.arrtwo{
+    right: 420px;
+    top: 80px;
+}
+
+.arrthree{
+    right: 280px;
+    top: 80px;
+
+}
+
+.arrfour{
+    top: 80px;
+    right: 165px;
+}
+
+.arrfive{
+    right: 67px;
+    top: 80px;
+}
+
+
+@media screen and (max-width: 1440px){
+    header{
+        height: 70px;
+    }
+
+    header .logo{
+        height: 100px;
+
+    }
+
+    .navul li a{
+        line-height: 70px;
+    }
+    
+    .arrone{
+        top: 55px;
+        right: 570px;
+    }
+    
+    .arrtwo{
+        right: 420px;
+        top: 55px;
+    }
+    
+    .arrthree{
+        right: 280px;
+        top: 55px;
+    
+    }
+    
+    .arrfour{
+        top: 55px;
+        right: 165px;
+    }
+    
+    .arrfive{
+        right: 67px;
+        top: 55px;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 900px) {
+    header{
+        height: 70px;
+    }
+
+    header .logo{
+        height: 100px;
+
+    }
+
+    .hamburger{
+        display: block;
+        width: 70px;
+        height: 70px;
+    }
+
+    nav{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: -70px;
+        left: -100%;
+        background: #2d3033;
+        transition: 1s;
+    }
+
+    .navul{
+        display: block;
+        text-align: center;
+    }
+
+    .navul li{
+        margin: 30px 10px;
+    }
+
+    .navul li a{
+        border: 3px solid #f29533;
+        border-radius: 10px;
+        height: 40px;
+        line-height: 40px;
+        font-weight: 100;
+    }
+
+    .navul li a:hover{
+        transform: scale(1.2);
+        color: #f29533;
+    }
+
+    .subarrow{
+        display: none;
+    }
+
+    .menuBtn6{
+        width: 100px;
+        height: 100px;
+        transition: 1s;
+    }
+
+    .menuBtn6:hover{
+        transform: rotate(360deg);
+    }
+
+    .sub{
+        height: 100vh;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sub a:hover{
+        transform: scale(1.2);
+    }
+
+    .sub1{
+        display: none;
+    }
+
+    .sub2{
+        display: none;
+    }
+
+    .sub3{
+        display: none;
+    }
+
+    .subclose1, .subclose2, .subclose3{
+        width: 100px;
+        height: 100px;
+        display: block;
+        text-align: center;
+        margin: auto;
+        transition: 1s;
+    }
+
+    .subclose1:hover, .subclose2:hover, .subclose3:hover{
+        transform: rotate(360deg);
+    }
+
+ 
+
+
+}

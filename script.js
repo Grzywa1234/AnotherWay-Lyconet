@@ -89,6 +89,7 @@ function showHomepage () {
     homepagecbApp.style.display = "block";
     homepagemlm.style.display = "block";
     appTab.style.display = "none";
+    changeUrl();
 }
 
 /* video */

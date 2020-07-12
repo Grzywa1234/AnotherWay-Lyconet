@@ -200,24 +200,56 @@ function queryBig(){
 const sub1btn1 = document.querySelector('.sub1btn1');
 const sub1btn2 = document.querySelector('.sub1btn2');
 const sub2btn1 = document.querySelector('.sub2btn1');
+const sub2btn2 = document.querySelector('.sub2btn2');
+const sub3btn1 = document.querySelector('.sub3btn1');
+const sub3btn2 = document.querySelector('.sub3btn2');
+const sub3btn3 = document.querySelector('.sub3btn3');
+const sub3btn4 = document.querySelector('.sub3btn4');
+const sub3btn5 = document.querySelector('.sub3btn5');
+
+
 
 const homelogo = document.querySelector('.logo')
+
 const content1 = document.querySelector('.content1');
 const content2 = document.querySelector('.content2');
 const content3 = document.querySelector('.content3');
 const content4 = document.querySelector('.content4');
+const content5 = document.querySelector('.content5');
+const content6 = document.querySelector('.content6');
+const content7 = document.querySelector('.content7');
+const content8 = document.querySelector('.content8');
+const content9 = document.querySelector('.content9');
+const content10 = document.querySelector('.content10');
 
+const marvid1 = document.querySelector('.marvid1');
+const marvid2 = document.querySelector('.marvid2');
+const acavid1 = document.querySelector('.acavid1');
 
 homelogo.addEventListener('click', homepageContainer)
 sub1btn1.addEventListener('click', changeContainer1);
 sub1btn2.addEventListener('click', changeContainer2);
 sub2btn1.addEventListener('click', changeContainer3);
+sub2btn2.addEventListener('click', changeContainer4);
+sub3btn1.addEventListener('click', changeContainer5);
+sub3btn2.addEventListener('click', changeContainer6);
+sub3btn3.addEventListener('click', changeContainer7);
+sub3btn4.addEventListener('click', changeContainer8);
+sub3btn5.addEventListener('click', changeContainer9);
 
 function homepageContainer() {
     content1.style.display = 'flex';
     content2.style.display = 'none';
     content3.style.display = 'none';
     content4.style.display = 'none';
+    content5.style.display = 'none';
+    content6.style.display = 'none';
+    content7.style.display = 'none';
+    content8.style.display = 'none';
+    content9.style.display = 'none';
+    marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
+    marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
+    acavid1.src = "https://www.youtube.com/embed/80VarX0a5aw";
 }
 
 function changeContainer1() {
@@ -225,6 +257,13 @@ function changeContainer1() {
     content2.style.display = 'block';
     content3.style.display = 'none';
     content4.style.display = 'none';
+    content5.style.display = 'none';
+    content6.style.display = 'none';
+    content7.style.display = 'none';
+    content8.style.display = 'none';
+    content9.style.display = 'none';
+    marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
+    acavid1.src = "https://www.youtube.com/embed/80VarX0a5aw";
 }
 
 function changeContainer2() {
@@ -232,6 +271,13 @@ function changeContainer2() {
     content2.style.display = 'none';
     content3.style.display = 'block';
     content4.style.display = 'none';
+    content5.style.display = 'none';
+    content6.style.display = 'none';
+    content7.style.display = 'none';
+    content8.style.display = 'none';
+    content9.style.display = 'none';
+    acavid1.src = "https://www.youtube.com/embed/80VarX0a5aw";
+    marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
 }
 
 function changeContainer3() {
@@ -239,11 +285,105 @@ function changeContainer3() {
     content2.style.display = 'none';
     content3.style.display = 'none';
     content4.style.display = 'block';
+    content5.style.display = 'none';
+    content6.style.display = 'none';
+    content7.style.display = 'none';
+    content8.style.display = 'none';
+    content9.style.display = 'none';
+    marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
+    marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
 }
 
+function changeContainer4() {
+    content1.style.display = 'none';
+    content2.style.display = 'none';
+    content3.style.display = 'none';
+    content4.style.display = 'none';
+    content5.style.display = 'block';
+    content6.style.display = 'none';
+    content7.style.display = 'none';
+    content8.style.display = 'none';
+    content9.style.display = 'none';
+    marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
+    marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
+    acavid1.src = "https://www.youtube.com/embed/80VarX0a5aw";
+}
 
+function changeContainer5() {
+    content1.style.display = 'none';
+    content2.style.display = 'none';
+    content3.style.display = 'none';
+    content4.style.display = 'none';
+    content5.style.display = 'none';
+    content6.style.display = 'block';
+    content7.style.display = 'none';
+    content8.style.display = 'none';
+    content9.style.display = 'none';
+    marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
+    marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
+    acavid1.src = "https://www.youtube.com/embed/80VarX0a5aw";
+}
 
+function changeContainer6() {
+    content1.style.display = 'none';
+    content2.style.display = 'none';
+    content3.style.display = 'none';
+    content4.style.display = 'none';
+    content5.style.display = 'none';
+    content6.style.display = 'none';
+    content7.style.display = 'block';
+    content8.style.display = 'none';
+    content9.style.display = 'none';
+    marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
+    marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
+    acavid1.src = "https://www.youtube.com/embed/80VarX0a5aw";
+}
 
+function changeContainer7() {
+    content1.style.display = 'none';
+    content2.style.display = 'none';
+    content3.style.display = 'none';
+    content4.style.display = 'none';
+    content5.style.display = 'none';
+    content6.style.display = 'none';
+    content7.style.display = 'none';
+    content8.style.display = 'block';
+    content9.style.display = 'none';
+    marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
+    marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
+    acavid1.src = "https://www.youtube.com/embed/80VarX0a5aw";
+}
+
+function changeContainer8() {
+    content1.style.display = 'none';
+    content2.style.display = 'none';
+    content3.style.display = 'none';
+    content4.style.display = 'none';
+    content5.style.display = 'none';
+    content6.style.display = 'none';
+    content7.style.display = 'none';
+    content8.style.display = 'none';
+    content9.style.display = 'block';
+    marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
+    marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
+    acavid1.src = "https://www.youtube.com/embed/80VarX0a5aw";
+}
+
+function changeContainer9() {
+    content1.style.display = 'none';
+    content2.style.display = 'none';
+    content3.style.display = 'none';
+    content4.style.display = 'none';
+    content5.style.display = 'none';
+    content6.style.display = 'none';
+    content7.style.display = 'none';
+    content8.style.display = 'none';
+    content9.style.display = 'none';
+    content10.style.display = 'block';
+    marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
+    marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
+    acavid1.src = "https://www.youtube.com/embed/80VarX0a5aw";
+}
 
 
 
