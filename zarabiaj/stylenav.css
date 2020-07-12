@@ -248,7 +248,6 @@ header nav ul li a{
     }
 
     .navul li a:hover{
-        transform: scale(1.2);
         color: #f29533;
     }
 
@@ -277,7 +276,7 @@ header nav ul li a{
     }
 
     .sub a:hover{
-        transform: scale(1.2);
+        color: #f29533;
     }
 
     .sub1{

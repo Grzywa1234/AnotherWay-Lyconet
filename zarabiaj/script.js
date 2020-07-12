@@ -301,7 +301,6 @@ function changeContainer2() {
     content7.style.display = 'none';
     content8.style.display = 'none';
     content9.style.display = 'none';
-    acavid1.src = "https://www.youtube.com/embed/80VarX0a5aw";
     marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
 }
 

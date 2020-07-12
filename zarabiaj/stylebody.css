@@ -1,7 +1,7 @@
 .content1{
     position: relative;
     top: 100px;
-    display: flex;
+    display: none; /*flex*/
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -87,17 +87,13 @@
         max-height: 300px;
         left: 0;
         width: 100%;
-        margin-top: 30vh;
+        margin-top: 40vh;
     }
 }
 
 
 
 
-
-.content4{
-    display: none;
-}
 
 .content5{
     display: none;
