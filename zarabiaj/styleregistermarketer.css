@@ -37,3 +37,11 @@
 .content3 {
     display: none;
 }
+
+
+
+@media screen and (max-width: 1440px){
+    .reg{
+        top: 70px;
+    }
+}

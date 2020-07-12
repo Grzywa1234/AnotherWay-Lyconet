@@ -64,6 +64,8 @@ function opacityFiveZero(){
 }
 
 
+
+
 /* menu show & hide  */
 
 const showBtn = document.querySelector('.hamburger');
@@ -72,6 +74,16 @@ const subBtn = document.querySelector('.subclose2');
 const subBtn2 = document.querySelector('.subclose1');
 const subBtn3 = document.querySelector('.subclose3');
 const menu = document.querySelector('nav');
+
+const sub1btn1 = document.querySelector('.sub1btn1');
+const sub1btn2 = document.querySelector('.sub1btn2');
+const sub2btn1 = document.querySelector('.sub2btn1');
+const sub2btn2 = document.querySelector('.sub2btn2');
+const sub3btn1 = document.querySelector('.sub3btn1');
+const sub3btn2 = document.querySelector('.sub3btn2');
+const sub3btn3 = document.querySelector('.sub3btn3');
+const sub3btn4 = document.querySelector('.sub3btn4');
+const sub3btn5 = document.querySelector('.sub3btn5');
 
 
 /* media queries for menu */
@@ -107,6 +119,16 @@ function query() {
         menuBtn.addEventListener('click', showSub1);
         menuBtn2.addEventListener('click', showSub2);
         menuBtn3.addEventListener('click', showSub3);
+
+        sub1btn1.addEventListener('click', hideBoth);
+        sub1btn2.addEventListener('click', hideBoth);
+        sub2btn1.addEventListener('click', hideBoth);
+        sub2btn2.addEventListener('click', hideBoth);
+        sub3btn1.addEventListener('click', hideBoth);
+        sub3btn2.addEventListener('click', hideBoth);
+        sub3btn3.addEventListener('click', hideBoth);
+        sub3btn4.addEventListener('click', hideBoth);
+        sub3btn5.addEventListener('click', hideBoth);
 
 
         function showMenu() {
@@ -159,6 +181,13 @@ function query() {
     }
 }
 
+function hideBoth(){
+    menu.style.transform = 'translateX(0)';
+    subOne.style.display = 'none';
+    subTwo.style.display = 'none';
+    subThree.style.display = 'none';
+   }
+
 
 
 function queryBig(){
@@ -190,23 +219,20 @@ function queryBig(){
         menuBtn2.removeEventListener('click', opacityArrTwo);
         menuBtn3.removeEventListener('click', opacityArrThree)
 
-
+        sub1btn1.removeEventListener('click', hideBoth);
+        sub1btn2.removeEventListener('click', hideBoth);
+        sub2btn1.removeEventListener('click', hideBoth);
+        sub2btn2.removeEventListener('click', hideBoth);
+        sub3btn1.removeEventListener('click', hideBoth);
+        sub3btn2.removeEventListener('click', hideBoth);
+        sub3btn3.removeEventListener('click', hideBoth);
+        sub3btn4.removeEventListener('click', hideBoth);
+        sub3btn5.removeEventListener('click', hideBoth);
         
     }
 }
 
 /* submenu */
-
-const sub1btn1 = document.querySelector('.sub1btn1');
-const sub1btn2 = document.querySelector('.sub1btn2');
-const sub2btn1 = document.querySelector('.sub2btn1');
-const sub2btn2 = document.querySelector('.sub2btn2');
-const sub3btn1 = document.querySelector('.sub3btn1');
-const sub3btn2 = document.querySelector('.sub3btn2');
-const sub3btn3 = document.querySelector('.sub3btn3');
-const sub3btn4 = document.querySelector('.sub3btn4');
-const sub3btn5 = document.querySelector('.sub3btn5');
-
 
 
 const homelogo = document.querySelector('.logo')
@@ -224,7 +250,6 @@ const content10 = document.querySelector('.content10');
 
 const marvid1 = document.querySelector('.marvid1');
 const marvid2 = document.querySelector('.marvid2');
-const acavid1 = document.querySelector('.acavid1');
 
 homelogo.addEventListener('click', homepageContainer)
 sub1btn1.addEventListener('click', changeContainer1);
@@ -249,7 +274,7 @@ function homepageContainer() {
     content9.style.display = 'none';
     marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
     marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acavid1.src = "https://www.youtube.com/embed/80VarX0a5aw";
+    
 }
 
 function changeContainer1() {
@@ -263,7 +288,7 @@ function changeContainer1() {
     content8.style.display = 'none';
     content9.style.display = 'none';
     marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acavid1.src = "https://www.youtube.com/embed/80VarX0a5aw";
+    
 }
 
 function changeContainer2() {
@@ -306,7 +331,7 @@ function changeContainer4() {
     content9.style.display = 'none';
     marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
     marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acavid1.src = "https://www.youtube.com/embed/80VarX0a5aw";
+
 }
 
 function changeContainer5() {
@@ -321,7 +346,7 @@ function changeContainer5() {
     content9.style.display = 'none';
     marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
     marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acavid1.src = "https://www.youtube.com/embed/80VarX0a5aw";
+
 }
 
 function changeContainer6() {
@@ -336,7 +361,7 @@ function changeContainer6() {
     content9.style.display = 'none';
     marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
     marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acavid1.src = "https://www.youtube.com/embed/80VarX0a5aw";
+
 }
 
 function changeContainer7() {
@@ -351,7 +376,7 @@ function changeContainer7() {
     content9.style.display = 'none';
     marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
     marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acavid1.src = "https://www.youtube.com/embed/80VarX0a5aw";
+
 }
 
 function changeContainer8() {
@@ -366,7 +391,7 @@ function changeContainer8() {
     content9.style.display = 'block';
     marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
     marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acavid1.src = "https://www.youtube.com/embed/80VarX0a5aw";
+
 }
 
 function changeContainer9() {
@@ -382,7 +407,7 @@ function changeContainer9() {
     content10.style.display = 'block';
     marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
     marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acavid1.src = "https://www.youtube.com/embed/80VarX0a5aw";
+
 }
 
 
