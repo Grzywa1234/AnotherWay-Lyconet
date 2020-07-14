@@ -88,11 +88,11 @@ const sub3btn5 = document.querySelector('.sub3btn5');
 
 /* media queries for menu */
 
-const mql = window.matchMedia("(max-width: 900px)");
-const maxql = window.matchMedia("(min-width: 901px)");
+const mql = window.matchMedia("screen and (max-width: 900px)");
+const maxql = window.matchMedia(" screen and (min-width: 901px)");
 
 
-mql.addEventListener("change", (e) => {
+mql.addEventListener("change", function(e) {
 
     if(e.matches){
 
@@ -101,7 +101,7 @@ mql.addEventListener("change", (e) => {
 });
 
 
-maxql.addEventListener("change", (e) => {
+maxql.addEventListener("change", function(e) {
 
     if(e.matches){
         queryBig()
@@ -110,6 +110,10 @@ maxql.addEventListener("change", (e) => {
 
 function query() {
     if(mql.matches){
+
+        subBtn.style.display = 'block';
+        subBtn2.style.display = 'block';
+        subBtn3.style.display = 'block';
 
         showBtn.addEventListener('click', showMenu);
         hideBtn.addEventListener('click', hideMenu);
