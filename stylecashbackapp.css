@@ -220,13 +220,10 @@
     }
 
     .appvideo h1{
-        font-size: 30px;
+        font-size: 20px;
         padding-bottom: 10px;
     }
 
-    .source p {
-        font-size: 20px;
-    }
 
     .videoframe{
         flex-direction: column-reverse;
@@ -235,6 +232,7 @@
         padding-top: 20px;
         padding-bottom: 0px;
         margin-bottom: 40px;
+        min-height: 530px;
     }
     
     .video{
@@ -243,9 +241,12 @@
         margin: 0;
     }
 
+
     .source p{
         margin-top: 10px;
         margin-bottom: 10px;
+        
+        font-size: 20px;
     }
 
     .faq a{
