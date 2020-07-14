@@ -1,7 +1,7 @@
 .content1{
     position: relative;
     top: 100px;
-    display: none; /*flex*/
+    display: flex; /*flex*/
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -22,13 +22,13 @@
 }
 
 .content1p1{
-    margin-bottom: 20vh;
-    margin-top: 0;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
 }
 
 .content1p2{
-    margin-bottom: 5vh;
-    margin-top: 20vh;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
 }
 
 .content1 img{
