@@ -133,10 +133,12 @@ function query() {
 
         function showMenu() {
          menu.style.transform = 'translateX(100%)';
+         menu.style.webkitTransform = 'translateX(100%)';
         }
 
         function hideMenu() {
           menu.style.transform = 'translateX(0)';
+          menu.style.webkitTransform = 'translateX(0)';
         }
 
         function hideSub() {
