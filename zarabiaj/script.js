@@ -411,6 +411,54 @@ function changeContainer9() {
 
 
 
+/* Academy video change URL */
+
+const aca1 = document.querySelector('.aca1');
+const aca2 = document.querySelector('.aca2');
+const aca3 = document.querySelector('.aca3');
+const aca4 = document.querySelector('.aca4');
+const aca5 = document.querySelector('.aca5');
+const aca6 = document.querySelector('.aca6');
+const aca7 = document.querySelector('.aca7');
+
+aca1.addEventListener('click', changeVideo);
+aca2.addEventListener('click', changeVideo2);
+aca3.addEventListener('click', changeVideo3);
+aca4.addEventListener('click', changeVideo4);
+aca5.addEventListener('click', changeVideo5);
+aca6.addEventListener('click', changeVideo6);
+aca7.addEventListener('click', changeVideo7);
+
+function changeVideo () {
+    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/GJRj78sU0_o';
+}
+
+function changeVideo2 () {
+    document.querySelector('.video').src = 'https://www.youtube.com/embed/2Un8DbwjeTA';
+}
+
+function changeVideo3 () {
+    document.querySelector('.video').src = 'https://www.youtube.com/embed/DUJEbQ43By4';
+}
+
+
+function changeVideo4 () {
+    document.querySelector('.video').src = 'https://www.youtube-nocookie.com/embed/MyY7AmMD8OM';
+}
+
+function changeVideo5 () {
+    document.querySelector('.video').src = "https://www.youtube-nocookie.com/embed/jvGtp62PKUQ";
+}
+
+function changeVideo6 () {
+    document.querySelector('.video').src = "https://www.youtube-nocookie.com/embed/jvGtp62PKUQ";
+}
+
+function changeVideo7 () {
+    document.querySelector('.video').src = "https://www.youtube-nocookie.com/embed/jvGtp62PKUQ";
+}
+
+
 /* login display */ 
 const password = document.querySelector('.password');
 const login = document.querySelector('.login');
