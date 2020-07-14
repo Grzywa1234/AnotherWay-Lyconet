@@ -88,16 +88,18 @@ const sub3btn5 = document.querySelector('.sub3btn5');
 
 /* media queries for menu */
 
-let mql = window.matchMedia("(max-width: 900px)");
-let maxql = window.matchMedia("(min-width: 901px)")
+const mql = window.matchMedia("(max-width: 900px)");
+const maxql = window.matchMedia("(min-width: 901px)");
 
-mql.addEventListener("change", (e) =>{
+
+mql.addEventListener("change", (e) => {
 
     if(e.matches){
 
         query()
     }
 });
+
 
 maxql.addEventListener("change", (e) => {
 
