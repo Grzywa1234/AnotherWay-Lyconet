@@ -92,7 +92,7 @@ const mql = window.matchMedia("screen and (max-width: 900px)");
 const maxql = window.matchMedia(" screen and (min-width: 901px)");
 
 
-mql.addEventListener("change", function(e) {
+mql.addListener(function(e) {
 
     if(e.matches){
 
@@ -100,8 +100,15 @@ mql.addEventListener("change", function(e) {
     }
 });
 
-
+/* 
 maxql.addEventListener("change", function(e) {
+
+    if(e.matches){
+        queryBig()
+    }
+}); */
+
+maxql.addListener(function(e) {
 
     if(e.matches){
         queryBig()
@@ -446,9 +453,8 @@ function changeVideo2 () {
 }
 
 function changeVideo3 () {
-    document.querySelector('.video').src = 'https://www.youtube.com/embed/DUJEbQ43By4';
+    document.querySelector('.video').src="https://www.youtube-nocookie.com/embed/WSkMWm3l3D8";
 }
-
 
 function changeVideo4 () {
     document.querySelector('.video').src = 'https://www.youtube-nocookie.com/embed/MyY7AmMD8OM';
