@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+}
+
 .content1{
     position: relative;
     top: 100px;
@@ -92,29 +96,3 @@
 }
 
 
-
-
-
-.content5{
-    display: none;
-}
-
-.content6{
-    display: none;
-}
-
-.content7{
-    display: none;
-}
-
-.content8{
-    display: none;
-}
-
-.content9{
-    display: none;
-}
-
-.content10{
-    display: none;
-}

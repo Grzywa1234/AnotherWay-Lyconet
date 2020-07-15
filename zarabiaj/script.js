@@ -288,9 +288,10 @@ function homepageContainer() {
     content7.style.display = 'none';
     content8.style.display = 'none';
     content9.style.display = 'none';
+    content10.style.display = 'none';
     marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
     marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acaiframe.src = "https://www.youtube-nocookie.com/embed/xK8LzdU4ON0";
+    acaiframe.src = "https://www.youtube-nocookie.com/embed/fyYIRUlbqLg";
     
 }
 
@@ -304,8 +305,9 @@ function changeContainer1() {
     content7.style.display = 'none';
     content8.style.display = 'none';
     content9.style.display = 'none';
+    content10.style.display = 'none';
     marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acaiframe.src = "https://www.youtube-nocookie.com/embed/xK8LzdU4ON0";
+    acaiframe.src = "https://www.youtube-nocookie.com/embed/fyYIRUlbqLg";
     
 }
 
@@ -319,8 +321,9 @@ function changeContainer2() {
     content7.style.display = 'none';
     content8.style.display = 'none';
     content9.style.display = 'none';
+    content10.style.display = 'none';
     marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
-    acaiframe.src = "https://www.youtube-nocookie.com/embed/xK8LzdU4ON0";
+    acaiframe.src = "https://www.youtube-nocookie.com/embed/fyYIRUlbqLg";
 }
 
 function changeContainer3() {
@@ -333,6 +336,7 @@ function changeContainer3() {
     content7.style.display = 'none';
     content8.style.display = 'none';
     content9.style.display = 'none';
+    content10.style.display = 'none';
     marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
     marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
 }
@@ -347,9 +351,10 @@ function changeContainer4() {
     content7.style.display = 'none';
     content8.style.display = 'none';
     content9.style.display = 'none';
+    content10.style.display = 'none';
     marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
     marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acaiframe.src = "https://www.youtube-nocookie.com/embed/xK8LzdU4ON0";
+    acaiframe.src = "https://www.youtube-nocookie.com/embed/fyYIRUlbqLg";
 
 }
 
@@ -363,9 +368,10 @@ function changeContainer5() {
     content7.style.display = 'none';
     content8.style.display = 'none';
     content9.style.display = 'none';
+    content10.style.display = 'none';
     marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
     marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acaiframe.src = "https://www.youtube-nocookie.com/embed/xK8LzdU4ON0";
+    acaiframe.src = "https://www.youtube-nocookie.com/embed/fyYIRUlbqLg";
 
 }
 
@@ -379,9 +385,10 @@ function changeContainer6() {
     content7.style.display = 'block';
     content8.style.display = 'none';
     content9.style.display = 'none';
+    content10.style.display = 'none';
     marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
     marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acaiframe.src = "https://www.youtube-nocookie.com/embed/xK8LzdU4ON0";
+    acaiframe.src = "https://www.youtube-nocookie.com/embed/fyYIRUlbqLg";
 
 }
 
@@ -395,9 +402,10 @@ function changeContainer7() {
     content7.style.display = 'none';
     content8.style.display = 'block';
     content9.style.display = 'none';
+    content10.style.display = 'none';
     marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
     marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acaiframe.src = "https://www.youtube-nocookie.com/embed/xK8LzdU4ON0";
+    acaiframe.src = "https://www.youtube-nocookie.com/embed/fyYIRUlbqLg";
 
 }
 
@@ -411,9 +419,10 @@ function changeContainer8() {
     content7.style.display = 'none';
     content8.style.display = 'none';
     content9.style.display = 'block';
+    content10.style.display = 'none';
     marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
     marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acaiframe.src = "https://www.youtube-nocookie.com/embed/xK8LzdU4ON0";
+    acaiframe.src = "https://www.youtube-nocookie.com/embed/fyYIRUlbqLg";
 
 }
 
@@ -430,7 +439,7 @@ function changeContainer9() {
     content10.style.display = 'block';
     marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
     marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acaiframe.src = "https://www.youtube-nocookie.com/embed/xK8LzdU4ON0";
+    acaiframe.src = "https://www.youtube-nocookie.com/embed/fyYIRUlbqLg";
 
 }
 
@@ -455,7 +464,7 @@ aca6.addEventListener('click', changeVideo6);
 aca7.addEventListener('click', changeVideo7);
 
 function changeVideo () {
-    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/xK8LzdU4ON0';
+    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/fyYIRUlbqLg';
 }
 
 function changeVideo2 () {
