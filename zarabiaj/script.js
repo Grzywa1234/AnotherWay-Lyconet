@@ -445,31 +445,31 @@ aca6.addEventListener('click', changeVideo6);
 aca7.addEventListener('click', changeVideo7);
 
 function changeVideo () {
-    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/GJRj78sU0_o';
+    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/xK8LzdU4ON0';
 }
 
 function changeVideo2 () {
-    document.querySelector('.video').src = 'https://www.youtube.com/embed/2Un8DbwjeTA';
+    document.querySelector('.acaiframe').src = 'https://www.youtube.com/embed/80VarX0a5aw';
 }
 
 function changeVideo3 () {
-    document.querySelector('.video').src="https://www.youtube-nocookie.com/embed/WSkMWm3l3D8";
+    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/WSkMWm3l3D8';
 }
 
 function changeVideo4 () {
-    document.querySelector('.video').src = 'https://www.youtube-nocookie.com/embed/MyY7AmMD8OM';
+    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/pmW0YrRGx1A';
 }
 
 function changeVideo5 () {
-    document.querySelector('.video').src = "https://www.youtube-nocookie.com/embed/jvGtp62PKUQ";
+    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/JY-Zx3wnLNg';
 }
 
 function changeVideo6 () {
-    document.querySelector('.video').src = "https://www.youtube-nocookie.com/embed/jvGtp62PKUQ";
+    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/xK8LzdU4ON0';
 }
 
 function changeVideo7 () {
-    document.querySelector('.video').src = "https://www.youtube-nocookie.com/embed/jvGtp62PKUQ";
+    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/pSDgPzJXJa8';
 }
 
 
