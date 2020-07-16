@@ -63,14 +63,14 @@ header nav{
 .sub1{
     display: none;
     position: absolute;
-    right: 525px;
+    right: 510px;
     transition: .4s;
 }
 
 .sub2{
     display: none;
     position: absolute;
-    right: 350px;
+    right: 340px;
     transition: .4s;
 }
 
@@ -134,16 +134,16 @@ header nav ul li a{
 
 .arrone{
     top: 80px;
-    right: 570px;
+    right: 560px;
 }
 
 .arrtwo{
-    right: 420px;
+    right: 410px;
     top: 80px;
 }
 
 .arrthree{
-    right: 280px;
+    right: 275px;
     top: 80px;
 
 }
@@ -175,16 +175,16 @@ header nav ul li a{
     
     .arrone{
         top: 55px;
-        right: 570px;
+        right: 560px;
     }
     
     .arrtwo{
-        right: 420px;
+        right: 410px;
         top: 55px;
     }
     
     .arrthree{
-        right: 280px;
+        right: 273px;
         top: 55px;
     
     }

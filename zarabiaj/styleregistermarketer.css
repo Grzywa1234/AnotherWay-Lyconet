@@ -52,4 +52,8 @@
         width: 100vw;
         height: 56vw;
     }
+
+    .regcontainer{
+        align-items: flex-start;
+    }
 }

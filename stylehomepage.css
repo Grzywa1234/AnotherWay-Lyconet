@@ -99,7 +99,7 @@ body{
 
 .wrap{
     position: relative;
-    top: 40px;
+    top: 70px;
     overflow: visible;
     width: 85%;
     margin: auto;
@@ -117,29 +117,6 @@ body{
     background-repeat: no-repeat;
 
 }
-
-/*
-.slide1{
-    background-image: url('./img/baner5.png');
-}
-
-.slide2{
-    background-image: url('./img/baner1.png');
-}
-
-.slide3{
-    background-image: url('img/baner2.png');
-}
-
-.slide4{
-    background-image: url('img/baner3.png');
-}
-
-.slide5{
-    background-image: url('img/baner4.png');
-}
-
-*/
 
 .banerImg{
     width: 100%;
@@ -165,22 +142,6 @@ body{
     border-style: solid;
     transition: .2s;
 }
-
-/*
-#arrow-left{
-    border-width: 30px 40px 30px 0;
-    left: 0;
-    margin-left: 30px;
-    border-color: transparent #e68928 transparent transparent;
-}
-
-#arrow-right{
-    border-width: 30px 0px 30px 40px;
-    right: 0;
-    margin-right: 30px;
-    border-color: transparent transparent transparent #e68928;
-}
-*/
 
 #arrow-left{
     left: -50px;
@@ -383,7 +344,7 @@ body{
     }
 
     .wrap{
-        top: 30px;
+        top: 50px;
         width: 90%;
         overflow: visible;
     }
@@ -422,6 +383,10 @@ body{
         max-height: 400px;
     }
 
+    .mlmtxt li{
+        font-size: 20px;
+    }
+
 
 }
 
@@ -450,6 +415,10 @@ body{
         margin-right: 30px;
     }
 
+    .mlmtxt li{
+        font-size: 20px;
+    }
+
 }
 
 @media screen and (max-width: 900px){
@@ -469,6 +438,7 @@ body{
         top: 70px;
         width: 100%;
     }
+
 }
 
 @media screen and (max-width: 767px){
