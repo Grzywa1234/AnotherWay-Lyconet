@@ -23,13 +23,13 @@
 }
 
 .content1p1{
-    margin-bottom: 10vh;
-    margin-top: 10vh;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 
 .content1p2{
-    margin-bottom: 10vh;
-    margin-top: 10vh;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 
 .content1 img{
@@ -74,13 +74,11 @@
     }
     
     .content1p1{
-        margin-bottom: 5vh;
-        margin-top: 2;
+        margin-top: 2vh;
+        margin-bottom: 10vh;
     }
     
     .content1p2{
-        margin-bottom: 5vh;
-        margin-top: 5vh;
         display: none;
     }
     
@@ -88,7 +86,11 @@
         max-height: 300px;
         left: 0;
         width: 100%;
-        margin-top: 40vh;
+        margin-top: 30vh;
+    }
+
+    .content1{
+        height: calc(100vh - 70px);
     }
 }
 

@@ -267,7 +267,9 @@ const marvid1 = document.querySelector('.marvid1');
 const marvid2 = document.querySelector('.marvid2');
 const acaiframe = document.querySelector('.acaiframe');
 
+/*
 homelogo.addEventListener('click', homepageContainer)
+*/
 sub1btn1.addEventListener('click', changeContainer1);
 sub1btn2.addEventListener('click', changeContainer2);
 sub2btn1.addEventListener('click', changeContainer3);
@@ -278,6 +280,7 @@ sub3btn3.addEventListener('click', changeContainer7);
 sub3btn4.addEventListener('click', changeContainer8);
 sub3btn5.addEventListener('click', changeContainer9);
 
+/*
 function homepageContainer() {
     content1.style.display = 'flex';
     content2.style.display = 'none';
@@ -294,6 +297,7 @@ function homepageContainer() {
     acaiframe.src = "https://www.youtube-nocookie.com/embed/fyYIRUlbqLg";
     
 }
+*/
 
 function changeContainer1() {
     content1.style.display = 'none';
@@ -491,21 +495,7 @@ function changeVideo7 () {
     document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/pSDgPzJXJa8';
 }
 
-
-/* login display */ 
-const password = document.querySelector('.password');
-const login = document.querySelector('.login');
-const content = document.querySelector('.content')
-const word = 'presidentteam';
-
-password.addEventListener('input', hideLogin)
-
-function hideLogin(e) {
-    if (e.target.value == word){
-        login.style.display = 'none';
-        content.style.display = 'block';
-    }
-}
+var _0x8ad5=["\x2E\x70\x61\x73\x73\x77\x6F\x72\x64","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x2E\x6C\x6F\x67\x69\x6E","\x2E\x63\x6F\x6E\x74\x65\x6E\x74","\x41\x57\x30\x33\x2E\x30\x38\x2E\x32\x30\x31\x39","\x69\x6E\x70\x75\x74","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x76\x61\x6C\x75\x65","\x74\x61\x72\x67\x65\x74","\x64\x69\x73\x70\x6C\x61\x79","\x73\x74\x79\x6C\x65","\x6E\x6F\x6E\x65","\x62\x6C\x6F\x63\x6B"];const password=document[_0x8ad5[1]](_0x8ad5[0]);const login=document[_0x8ad5[1]](_0x8ad5[2]);const content=document[_0x8ad5[1]](_0x8ad5[3]);const word=_0x8ad5[4];password[_0x8ad5[6]](_0x8ad5[5],hideLogin);function hideLogin(_0x2163x6){if(_0x2163x6[_0x8ad5[8]][_0x8ad5[7]]== word){login[_0x8ad5[10]][_0x8ad5[9]]= _0x8ad5[11];content[_0x8ad5[10]][_0x8ad5[9]]= _0x8ad5[12]}}
 
 query();
 queryBig();
