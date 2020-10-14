@@ -13,7 +13,7 @@ body{
 }
 
 .header{
-    height: 100px;
+    height: 60px;
     background-image: linear-gradient(to right,#e68928 ,#4b2011);
     font-size: 18px;
     position: fixed;
@@ -23,7 +23,7 @@ body{
 
 .menu{
     float: right;
-    line-height: 100px;
+    line-height: 60px;
     
 }
 
@@ -31,7 +31,7 @@ body{
     float: left;
     position: absolute;
     color: #fff;
-    height: 130px;
+    height: 85px;
     top: -10px;
     left: 10px;
 }
@@ -61,18 +61,18 @@ body{
 }
 
 .arrone{
-    top: 40px;
+    top: 35px;
     right: 53px;
 }
 
 .arrtwo{
     right: 80px;
-    top: 40px;
+    top: 35px;
 }
 
 .arrthree{
     right: 57px;
-    top: 40px;
+    top: 35px;
 
 }
 
@@ -99,9 +99,9 @@ body{
 
 .wrap{
     position: relative;
-    top: 70px;
+    top: 40px;
     overflow: visible;
-    width: 85%;
+    width: 100%;
     margin: auto;
 }
 
@@ -144,14 +144,14 @@ body{
 }
 
 #arrow-left{
-    left: -50px;
+    left: 20px;
     margin-left: 0px;
     border-color: transparent #e68928 transparent transparent;
     border-width: 30px 40px 30px 0;
 }
 
 #arrow-right{
-    right: -50px;
+    right: 20px;
     margin-right: 0px;
     border-color: transparent transparent transparent #e68928;
     border-width: 30px 0px 30px 40px;
@@ -336,30 +336,34 @@ body{
 
 @media screen and (max-width: 1440px){
     .header{
-        height: 70px;
+        height: 50px;
     }
 
     .logo{
-        height: 100px;
+        height: 73px;
     }
 
     .wrap{
-        top: 50px;
-        width: 90%;
+        top: 40px;
+        width: 100%;
         overflow: visible;
     }
 
     .menu{
-        line-height: 70px;
+        line-height: 50px;
+    }
+    
+    .arrthree, .arrtwo, .arrone{
+        top: 30px;
     }
 
     #arrow-left{
-        left: -50px;
+        left: 20px;
         margin-left: 0px;
     }
     
     #arrow-right{
-        right: -50px;
+        right: 20px;
         margin-right: 0px;
     }
 
@@ -391,6 +395,7 @@ body{
 }
 
 @media screen and (max-width: 1110px){
+
     .appBox{
         width: 100%;
     }
@@ -400,7 +405,7 @@ body{
     }
 
     .wrap{
-        top: 70px;
+        top: 50px;
         width: 100%;
     }
 
@@ -435,7 +440,7 @@ body{
     }
 
     .wrap{
-        top: 70px;
+        top: 40px;
         width: 100%;
     }
 
@@ -654,7 +659,50 @@ body{
     }
 }
 
+/* loading styles*/
 
+.hide {
+    opacity: 0;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
 
+.show {
+    opacity: 1;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #f29533;
+    border-bottom: 16px solid #f29533;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 
 

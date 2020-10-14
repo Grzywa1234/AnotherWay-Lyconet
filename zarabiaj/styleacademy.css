@@ -1,7 +1,10 @@
+/* ACADEMY AW */
 .content4{
     display: none;
     position: relative;
-    top: 100px;
+    top: 70px;
+    height: 100vh;
+    background-color: black;
 }
 
 .acavideo{
@@ -47,6 +50,10 @@
     width: 25%;
 }
 
+.acaplus4, .acaplus5, .acaplus6, .acaplus7{
+    display: none;
+}
+
 .acatxt{
     color: #fff;
     width: 90%;
@@ -68,7 +75,7 @@
 
 @media screen and (max-width: 1440px){
     .content4{
-        top: 70px;
+        top: 50px;
     }    
 
     .acavidframe{
@@ -91,6 +98,10 @@
 }
 
 @media screen and (max-width: 900px){
+    .content4{
+        top: 70px;
+    }    
+
     .acavideo h1{
         padding-top: 2px;
         padding-bottom: 2px;
@@ -113,6 +124,197 @@
     }
 
     .acaiframe{
+        width: 100vw;
+        height: 56vw;
+    }
+
+}
+
+
+/* ACADEMY PLUS  LOGIN*/
+
+.loginacaplus {
+    display: flex; /* flex!! */
+
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300px;
+    color: #e68928;
+    overflow: hidden;
+    width: 700px;
+    margin: auto;
+    background-color: #fff;
+    height: 90vh;
+    
+}
+
+.loginacaplus p{
+    font-size: 40px;
+    margin: 20px;
+}
+
+.loginacaplus img{
+    max-width: 400px;
+}
+
+.passwordacaplus{
+    border: 3px solid #e68928;
+    border-radius: 7px;
+    width: 60%;
+    height: 40px;
+}
+
+
+@media screen and (max-width: 767px){
+    .loginacaplus{
+        width: 300px;
+
+    }
+
+    .loginacaplus p{
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .loginacaplus img{
+        max-width: 300px;
+    }
+
+    .passwordacaplus{
+        width: 90%;
+        font-size: 30px;
+    }
+
+}
+
+
+/* ACADEMY PLUS */
+
+.content5{
+    display: none;
+    position: relative;
+    top: 70px;
+    height: 100vh;
+    background-color: black;
+}
+
+.acavideo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.acavideo h1{
+    background: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+}
+
+.acavidframe{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    background: black;
+    width: 100%;
+}
+
+.acaplusiframe{
+    width: 73vw;
+    height: 41vw;
+}
+
+.acasource{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+.acatxt{
+    color: #fff;
+    width: 90%;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 3px solid #e68928;
+    transition: .3s;
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    padding: 9px;
+}
+
+.acatxt:hover{
+    background-color: #e68928;
+    color: black;
+}
+
+
+@media screen and (max-width: 1440px){
+    .content5{
+        top: 50px;
+    }    
+
+    .acavidframe{
+        padding-bottom: 10vh;
+        background-color: black;
+    }
+
+    .acavideo h1{
+        background: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 30px;
+    }
+
+    .acatxt{
+        font-size: 15px;
+        padding: 6px;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    .content5{
+        top: 70px;
+    } 
+
+    .acavideo h1{
+        padding-top: 2px;
+        padding-bottom: 2px;
+        font-size: 15px;
+    }
+
+    .acasource{
+        width: 90%;
+    }
+
+    .acavidframe{
+        flex-direction: column-reverse;
+    }
+
+    .acatxt{
+        font-size: 15px;
+        padding: 3px;
+        margin: 4px;
+        border: 2px solid #e68928;
+    }
+
+    .acaplusiframe{
         width: 100vw;
         height: 56vw;
     }

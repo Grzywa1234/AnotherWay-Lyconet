@@ -16,6 +16,8 @@ const subOne = document.querySelector('.sub1');
 const subTwo = document.querySelector('.sub2');
 const subThree = document.querySelector('.sub3');
 
+const subFive = document.querySelector('.sub5');
+
 
 function opacityArrOne() {
     arrone.style.opacity = '1';
@@ -37,7 +39,8 @@ function opacityArrFour() {
 }
 
 function opacityArrFive() {
-    arrfive.style.opacity = '1';
+    arrfive.style.opacity = '1';    
+    subFive.style.display = 'block';
 }
 
 function opacityOneZero(){
@@ -61,6 +64,7 @@ function opacityFourZero(){
 
 function opacityFiveZero(){
     arrfive.style.opacity = '0';
+    subFive.style.display = 'none'
 }
 
 
@@ -73,6 +77,8 @@ const hideBtn = document.querySelector('.menuBtn6');
 const subBtn = document.querySelector('.subclose2');
 const subBtn2 = document.querySelector('.subclose1');
 const subBtn3 = document.querySelector('.subclose3');
+
+const subBtn5 = document.querySelector('.subclose5')
 const menu = document.querySelector('nav');
 
 const sub1btn1 = document.querySelector('.sub1btn1');
@@ -84,6 +90,9 @@ const sub3btn2 = document.querySelector('.sub3btn2');
 const sub3btn3 = document.querySelector('.sub3btn3');
 const sub3btn4 = document.querySelector('.sub3btn4');
 const sub3btn5 = document.querySelector('.sub3btn5');
+
+const sub5btn1 = document.querySelector('.sub5btn1');
+const sub5btn2 = document.querySelector('.sub5btn2');
 
 
 /* media queries for menu */
@@ -121,17 +130,20 @@ function query() {
         subBtn.style.display = 'block';
         subBtn2.style.display = 'block';
         subBtn3.style.display = 'block';
+        subBtn5.style.display = 'block';
 
         showBtn.addEventListener('click', showMenu);
         hideBtn.addEventListener('click', hideMenu);
         subBtn.addEventListener('click', hideSub);
         subBtn2.addEventListener('click', hideSub);
         subBtn3.addEventListener('click', hideSub);
+        subBtn5.addEventListener('click', hideSub);
         
 
         menuBtn.addEventListener('click', showSub1);
         menuBtn2.addEventListener('click', showSub2);
         menuBtn3.addEventListener('click', showSub3);
+        menuBtn5.addEventListener('click', showSub5);
 
         sub1btn1.addEventListener('click', hideBoth);
         sub1btn2.addEventListener('click', hideBoth);
@@ -142,6 +154,8 @@ function query() {
         sub3btn3.addEventListener('click', hideBoth);
         sub3btn4.addEventListener('click', hideBoth);
         sub3btn5.addEventListener('click', hideBoth);
+        sub5btn1.addEventListener('click', hideBoth);
+        sub5btn2.addEventListener('click', hideBoth);
 
 
         function showMenu() {
@@ -158,6 +172,7 @@ function query() {
          subOne.style.display = 'none';
           subTwo.style.display = 'none';
           subThree.style.display = 'none';
+          subFive.style.display = 'none';
         }
 
         function showSub1() {
@@ -170,6 +185,10 @@ function query() {
 
         function showSub3() {
             subThree.style.display = 'block';
+        }
+
+        function showSub5() {
+            subFive.style.display = 'block';
         }
 
 
@@ -191,6 +210,8 @@ function query() {
         subTwo.removeEventListener('mouseout', opacityTwoZero);
         subThree.removeEventListener('mouseover', opacityArrThree);
         subThree.removeEventListener('mouseout', opacityThreeZero);
+        subFive.removeEventListener('mouseover', opacityArrThree);
+        subFive.removeEventListener('mouseout', opacityThreeZero);
 
 
     }
@@ -201,6 +222,7 @@ function hideBoth(){
     subOne.style.display = 'none';
     subTwo.style.display = 'none';
     subThree.style.display = 'none';
+    subFive.style.display = 'none';
    }
 
 
@@ -210,6 +232,8 @@ function queryBig(){
         subBtn.style.display = 'none';
         subBtn2.style.display = 'none';
         subBtn3.style.display = 'none'; 
+        subBtn5.style.display = 'none'; 
+        
         
         menuBtn.addEventListener('mouseover', opacityArrOne);
         menuBtn.addEventListener('mouseout', opacityOneZero);
@@ -228,11 +252,14 @@ function queryBig(){
         subTwo.addEventListener('mouseout', opacityTwoZero);
         subThree.addEventListener('mouseover', opacityArrThree);
         subThree.addEventListener('mouseout', opacityThreeZero);
+        subFive.addEventListener('mouseover', opacityArrFive);
+        subFive.addEventListener('mouseout', opacityFiveZero);
 
         
         menuBtn.removeEventListener('click', opacityArrOne);
         menuBtn2.removeEventListener('click', opacityArrTwo);
-        menuBtn3.removeEventListener('click', opacityArrThree)
+        menuBtn3.removeEventListener('click', opacityArrThree);
+        menuBtn5.removeEventListener('click', opacityArrFive);
 
         sub1btn1.removeEventListener('click', hideBoth);
         sub1btn2.removeEventListener('click', hideBoth);
@@ -243,6 +270,8 @@ function queryBig(){
         sub3btn3.removeEventListener('click', hideBoth);
         sub3btn4.removeEventListener('click', hideBoth);
         sub3btn5.removeEventListener('click', hideBoth);
+        sub5btn1.removeEventListener('click', hideBoth);
+        sub5btn2.removeEventListener('click', hideBoth);
         
     }
 }
@@ -262,10 +291,28 @@ const content7 = document.querySelector('.content7');
 const content8 = document.querySelector('.content8');
 const content9 = document.querySelector('.content9');
 const content10 = document.querySelector('.content10');
+const content11 = document.querySelector('.content11')
+const content12 = document.querySelector('.content12')
+const acavideoplus = document.querySelector('.acavideoplus');
+const loginacaplus = document.querySelector('.loginacaplus');
 
 const marvid1 = document.querySelector('.marvid1');
 const marvid2 = document.querySelector('.marvid2');
+const marvid3 = document.querySelector('.marvid3');
+const marvid4 = document.querySelector('.marvid4');
 const acaiframe = document.querySelector('.acaiframe');
+const acaplusiframe = document.querySelector('.acaplusiframe');
+const zoomVideoOne = document.querySelector('.contener2__video1');
+const zoomVideoTwo = document.querySelector('.contener2__video2');
+
+const marvid1src = 'https://www.youtube-nocookie.com/embed/zBgT4LEHWlI';
+const marvid2src = 'https://www.youtube-nocookie.com/embed/Ask5hlhfk9Y';
+const marvid3src = 'https://www.youtube-nocookie.com/embed/u4t7yo95zbM';
+const marvid4src = 'https://www.youtube-nocookie.com/embed/K6efOvXOf8w';
+const acaplussrc = 'https://www.youtube-nocookie.com/embed/fyYIRUlbqLg';
+const acasrc = 'https://www.youtube-nocookie.com/embed/73texEQE3mg';
+const zoomVideoOneSrc = 'https://www.youtube-nocookie.com/embed/q4O51-2y2S8';
+const zoomVideoTwoSrc = 'https://www.youtube.com/embed/fMJKObJGpIk';
 
 /*
 homelogo.addEventListener('click', homepageContainer)
@@ -279,6 +326,8 @@ sub3btn2.addEventListener('click', changeContainer6);
 sub3btn3.addEventListener('click', changeContainer7);
 sub3btn4.addEventListener('click', changeContainer8);
 sub3btn5.addEventListener('click', changeContainer9);
+sub5btn1.addEventListener('click', changeContainer11);
+sub5btn2.addEventListener('click', changeContainer12);
 
 /*
 function homepageContainer() {
@@ -304,15 +353,19 @@ function changeContainer1() {
     content2.style.display = 'block';
     content3.style.display = 'none';
     content4.style.display = 'none';
-    content5.style.display = 'none';
+    content5.style.display = 'none'
     content6.style.display = 'none';
     content7.style.display = 'none';
     content8.style.display = 'none';
     content9.style.display = 'none';
     content10.style.display = 'none';
-    marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acaiframe.src = "https://www.youtube-nocookie.com/embed/fyYIRUlbqLg";
-    
+    content11.style.display = 'none';
+    content12.style.display = 'none';
+    marvid1.src = marvid1src;
+    acaiframe.src = acasrc;
+    acaplusiframe.src = acaplussrc;
+    zoomVideoOne.src = zoomVideoOneSrc;
+    zoomVideoTwo.src = zoomVideoTwoSrc;
 }
 
 function changeContainer2() {
@@ -326,8 +379,15 @@ function changeContainer2() {
     content8.style.display = 'none';
     content9.style.display = 'none';
     content10.style.display = 'none';
-    marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
-    acaiframe.src = "https://www.youtube-nocookie.com/embed/fyYIRUlbqLg";
+    content11.style.display = 'none';
+    content12.style.display = 'none';
+    marvid2.src = marvid2src;
+    marvid3.src = marvid3src;
+    marvid4.src = marvid4src;
+    acaiframe.src = acasrc;
+    acaplusiframe.src = acaplussrc;
+    zoomVideoOne.src = zoomVideoOneSrc;
+    zoomVideoTwo.src = zoomVideoTwoSrc;
 }
 
 function changeContainer3() {
@@ -341,8 +401,15 @@ function changeContainer3() {
     content8.style.display = 'none';
     content9.style.display = 'none';
     content10.style.display = 'none';
-    marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
-    marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
+    content11.style.display = 'none';
+    content12.style.display = 'none';
+    marvid1.src = marvid1src;
+    marvid2.src = marvid2src;
+    marvid3.src = marvid3src;
+    marvid4.src = marvid4src;
+    acaplusiframe.src = acaplussrc;
+    zoomVideoOne.src = zoomVideoOneSrc;
+    zoomVideoTwo.src = zoomVideoTwoSrc;
 }
 
 function changeContainer4() {
@@ -350,16 +417,24 @@ function changeContainer4() {
     content2.style.display = 'none';
     content3.style.display = 'none';
     content4.style.display = 'none';
+    acavideoplus.style.display = 'none';
+    loginacaplus.style.display = 'flex';
     content5.style.display = 'block';
     content6.style.display = 'none';
     content7.style.display = 'none';
     content8.style.display = 'none';
     content9.style.display = 'none';
     content10.style.display = 'none';
-    marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
-    marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acaiframe.src = "https://www.youtube-nocookie.com/embed/fyYIRUlbqLg";
-
+    content11.style.display = 'none';
+    content12.style.display = 'none';
+    marvid1.src = marvid1src;
+    marvid2.src = marvid2src;
+    marvid3.src = marvid3src;
+    marvid4.src = marvid4src;
+    acaiframe.src = acasrc;
+    zoomVideoOne.src = zoomVideoOneSrc;
+    zoomVideoTwo.src = zoomVideoTwoSrc;
+    
 }
 
 function changeContainer5() {
@@ -373,10 +448,16 @@ function changeContainer5() {
     content8.style.display = 'none';
     content9.style.display = 'none';
     content10.style.display = 'none';
-    marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
-    marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acaiframe.src = "https://www.youtube-nocookie.com/embed/fyYIRUlbqLg";
-
+    content11.style.display = 'none';
+    content12.style.display = 'none';
+    marvid1.src = marvid1src;
+    marvid2.src = marvid2src;
+    marvid3.src = marvid3src;
+    marvid4.src = marvid4src;
+    acaiframe.src = acasrc;
+    acaplusiframe.src = acaplussrc;
+    zoomVideoOne.src = zoomVideoOneSrc;
+    zoomVideoTwo.src = zoomVideoTwoSrc;
 }
 
 function changeContainer6() {
@@ -390,9 +471,16 @@ function changeContainer6() {
     content8.style.display = 'none';
     content9.style.display = 'none';
     content10.style.display = 'none';
-    marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
-    marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acaiframe.src = "https://www.youtube-nocookie.com/embed/fyYIRUlbqLg";
+    content11.style.display = 'none';
+    content12.style.display = 'none';
+    marvid1.src = marvid1src;
+    marvid2.src = marvid2src;
+    marvid3.src = marvid3src;
+    marvid4.src = marvid4src;
+    acaiframe.src = acasrc;
+    acaplusiframe.src = acaplussrc;
+    zoomVideoOne.src = zoomVideoOneSrc;
+    zoomVideoTwo.src = zoomVideoTwoSrc;
 
 }
 
@@ -407,9 +495,16 @@ function changeContainer7() {
     content8.style.display = 'block';
     content9.style.display = 'none';
     content10.style.display = 'none';
-    marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
-    marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acaiframe.src = "https://www.youtube-nocookie.com/embed/fyYIRUlbqLg";
+    content11.style.display = 'none';
+    content12.style.display = 'none';
+    marvid1.src = marvid1src;
+    marvid2.src = marvid2src;
+    marvid3.src = marvid3src;
+    marvid4.src = marvid4src;
+    acaiframe.src = acasrc;
+    acaplusiframe.src = acaplussrc;
+    zoomVideoOne.src = zoomVideoOneSrc;
+    zoomVideoTwo.src = zoomVideoTwoSrc;
 
 }
 
@@ -424,9 +519,16 @@ function changeContainer8() {
     content8.style.display = 'none';
     content9.style.display = 'block';
     content10.style.display = 'none';
-    marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
-    marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acaiframe.src = "https://www.youtube-nocookie.com/embed/fyYIRUlbqLg";
+    content11.style.display = 'none';
+    content12.style.display = 'none';
+    marvid1.src = marvid1src;
+    marvid2.src = marvid2src;
+    marvid3.src = marvid3src;
+    marvid4.src = marvid4src;
+    acaiframe.src = acasrc;
+    acaplusiframe.src = acaplussrc;
+    zoomVideoOne.src = zoomVideoOneSrc;
+    zoomVideoTwo.src = zoomVideoTwoSrc;
 
 }
 
@@ -441,15 +543,113 @@ function changeContainer9() {
     content8.style.display = 'none';
     content9.style.display = 'none';
     content10.style.display = 'block';
-    marvid1.src = "https://www.youtube-nocookie.com/embed/zBgT4LEHWlI";
-    marvid2.src = "https://www.youtube-nocookie.com/embed/XGHzDfbjhhM";
-    acaiframe.src = "https://www.youtube-nocookie.com/embed/fyYIRUlbqLg";
-
+    content11.style.display = 'none';
+    content12.style.display = 'none';
+    marvid1.src = marvid1src;
+    marvid2.src = marvid2src;
+    marvid3.src = marvid3src;
+    marvid4.src = marvid4src;
+    acaiframe.src = acasrc;
+    acaplusiframe.src = acaplussrc;
+    zoomVideoOne.src = zoomVideoOneSrc;
+    zoomVideoTwo.src = zoomVideoTwoSrc;
 }
 
+function changeContainer11() {
+    content1.style.display = 'none';
+    content2.style.display = 'none';
+    content3.style.display = 'none';
+    content4.style.display = 'none';
+    content5.style.display = 'none';
+    content6.style.display = 'none';
+    content7.style.display = 'none';
+    content8.style.display = 'none';
+    content9.style.display = 'none';
+    content10.style.display = 'none';
+    content11.style.display = 'block';
+    content12.style.display = 'none';
+    marvid1.src = marvid1src;
+    marvid2.src = marvid2src;
+    marvid3.src = marvid3src;
+    marvid4.src = marvid4src;
+    acaiframe.src = acasrc;
+    acaplusiframe.src = acaplussrc;
+}
 
+function changeContainer12() {
+    content1.style.display = 'none';
+    content2.style.display = 'none';
+    content3.style.display = 'none';
+    content4.style.display = 'none';
+    content5.style.display = 'none';
+    content6.style.display = 'none';
+    content7.style.display = 'none';
+    content8.style.display = 'none';
+    content9.style.display = 'none';
+    content10.style.display = 'none';
+    content11.style.display = 'none';
+    content12.style.display = 'block';
+    marvid1.src = marvid1src;
+    marvid2.src = marvid2src;
+    marvid3.src = marvid3src;
+    marvid4.src = marvid4src;
+    acaiframe.src = acasrc;
+    acaplusiframe.src = acaplussrc;
+    zoomVideoOne.src = zoomVideoOneSrc;
+    zoomVideoTwo.src = zoomVideoTwoSrc;
+}
 
-/* Academy video change URL */
+/* Academy AW video change URL */
+
+const acaplus1 = document.querySelector('.acaplus1');
+const acaplus2 = document.querySelector('.acaplus2');
+const acaplus3 = document.querySelector('.acaplus3');
+/*
+const acaplus4 = document.querySelector('.acaplus4');
+const acaplus5 = document.querySelector('.acaplus5');
+const acaplus6 = document.querySelector('.acaplus6');
+const acaplus7 = document.querySelector('.acaplus7');
+*/
+acaplus1.addEventListener('click', acapluschangeVideo);
+acaplus2.addEventListener('click', acapluschangeVideo2);
+acaplus3.addEventListener('click', acapluschangeVideo3);
+/*
+acaplus4.addEventListener('click', acapluschangeVideo4);
+acaplus5.addEventListener('click', acapluschangeVideo5);
+acaplus6.addEventListener('click', acapluschangeVideo6);
+acaplus7.addEventListener('click', acapluschangeVideo7);
+*/
+
+function acapluschangeVideo () {
+    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/73texEQE3mg';
+}
+
+function acapluschangeVideo2 () {
+    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/aiDUJ0rrzPk';
+}
+
+function acapluschangeVideo3 () {
+    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/auEv24KKJZE';
+}
+/*
+function acapluschangeVideo4 () {
+    document.querySelector('.acaiframe').src = '';
+}
+
+function acapluschangeVideo5 () {
+    document.querySelector('.acaiframe').src = '';
+}
+
+function acapluschangeVideo6 () {
+    document.querySelector('.acaiframe').src = '';
+}
+
+function acapluschangeVideo7 () {
+    document.querySelector('.acaiframe').src = '';
+}
+*/
+
+/* Academy PLUS video change URL */
 
 const aca1 = document.querySelector('.aca1');
 const aca2 = document.querySelector('.aca2');
@@ -468,33 +668,35 @@ aca6.addEventListener('click', changeVideo6);
 aca7.addEventListener('click', changeVideo7);
 
 function changeVideo () {
-    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/fyYIRUlbqLg';
+    document.querySelector('.acaplusiframe').src = 'https://www.youtube-nocookie.com/embed/fyYIRUlbqLg';
 }
 
 function changeVideo2 () {
-    document.querySelector('.acaiframe').src = 'https://www.youtube.com/embed/80VarX0a5aw';
+    document.querySelector('.acaplusiframe').src = 'https://www.youtube.com/embed/80VarX0a5aw';
 }
 
 function changeVideo3 () {
-    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/WSkMWm3l3D8';
+    document.querySelector('.acaplusiframe').src = 'https://www.youtube-nocookie.com/embed/WSkMWm3l3D8';
 }
 
 function changeVideo4 () {
-    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/pmW0YrRGx1A';
+    document.querySelector('.acaplusiframe').src = 'https://www.youtube-nocookie.com/embed/pmW0YrRGx1A';
 }
 
 function changeVideo5 () {
-    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/JY-Zx3wnLNg';
+    document.querySelector('.acaplusiframe').src = 'https://www.youtube-nocookie.com/embed/JY-Zx3wnLNg';
 }
 
 function changeVideo6 () {
-    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/xK8LzdU4ON0';
+    document.querySelector('.acaplusiframe').src = 'https://www.youtube-nocookie.com/embed/xK8LzdU4ON0';
 }
 
 function changeVideo7 () {
-    document.querySelector('.acaiframe').src = 'https://www.youtube-nocookie.com/embed/pSDgPzJXJa8';
+    document.querySelector('.acaplusiframe').src = 'https://www.youtube-nocookie.com/embed/pSDgPzJXJa8';
 }
 
+var _0x44e1=["\x2E\x63\x6C\x69\x65\x6E\x74\x66\x6F\x6F\x74\x65\x72\x32\x70","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x48\x61\x73\u0142\x6F\x3A\x20\x41\x57\x30\x33\x2E\x30\x38\x2E\x32\x30\x31\x39"];const passpassword=document[_0x44e1[1]](_0x44e1[0]);passpassword[_0x44e1[2]]= _0x44e1[3]
+var _0x91f0=["\x2E\x70\x61\x73\x73\x77\x6F\x72\x64\x61\x63\x61\x70\x6C\x75\x73","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x70\x72\x65\x73\x69\x64\x65\x6E\x74\x74\x65\x61\x6D","\x69\x6E\x70\x75\x74","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x76\x61\x6C\x75\x65","\x74\x61\x72\x67\x65\x74","\x64\x69\x73\x70\x6C\x61\x79","\x73\x74\x79\x6C\x65","\x62\x6C\x6F\x63\x6B","\x6E\x6F\x6E\x65"];const passwordacaplus=document[_0x91f0[1]](_0x91f0[0]);const acaplusword=_0x91f0[2];passwordacaplus[_0x91f0[4]](_0x91f0[3],hideLoginAcaPlus);function hideLoginAcaPlus(_0x26cex4){if(_0x26cex4[_0x91f0[6]][_0x91f0[5]]== acaplusword){acavideoplus[_0x91f0[8]][_0x91f0[7]]= _0x91f0[9];loginacaplus[_0x91f0[8]][_0x91f0[7]]= _0x91f0[10]}}
 var _0x8ad5=["\x2E\x70\x61\x73\x73\x77\x6F\x72\x64","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x2E\x6C\x6F\x67\x69\x6E","\x2E\x63\x6F\x6E\x74\x65\x6E\x74","\x41\x57\x30\x33\x2E\x30\x38\x2E\x32\x30\x31\x39","\x69\x6E\x70\x75\x74","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x76\x61\x6C\x75\x65","\x74\x61\x72\x67\x65\x74","\x64\x69\x73\x70\x6C\x61\x79","\x73\x74\x79\x6C\x65","\x6E\x6F\x6E\x65","\x62\x6C\x6F\x63\x6B"];const password=document[_0x8ad5[1]](_0x8ad5[0]);const login=document[_0x8ad5[1]](_0x8ad5[2]);const content=document[_0x8ad5[1]](_0x8ad5[3]);const word=_0x8ad5[4];password[_0x8ad5[6]](_0x8ad5[5],hideLogin);function hideLogin(_0x2163x6){if(_0x2163x6[_0x8ad5[8]][_0x8ad5[7]]== word){login[_0x8ad5[10]][_0x8ad5[9]]= _0x8ad5[11];content[_0x8ad5[10]][_0x8ad5[9]]= _0x8ad5[12]}}
 
 query();

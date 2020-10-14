@@ -77,20 +77,65 @@ const appTab = document.querySelector('.cashbackapp');
 menuBtn2.addEventListener('click', hideHomepage)
 menuBtn.addEventListener('click', showHomepage)
 
+const homepageElems = [homepageWrap, homepagecbApp, homepagemlm];
+
 function hideHomepage () {
     homepageWrap.style.display = "none";
     homepagecbApp.style.display = "none";
     homepagemlm.style.display = "none";
     appTab.style.display = "block";
-}
+    homepageWrap.classList.add("hide");
+    homepagecbApp.classList.add("hide");
+    homepagemlm.classList.add("hide");
+
+    // functions added to animate transitions between the menu pages
+    function show () {
+        appTab.classList.add("show")
+    }
+
+    function removeClass () {
+        appTab.classList.add("show")
+        appTab.classList.remove("hide")
+    }
+
+    setTimeout(show, 1);
+    setTimeout(removeClass, 500)
+
+};
+
+
 
 function showHomepage () {
     homepageWrap.style.display = "block";
     homepagecbApp.style.display = "block";
     homepagemlm.style.display = "block";
     appTab.style.display = "none";
+
+    
+
+    // functions added to animate transitions between the menu pages
+    function show () {
+        homepageWrap.classList.add("show");
+        homepagecbApp.classList.add("show");
+        homepagemlm.classList.add("show");
+        appTab.classList.add("hide")
+    }
+
+    function removeClass () {
+        homepageWrap.classList.remove("show");
+        homepagecbApp.classList.remove("show");
+        homepagemlm.classList.remove("show");
+        homepageWrap.classList.remove("hide");
+        homepagecbApp.classList.remove("hide");
+        homepagemlm.classList.remove("hide");
+    }
+    
+    setTimeout(show, 1);
+    setTimeout(removeClass, 500)
+
+
     changeUrl();
-}
+};
 
 /* video */
 
@@ -173,3 +218,15 @@ arrowRight.addEventListener('click', function(){
 
 
 startSlide();
+
+// loader
+
+function contentLoaded () {
+    const timeOut = setTimeout(showPage, 1000)
+}
+
+function showPage () { 
+    document.getElementById("showafterloading").classList.remove("hide")
+    document.getElementById("showafterloading").classList.add("show")    
+    document.getElementById("loader").classList.add("hide")
+}

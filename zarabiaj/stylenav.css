@@ -12,7 +12,7 @@ header{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    height: 100px;
+    height: 70px;
     font-size: 18px;
     z-index: 111;
 }
@@ -21,7 +21,7 @@ header .logo{
     float: left;
     position: absolute;
     color: #fff;
-    height: 130px;
+    height: 95px;
     top: -10px;
     left: 10px;
     cursor: pointer;
@@ -29,7 +29,7 @@ header .logo{
 
 header nav{
     float: right;
-    line-height: 100px;
+    line-height: 70px;
     position: relative;
     z-index: 1111;
 }
@@ -59,25 +59,32 @@ header nav{
 }
 
 
-
+/*order mixed, subthree is in place of subfive and vice versa*/
 .sub1{
     display: none;
     position: absolute;
-    right: 510px;
+    right: 670px;
     transition: .4s;
 }
 
 .sub2{
     display: none;
     position: absolute;
-    right: 340px;
+    right: 500px;
     transition: .4s;
 }
 
 .sub3{
     display: none;
     position: absolute;
-    right: 200px;
+    right: 0px;
+    transition: .4s;
+}
+
+.sub5{
+    display: none; /*none*/
+    position: absolute;
+    right: 260px;
     transition: .4s;
 }
 
@@ -132,71 +139,73 @@ header nav ul li a{
     transition: .4s;
 }
 
+
+/*order mixed, arrthree is in place of arrfive and vice versa*/
 .arrone{
-    top: 80px;
-    right: 560px;
+    top: 55px;
+    right: 720px;
 }
 
 .arrtwo{
-    right: 410px;
-    top: 80px;
+    right: 570px;
+    top: 55px;
 }
 
 .arrthree{
-    right: 275px;
-    top: 80px;
+    right: 70px;
+    top: 55px;
 
 }
 
 .arrfour{
-    top: 80px;
-    right: 165px;
+    top: 55px;
+    right: 185px;
 }
 
 .arrfive{
-    right: 67px;
-    top: 80px;
+    right: 370px;
+    top: 55px;
 }
 
 
 @media screen and (max-width: 1440px){
     header{
-        height: 70px;
+        height: 50px;
     }
 
     header .logo{
-        height: 100px;
+        height: 73px;
 
     }
 
     .navul li a{
-        line-height: 70px;
+        line-height: 50px;
     }
     
     .arrone{
-        top: 55px;
-        right: 560px;
+        top: 42px;
+        right: 720px;
     }
     
     .arrtwo{
-        right: 410px;
-        top: 55px;
+        right: 570px;
+        top: 42px;
     }
     
     .arrthree{
-        right: 273px;
-        top: 55px;
+        right: 75px;
+        top: 42px;
     
     }
     
     .arrfour{
-        top: 55px;
-        right: 165px;
+        top: 42px;
+        right: 187px;
     }
     
     .arrfive{
-        right: 67px;
-        top: 55px;
+        right: 370px;
+        top: 42px;
     }
     
 
@@ -291,7 +300,10 @@ header nav ul li a{
         display: none;
     }
 
-    .subclose1, .subclose2, .subclose3{
+    .sub5{
+        display: none;
+    }
+    .subclose1, .subclose2, .subclose3, .subclose5{
         width: 100px;
         height: 100px;
         display: block;
@@ -300,7 +312,7 @@ header nav ul li a{
         transition: 1s;
     }
 
-    .subclose1:hover, .subclose2:hover, .subclose3:hover{
+    .subclose1:hover, .subclose2:hover, .subclose3:hover, .subclose5:hover{
         transform: rotate(360deg);
     }
 

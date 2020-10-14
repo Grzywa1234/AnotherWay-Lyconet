@@ -1,6 +1,6 @@
 .cashbackapp{
     position: relative;
-    top: 100px;
+    top: 60px;
     display: none;
 }   
 
@@ -15,9 +15,9 @@
 
 .appvideo h1{
     background: #005551;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 40px;
     color: #fff;
     width: 100%;
 }
@@ -52,6 +52,10 @@
     background-color: #fff;
     margin-left: auto;
     margin-right: auto;
+}
+
+.source1{
+    display: none;
 }
 
 .source p{
@@ -175,7 +179,7 @@
 
 @media screen and (max-width: 1440px){
     .cashbackapp{
-        top: 70px;
+        top: 50px;
 
     }
 
@@ -229,7 +233,7 @@
         flex-direction: column-reverse;
         margin-top: 10px;
         width: 100%;
-        padding-top: 20px;
+        padding-top: 0px; /* 20px for source1 display block*/
         padding-bottom: 0px;
         margin-bottom: 40px;
         min-height: 530px;

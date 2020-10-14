@@ -1,0 +1,152 @@
+/*zoom*/
+.content11{
+    display: none;
+    position: relative;
+    top: 70px;
+    overflow: hidden;
+}
+
+.zoom__contener1{
+    background-image: url('../img/contener1headerbackground.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    margin-top: 0;
+}
+
+.contener1__header{
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.contener1__imgbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+    position: relative;
+    left: 9vw;
+    top: 10vh;
+
+}
+
+.contener1__linkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.contener1__zoomwindows, .contener1__zoomhelp1, .contener1__zoomhelp2{
+    margin: 10px;
+    transition: .4s;
+}
+
+.contener1__zoomwindows:hover, .contener1__zoomhelp1:hover, .contener1__zoomhelp2:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.contener1__zoomimg{
+    height: 200px;
+    animation: scale 3s infinite;
+}
+
+.zoom__contener2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.contener2__header, .contener2__video2header{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.contener2__video1, .contener2__video2{
+    width: 70vw;
+    height: 40vw;
+}
+
+
+
+
+/*prowadzenie biznesu*/
+
+.content12{
+    display: none;
+}
+
+
+@media screen and (max-width: 1440px){
+    .content11{
+        top: 50px;
+    }
+
+    .contener1__header, .contener2__header, .contener2__video2header{
+        font-size: 33px;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .content11{
+        top: 70px;
+    }
+
+    .contener1__header, .contener2__header, .contener2__video2header{
+        font-size: 18px;
+    }
+
+    .contener1__header{
+        padding-top: 5px;
+    }
+
+    .contener1__imgbox{
+        flex-direction: column;
+        left: 0;
+        top: 0;
+    }
+
+    .contener1__linkbox{
+        flex-direction: column-reverse;
+        margin-left: 0;
+    }
+
+    .contener1__zoomimg{
+        height: 100px;
+    }
+
+    .contener1__zoomwindows, .contener1__zoomhelp1, .contener1__zoomhelp2{
+        margin: 5px;
+
+    }
+
+    .contener2__header{
+        padding-top: 50px;
+    }
+
+    .contener2__header, .contener2__video2header{
+        padding-bottom: 10px;
+    }
+
+    .contener2__video1, .contener2__video2{
+        width: 100vw;
+        height: 56vw;
+    }
+
+}

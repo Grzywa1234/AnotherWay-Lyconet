@@ -7,14 +7,14 @@
 html{
     margin: 0;
     padding: 0;
-    background-color: black;
+    /*background-color: black;*/
     height: 100vh;
 }
 
 
 
 body{
-    background-color: #f1f2f7;
+    /*background-color: #f1f2f7;*/
     margin: 0;
     padding: 0;
 }
@@ -71,5 +71,7 @@ body{
 
     .password{
         width: 90%;
+        font-size: 30px;
     }
 }
+

@@ -11,9 +11,12 @@
         <link rel="stylesheet" href="./stylehomepage.css">
         <link rel="stylesheet" href="./stylecashbackapp.css"> 
         <link rel="icon" href="./img/8ball.png">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
-    <body>
+    <body onload="contentLoaded()">
+        
+        <div class="hide" id="showafterloading">
         <span id="navnode"></span>
 
         <div class="header">
@@ -102,7 +105,7 @@
                 <img src="./img/iosstore.png"></a>
             </div>
             </div>
-            <img class="imgBox1" src="./img/label1.png">
+            <img class="imgBox1" src="./img/label1.png" data-aos="fade-left" data-aos-delay="300">
             </div>
 
             <div class="appBox box2">
@@ -126,7 +129,7 @@
                        Shops w swojej okolicy oraz aktualne oferty i interesujące
                         Deals korzystając z Cashback App.</p>
                     </div>
-                        <img class="imgBox3" src="./img/label3.jpg">
+                        <img class="imgBox3" src="./img/label3.jpg" data-aos="zoom-in" data-aos-delay="300">
             </div>
 
             <div class="appbox box4">
@@ -139,7 +142,8 @@
         <div class="mlm">
 
             <div class="mlmBox mlm1">
-                <img class="mlmimg mlmimg1" src="./img/mlmbox2.jpg">
+                <img class="mlmimg mlmimg1" src="./img/mlmbox2.jpg" data-aos="fade-up"
+                data-aos-duration="3000">
                 <div class="mlmtxt">
                     <h1>MARKETING SIECIOWY - TWOJA SZANSA</h1>
                     <p>Marketing sieciowy to rozwijająca się branża przyszłości. Żadna inna
@@ -175,7 +179,9 @@
             </div>
 
             <div class="mlmBox mlm3">
-                <img class="mlmimg mlmimg3" src="./img/mlmbox1.jpg">
+                <img class="mlmimg mlmimg3" src="./img/mlmbox1.jpg" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <div class="mlmtxt">
                 <h3>Z NAMI DO SUKCESU</h3>
                 <p>Już dawno dostrzegliśmy ogromny potencjał marketingu 
@@ -195,7 +201,7 @@
 
         <!--// 'Oszczędzaj'--> 
 
-        <div class="cashbackapp">
+        <div class="cashbackapp hide">
 
             <div class="appvideo">
 
@@ -203,7 +209,7 @@
                 
 
                 <div class="videoframe">
-                <iframe class="video" src="https://www.youtube-nocookie.com/embed/GJRj78sU0_o" 
+                <iframe class="video" src="https://www.youtube.com/embed/2Un8DbwjeTA" 
                 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                  allowfullscreen></iframe>
 
@@ -257,7 +263,15 @@
             
 
         </div>
+    </div>
 
+        <div id="loader"></div>
+
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="script.js"></script>
     </body>
-    <script src="script.js"></script>
 </html>
