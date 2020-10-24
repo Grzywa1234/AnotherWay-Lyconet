@@ -99,7 +99,7 @@ body{
 
 .hidepage{
     position: absolute !important;
-    left: -100% !important;
+    left: -500% !important;
 }
 
 .wrap{
@@ -453,7 +453,6 @@ body{
     }
 
     .footer{
-        top: 80px;
     }
 
 

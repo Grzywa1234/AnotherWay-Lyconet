@@ -19,16 +19,18 @@
         <link rel="icon" href="../img/8ball.png">
     </head>
 
-    <body>
+    <body onload="contentLoaded()">
 
-        <div class="login hidepage">
+        <div id="loader"></div>
+
+        <div class="login hidepage" id="login">
             <p>Witamy w AW Academy</p>
             <img src="../img/AWlogo.svg">
             <p>Wpisz swój klucz do sukcesu:</p>
             <input class="password" type="password">
         </div>
         
-        <div class="content ">
+        <div class="content hidepage">
 
         <header>
 

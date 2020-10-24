@@ -1,6 +1,7 @@
 .cashbackapp{
     position: relative;
     top: 60px;
+    overflow: hidden;
 }   
 
 .appvideo{
@@ -179,7 +180,6 @@
 @media screen and (max-width: 1440px){
     .cashbackapp{
         top: 50px;
-
     }
 
     .appvideo h1{

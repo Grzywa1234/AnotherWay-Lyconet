@@ -1,3 +1,12 @@
+function contentLoaded () {
+    const timeOut = setTimeout(showPage, 200)
+}
+
+function showPage () { 
+    document.getElementById("login").classList.remove("hidepage")
+    document.getElementById("loader").classList.add("hidepage")
+}
+
 /*
 navbar span & sub menu styling
  */
@@ -688,6 +697,7 @@ function hideLoginAcaPlus (e) {
         loginacaplus.classList.add("hidepage");
     }
 }
+
 
 query();
 queryBig();
