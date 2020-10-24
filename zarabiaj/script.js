@@ -293,6 +293,8 @@ const content9 = document.querySelector('.content9');
 const content10 = document.querySelector('.content10');
 const content11 = document.querySelector('.content11')
 const content12 = document.querySelector('.content12')
+const contentArr = [content1, content2, content3, content4, content5, content6, content7, content8, content9, content10, content11, content12]
+
 const acavideoplus = document.querySelector('.acavideoplus');
 const loginacaplus = document.querySelector('.loginacaplus');
 
@@ -317,17 +319,24 @@ const zoomVideoTwoSrc = 'https://www.youtube.com/embed/fMJKObJGpIk';
 /*
 homelogo.addEventListener('click', homepageContainer)
 */
+// 1st button
 sub1btn1.addEventListener('click', changeContainer1);
 sub1btn2.addEventListener('click', changeContainer2);
+
+//2nd button
 sub2btn1.addEventListener('click', changeContainer3);
 sub2btn2.addEventListener('click', changeContainer4);
-sub3btn1.addEventListener('click', changeContainer5);
-sub3btn2.addEventListener('click', changeContainer6);
-sub3btn3.addEventListener('click', changeContainer7);
-sub3btn4.addEventListener('click', changeContainer8);
-sub3btn5.addEventListener('click', changeContainer9);
-sub5btn1.addEventListener('click', changeContainer11);
-sub5btn2.addEventListener('click', changeContainer12);
+
+//5th button
+sub3btn1.addEventListener('click', changeContainer7);
+sub3btn2.addEventListener('click', changeContainer8);
+sub3btn3.addEventListener('click', changeContainer9);
+sub3btn4.addEventListener('click', changeContainer11);
+sub3btn5.addEventListener('click', changeContainer12);
+
+//3rd button
+sub5btn1.addEventListener('click', changeContainer5);
+sub5btn2.addEventListener('click', changeContainer6);
 
 /*
 function homepageContainer() {
@@ -349,18 +358,11 @@ function homepageContainer() {
 */
 
 function changeContainer1() {
-    content1.style.display = 'none';
-    content2.style.display = 'block';
-    content3.style.display = 'none';
-    content4.style.display = 'none';
-    content5.style.display = 'none'
-    content6.style.display = 'none';
-    content7.style.display = 'none';
-    content8.style.display = 'none';
-    content9.style.display = 'none';
-    content10.style.display = 'none';
-    content11.style.display = 'none';
-    content12.style.display = 'none';
+    contentArr[1].classList.remove("hidepage")
+    const toHide = contentArr.slice();
+    toHide.splice(1, 1)
+    toHide.forEach(div => div.classList.add("hidepage"))
+
     marvid1.src = marvid1src;
     acaiframe.src = acasrc;
     acaplusiframe.src = acaplussrc;
@@ -369,18 +371,11 @@ function changeContainer1() {
 }
 
 function changeContainer2() {
-    content1.style.display = 'none';
-    content2.style.display = 'none';
-    content3.style.display = 'block';
-    content4.style.display = 'none';
-    content5.style.display = 'none';
-    content6.style.display = 'none';
-    content7.style.display = 'none';
-    content8.style.display = 'none';
-    content9.style.display = 'none';
-    content10.style.display = 'none';
-    content11.style.display = 'none';
-    content12.style.display = 'none';
+    contentArr[2].classList.remove("hidepage")
+    const toHide = contentArr.slice();
+    toHide.splice(2, 1)
+    toHide.forEach(div => div.classList.add("hidepage"))
+    
     marvid2.src = marvid2src;
     marvid3.src = marvid3src;
     marvid4.src = marvid4src;
@@ -391,18 +386,11 @@ function changeContainer2() {
 }
 
 function changeContainer3() {
-    content1.style.display = 'none';
-    content2.style.display = 'none';
-    content3.style.display = 'none';
-    content4.style.display = 'block';
-    content5.style.display = 'none';
-    content6.style.display = 'none';
-    content7.style.display = 'none';
-    content8.style.display = 'none';
-    content9.style.display = 'none';
-    content10.style.display = 'none';
-    content11.style.display = 'none';
-    content12.style.display = 'none';
+    contentArr[3].classList.remove("hidepage")
+    const toHide = contentArr.slice();
+    toHide.splice(3, 1)
+    toHide.forEach(div => div.classList.add("hidepage"))
+
     marvid1.src = marvid1src;
     marvid2.src = marvid2src;
     marvid3.src = marvid3src;
@@ -413,20 +401,11 @@ function changeContainer3() {
 }
 
 function changeContainer4() {
-    content1.style.display = 'none';
-    content2.style.display = 'none';
-    content3.style.display = 'none';
-    content4.style.display = 'none';
-    acavideoplus.style.display = 'none';
-    loginacaplus.style.display = 'flex';
-    content5.style.display = 'block';
-    content6.style.display = 'none';
-    content7.style.display = 'none';
-    content8.style.display = 'none';
-    content9.style.display = 'none';
-    content10.style.display = 'none';
-    content11.style.display = 'none';
-    content12.style.display = 'none';
+    contentArr[4].classList.remove("hidepage")
+    const toHide = contentArr.slice();
+    toHide.splice(4, 1)
+    toHide.forEach(div => div.classList.add("hidepage"))
+
     marvid1.src = marvid1src;
     marvid2.src = marvid2src;
     marvid3.src = marvid3src;
@@ -438,18 +417,12 @@ function changeContainer4() {
 }
 
 function changeContainer5() {
-    content1.style.display = 'none';
-    content2.style.display = 'none';
-    content3.style.display = 'none';
-    content4.style.display = 'none';
-    content5.style.display = 'none';
-    content6.style.display = 'block';
-    content7.style.display = 'none';
-    content8.style.display = 'none';
-    content9.style.display = 'none';
-    content10.style.display = 'none';
-    content11.style.display = 'none';
-    content12.style.display = 'none';
+    
+    contentArr[5].classList.remove("hidepage")
+    const toHide = contentArr.slice();
+    toHide.splice(5, 1)
+    toHide.forEach(div => div.classList.add("hidepage"))
+
     marvid1.src = marvid1src;
     marvid2.src = marvid2src;
     marvid3.src = marvid3src;
@@ -460,19 +433,12 @@ function changeContainer5() {
     zoomVideoTwo.src = zoomVideoTwoSrc;
 }
 
-function changeContainer6() {
-    content1.style.display = 'none';
-    content2.style.display = 'none';
-    content3.style.display = 'none';
-    content4.style.display = 'none';
-    content5.style.display = 'none';
-    content6.style.display = 'none';
-    content7.style.display = 'block';
-    content8.style.display = 'none';
-    content9.style.display = 'none';
-    content10.style.display = 'none';
-    content11.style.display = 'none';
-    content12.style.display = 'none';
+function changeContainer6() {    
+    contentArr[6].classList.remove("hidepage")
+    const toHide = contentArr.slice();
+    toHide.splice(6, 1)
+    toHide.forEach(div => div.classList.add("hidepage"))
+    
     marvid1.src = marvid1src;
     marvid2.src = marvid2src;
     marvid3.src = marvid3src;
@@ -485,18 +451,11 @@ function changeContainer6() {
 }
 
 function changeContainer7() {
-    content1.style.display = 'none';
-    content2.style.display = 'none';
-    content3.style.display = 'none';
-    content4.style.display = 'none';
-    content5.style.display = 'none';
-    content6.style.display = 'none';
-    content7.style.display = 'none';
-    content8.style.display = 'block';
-    content9.style.display = 'none';
-    content10.style.display = 'none';
-    content11.style.display = 'none';
-    content12.style.display = 'none';
+    contentArr[7].classList.remove("hidepage")
+    const toHide = contentArr.slice();
+    toHide.splice(7, 1)
+    toHide.forEach(div => div.classList.add("hidepage"))
+    
     marvid1.src = marvid1src;
     marvid2.src = marvid2src;
     marvid3.src = marvid3src;
@@ -509,18 +468,12 @@ function changeContainer7() {
 }
 
 function changeContainer8() {
-    content1.style.display = 'none';
-    content2.style.display = 'none';
-    content3.style.display = 'none';
-    content4.style.display = 'none';
-    content5.style.display = 'none';
-    content6.style.display = 'none';
-    content7.style.display = 'none';
-    content8.style.display = 'none';
-    content9.style.display = 'block';
-    content10.style.display = 'none';
-    content11.style.display = 'none';
-    content12.style.display = 'none';
+    
+    contentArr[8].classList.remove("hidepage")
+    const toHide = contentArr.slice();
+    toHide.splice(8, 1)
+    toHide.forEach(div => div.classList.add("hidepage"))
+    
     marvid1.src = marvid1src;
     marvid2.src = marvid2src;
     marvid3.src = marvid3src;
@@ -533,18 +486,12 @@ function changeContainer8() {
 }
 
 function changeContainer9() {
-    content1.style.display = 'none';
-    content2.style.display = 'none';
-    content3.style.display = 'none';
-    content4.style.display = 'none';
-    content5.style.display = 'none';
-    content6.style.display = 'none';
-    content7.style.display = 'none';
-    content8.style.display = 'none';
-    content9.style.display = 'none';
-    content10.style.display = 'block';
-    content11.style.display = 'none';
-    content12.style.display = 'none';
+
+    contentArr[9].classList.remove("hidepage")
+    const toHide = contentArr.slice();
+    toHide.splice(9, 1)
+    toHide.forEach(div => div.classList.add("hidepage"))
+    
     marvid1.src = marvid1src;
     marvid2.src = marvid2src;
     marvid3.src = marvid3src;
@@ -556,6 +503,12 @@ function changeContainer9() {
 }
 
 function changeContainer11() {
+    
+    contentArr[11].classList.remove("hidepage")
+    const toHide = contentArr.slice();
+    toHide.splice(11, 1)
+    toHide.forEach(div => div.classList.add("hidepage"))
+    /*
     content1.style.display = 'none';
     content2.style.display = 'none';
     content3.style.display = 'none';
@@ -568,6 +521,7 @@ function changeContainer11() {
     content10.style.display = 'none';
     content11.style.display = 'block';
     content12.style.display = 'none';
+    */
     marvid1.src = marvid1src;
     marvid2.src = marvid2src;
     marvid3.src = marvid3src;
@@ -577,6 +531,12 @@ function changeContainer11() {
 }
 
 function changeContainer12() {
+    
+    contentArr[12].classList.remove("hidepage")
+    const toHide = contentArr.slice();
+    toHide.splice(12, 1)
+    toHide.forEach(div => div.classList.add("hidepage"))
+    /*
     content1.style.display = 'none';
     content2.style.display = 'none';
     content3.style.display = 'none';
@@ -589,6 +549,7 @@ function changeContainer12() {
     content10.style.display = 'none';
     content11.style.display = 'none';
     content12.style.display = 'block';
+    */
     marvid1.src = marvid1src;
     marvid2.src = marvid2src;
     marvid3.src = marvid3src;
@@ -695,9 +656,38 @@ function changeVideo7 () {
     document.querySelector('.acaplusiframe').src = 'https://www.youtube-nocookie.com/embed/pSDgPzJXJa8';
 }
 
-var _0x44e1=["\x2E\x63\x6C\x69\x65\x6E\x74\x66\x6F\x6F\x74\x65\x72\x32\x70","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x48\x61\x73\u0142\x6F\x3A\x20\x41\x57\x30\x33\x2E\x30\x38\x2E\x32\x30\x31\x39"];const passpassword=document[_0x44e1[1]](_0x44e1[0]);passpassword[_0x44e1[2]]= _0x44e1[3]
-var _0x91f0=["\x2E\x70\x61\x73\x73\x77\x6F\x72\x64\x61\x63\x61\x70\x6C\x75\x73","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x70\x72\x65\x73\x69\x64\x65\x6E\x74\x74\x65\x61\x6D","\x69\x6E\x70\x75\x74","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x76\x61\x6C\x75\x65","\x74\x61\x72\x67\x65\x74","\x64\x69\x73\x70\x6C\x61\x79","\x73\x74\x79\x6C\x65","\x62\x6C\x6F\x63\x6B","\x6E\x6F\x6E\x65"];const passwordacaplus=document[_0x91f0[1]](_0x91f0[0]);const acaplusword=_0x91f0[2];passwordacaplus[_0x91f0[4]](_0x91f0[3],hideLoginAcaPlus);function hideLoginAcaPlus(_0x26cex4){if(_0x26cex4[_0x91f0[6]][_0x91f0[5]]== acaplusword){acavideoplus[_0x91f0[8]][_0x91f0[7]]= _0x91f0[9];loginacaplus[_0x91f0[8]][_0x91f0[7]]= _0x91f0[10]}}
-var _0x8ad5=["\x2E\x70\x61\x73\x73\x77\x6F\x72\x64","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x2E\x6C\x6F\x67\x69\x6E","\x2E\x63\x6F\x6E\x74\x65\x6E\x74","\x41\x57\x30\x33\x2E\x30\x38\x2E\x32\x30\x31\x39","\x69\x6E\x70\x75\x74","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x76\x61\x6C\x75\x65","\x74\x61\x72\x67\x65\x74","\x64\x69\x73\x70\x6C\x61\x79","\x73\x74\x79\x6C\x65","\x6E\x6F\x6E\x65","\x62\x6C\x6F\x63\x6B"];const password=document[_0x8ad5[1]](_0x8ad5[0]);const login=document[_0x8ad5[1]](_0x8ad5[2]);const content=document[_0x8ad5[1]](_0x8ad5[3]);const word=_0x8ad5[4];password[_0x8ad5[6]](_0x8ad5[5],hideLogin);function hideLogin(_0x2163x6){if(_0x2163x6[_0x8ad5[8]][_0x8ad5[7]]== word){login[_0x8ad5[10]][_0x8ad5[9]]= _0x8ad5[11];content[_0x8ad5[10]][_0x8ad5[9]]= _0x8ad5[12]}}
+
+const password = document.querySelector('.password');
+const login = document.querySelector('.login');
+const content = document.querySelector('.content')
+const clifooter = document.querySelector('.clientfooter2p')
+const word = 'AW03.08.2019';
+clifooter.innerHTML = word;
+
+password.addEventListener('input', hideLogin)
+
+function hideLogin(e) {
+    if (e.target.value == word){
+        login.classList.add("hidepage");
+        content.classList.remove("hidepage");
+        const nav = document.querySelector("header")
+        nav.style.display = "fixed";
+    }
+}
+
+
+const passwordacaplus = document.querySelector('.passwordacaplus');
+const acaplusword = 'presidentteam';
+
+passwordacaplus.addEventListener('input', hideLoginAcaPlus);
+
+
+function hideLoginAcaPlus (e) {
+    if (e.target.value == acaplusword){
+        acavideoplus.classList.remove("hidepage");
+        loginacaplus.classList.add("hidepage");
+    }
+}
 
 query();
 queryBig();

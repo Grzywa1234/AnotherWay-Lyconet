@@ -1,5 +1,5 @@
 .content3{
-    display: none; /* none */
+    display: block; /* none */
     background-color: #fff;
     width: 100vw;
 }
@@ -42,7 +42,7 @@
 /* content2 styles */
 
 .content2 {
-    display: none; /* none */
+    display: block; /* none */
     overflow: hidden;
 }
 
@@ -210,11 +210,26 @@
         padding-left: 2vw;
         
     }
+
+    .content2__header{
+        padding-bottom: 2vw;
+        padding-top: 3vw;
+        font-size: 29px;
+    }
     
     .content2__header2{
         padding-bottom: 2vw;
         padding-top: 3vw;
-        font-size: 25px;
+        font-size: 20px;
+    }
+
+    .content2 h1, .content2 h2, .content2 h3{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .content2__telegramheader{
+        font-size: 30px;
     }
 
     .clientfooter1p{

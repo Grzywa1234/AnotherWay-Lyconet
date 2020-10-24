@@ -53,6 +53,29 @@ body{
     height: 40px;
 }
 
+@media screen and (max-width: 1400px){
+
+    .login{
+        width: 300px;
+
+    }
+
+    .login p{
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .login img{
+        max-width: 250px;
+    }
+
+    .password{
+        width: 90%;
+        font-size: 30px;
+    }
+}
+
 @media screen and (max-width: 767px){
     .login{
         width: 300px;

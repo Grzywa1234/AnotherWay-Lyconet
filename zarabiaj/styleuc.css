@@ -32,24 +32,24 @@
     max-width: 500px;
 }
 
-.content6{
-    display: none;
+.content11{
+    display: block;
 }
 
 .content7{
-    display: none;
+    display: block;
 }
 
 .content8{
-    display: none;
+    display: block;
 }
 
 .content9{
-    display: none;
+    display: block;
 }
 
 .content10{
-    display: none;
+    display: block;
 }
 
 @media screen and (max-width: 1440px){

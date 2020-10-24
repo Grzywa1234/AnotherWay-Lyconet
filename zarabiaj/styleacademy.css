@@ -1,6 +1,6 @@
 /* ACADEMY AW */
 .content4{
-    display: none;
+    display: block;
     position: relative;
     top: 70px;
     height: 100vh;
@@ -135,7 +135,6 @@
 
 .loginacaplus {
     display: flex; /* flex!! */
-
     flex-direction: column;
     align-items: center;
     align-content: center;
@@ -147,7 +146,7 @@
     width: 700px;
     margin: auto;
     background-color: #fff;
-    height: 90vh;
+    height: 100vh;
     
 }
 
@@ -165,6 +164,16 @@
     border-radius: 7px;
     width: 60%;
     height: 40px;
+}
+
+@media screen and (max-width: 1440px){
+    .loginacaplus p {
+        font-size: 30px;
+    }
+
+    .loginacaplus img{
+        width: 40%;
+    }
 }
 
 
@@ -195,11 +204,12 @@
 /* ACADEMY PLUS */
 
 .content5{
-    display: none;
+    display: block;
     position: relative;
+    overflow: hidden;
     top: 70px;
-    height: 100vh;
     background-color: black;
+    max-height: 100vh;
 }
 
 .acavideo{

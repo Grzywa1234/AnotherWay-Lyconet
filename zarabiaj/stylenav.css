@@ -1,9 +1,9 @@
 .content{
-    display: none; /*block*/
+    display: block; /*block*/
 }
 
 header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     padding: 0 100px;
@@ -167,6 +167,11 @@ header nav ul li a{
     top: 55px;
 }
 
+.hidepage{
+    position: absolute !important;
+    left: -500% !important;
+}
+
 
 @media screen and (max-width: 1440px){
     header{
@@ -320,3 +325,4 @@ header nav ul li a{
 
 
 }
+

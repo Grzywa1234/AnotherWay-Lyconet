@@ -1,7 +1,6 @@
 .cashbackapp{
     position: relative;
     top: 60px;
-    display: none;
 }   
 
 .appvideo{
@@ -184,9 +183,9 @@
     }
 
     .appvideo h1{
-        padding-bottom: 10px;
-        padding-top: 10px;
-        font-size: 30px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        font-size: 20px;
     }
 
     .videoframe{
@@ -198,8 +197,8 @@
         font-size: 20px;
     }
 
-    .mlm1 p{
-        font-size: 20px;
+    .storeimg{
+        max-width: 25%;
     }
 
     .source{
@@ -211,7 +210,24 @@
     }
 
     .source p{
-        font-size: 30px;
+        font-size: 20px;
+    }
+
+    .faq h2 {
+        font-size: 20px;
+    }
+
+    .faqlink{
+        max-width: 40%;
+        height: 100px;
+    }
+
+    .faqlink img{
+        width: 60%;
+    }
+
+    .socialimg{
+        max-width: 50px;
     }
 
 }

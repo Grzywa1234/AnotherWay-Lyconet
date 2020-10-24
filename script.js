@@ -4,6 +4,23 @@ navbar span styling
 const menuBtn = document.querySelector('.menuBtn1');
 const menuBtn2 = document.querySelector('.menuBtn2');
 const menuBtn3 = document.querySelector('.menuBtn3');
+const btnArr = [menuBtn, menuBtn2, menuBtn3]
+
+btnArr.forEach(btn => btn.addEventListener('mouseover', opacityOne))
+
+function opacityOne (e) {
+    e.target.firstChild.nextSibling.style.opacity = "1";
+}
+
+btnArr.forEach(btn => btn.addEventListener('mouseout', opacityZero))
+
+function opacityZero (e) {
+    e.target.firstChild.nextSibling.style.opacity = "0";
+}
+
+
+/*
+
 const arrone = document.querySelector('.arrone');
 const arrtwo = document.querySelector('.arrtwo');
 const arrthree = document.querySelector('.arrthree');
@@ -41,7 +58,7 @@ function opacityTwoZero(){
 function opacityThreeZero(){
     arrthree.style.opacity = '0';
 }
-
+*/
 
 /*
 menu
@@ -73,6 +90,7 @@ const homepageWrap = document.querySelector('.wrap');
 const homepagecbApp = document.querySelector('.cbApp');
 const homepagemlm = document.querySelector('.mlm');
 const appTab = document.querySelector('.cashbackapp');
+const homepage = [homepageWrap, homepagecbApp, homepagemlm]
 
 menuBtn2.addEventListener('click', hideHomepage)
 menuBtn.addEventListener('click', showHomepage)
@@ -80,22 +98,23 @@ menuBtn.addEventListener('click', showHomepage)
 const homepageElems = [homepageWrap, homepagecbApp, homepagemlm];
 
 function hideHomepage () {
-    homepageWrap.style.display = "none";
-    homepagecbApp.style.display = "none";
-    homepagemlm.style.display = "none";
+    homepage.forEach(div => div.classList.add("hidepage"))
+    appTab.classList.remove("hidepage")
+    /*
     appTab.style.display = "block";
-    homepageWrap.classList.add("hide");
-    homepagecbApp.classList.add("hide");
-    homepagemlm.classList.add("hide");
+    */
+    homepage.forEach(div => div.classList.add("hide"))
+    
 
     // functions added to animate transitions between the menu pages
     function show () {
         appTab.classList.add("show")
+        appTab.classList.remove("hide")
+        
     }
 
     function removeClass () {
-        appTab.classList.add("show")
-        appTab.classList.remove("hide")
+        appTab.classList.remove("show")
     }
 
     setTimeout(show, 1);
@@ -106,34 +125,26 @@ function hideHomepage () {
 
 
 function showHomepage () {
-    homepageWrap.style.display = "block";
-    homepagecbApp.style.display = "block";
-    homepagemlm.style.display = "block";
-    appTab.style.display = "none";
+    homepage.forEach(div => div.classList.remove("hidepage"))
+    appTab.classList.add("hidepage");
 
     
 
     // functions added to animate transitions between the menu pages
     function show () {
-        homepageWrap.classList.add("show");
-        homepagecbApp.classList.add("show");
-        homepagemlm.classList.add("show");
+        homepage.forEach(div => div.classList.add("show"))
         appTab.classList.add("hide")
     }
 
     function removeClass () {
-        homepageWrap.classList.remove("show");
-        homepagecbApp.classList.remove("show");
-        homepagemlm.classList.remove("show");
-        homepageWrap.classList.remove("hide");
-        homepagecbApp.classList.remove("hide");
-        homepagemlm.classList.remove("hide");
+        homepage.forEach(div => div.classList.remove("show"))
+        homepage.forEach(div => div.classList.remove("hide"))
     }
     
     setTimeout(show, 1);
     setTimeout(removeClass, 500)
 
-
+    // video url changed to stop it from playing
     changeUrl();
 };
 
@@ -171,6 +182,8 @@ function changeUrl4 () {
 function changeUrl5 () {
     document.querySelector('.video').src = "https://www.youtube-nocookie.com/embed/jvGtp62PKUQ";
 }
+
+
 /* wrap */
 
 let sliderImages = document.querySelectorAll('.slide'),
