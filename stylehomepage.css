@@ -99,7 +99,8 @@ body{
 
 .hidepage{
     position: absolute !important;
-    left: -500% !important;
+    left: -300% !important;
+    top: -300%;
 }
 
 .wrap{
@@ -453,6 +454,7 @@ body{
     }
 
     .footer{
+        top: 100px
     }
 
 
@@ -773,6 +775,7 @@ body{
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
   }
+
   
   @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }

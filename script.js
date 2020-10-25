@@ -235,7 +235,7 @@ startSlide();
 // loader
 
 function contentLoaded () {
-    const timeOut = setTimeout(showPage, 1000)
+    const timeOut = setTimeout(showPage, 500)
 }
 
 function showPage () { 

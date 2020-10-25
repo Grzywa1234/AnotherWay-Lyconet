@@ -666,37 +666,7 @@ function changeVideo7 () {
 }
 
 
-const password = document.querySelector('.password');
-const login = document.querySelector('.login');
-const content = document.querySelector('.content')
-const clifooter = document.querySelector('.clientfooter2p')
-const word = 'AW03.08.2019';
-clifooter.innerHTML = word;
-
-password.addEventListener('input', hideLogin)
-
-function hideLogin(e) {
-    if (e.target.value == word){
-        login.classList.add("hidepage");
-        content.classList.remove("hidepage");
-        const nav = document.querySelector("header")
-        nav.style.display = "fixed";
-    }
-}
-
-
-const passwordacaplus = document.querySelector('.passwordacaplus');
-const acaplusword = 'presidentteam';
-
-passwordacaplus.addEventListener('input', hideLoginAcaPlus);
-
-
-function hideLoginAcaPlus (e) {
-    if (e.target.value == acaplusword){
-        acavideoplus.classList.remove("hidepage");
-        loginacaplus.classList.add("hidepage");
-    }
-}
+var _0x5448=["\x2E\x70\x61\x73\x73\x77\x6F\x72\x64","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x2E\x6C\x6F\x67\x69\x6E","\x2E\x63\x6F\x6E\x74\x65\x6E\x74","\x2E\x63\x6C\x69\x65\x6E\x74\x66\x6F\x6F\x74\x65\x72\x32\x70","\x41\x57\x30\x33\x2E\x30\x38\x2E\x32\x30\x31\x39","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x69\x6E\x70\x75\x74","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x76\x61\x6C\x75\x65","\x74\x61\x72\x67\x65\x74","\x68\x69\x64\x65\x70\x61\x67\x65","\x61\x64\x64","\x63\x6C\x61\x73\x73\x4C\x69\x73\x74","\x72\x65\x6D\x6F\x76\x65","\x68\x65\x61\x64\x65\x72","\x64\x69\x73\x70\x6C\x61\x79","\x73\x74\x79\x6C\x65","\x66\x69\x78\x65\x64","\x2E\x70\x61\x73\x73\x77\x6F\x72\x64\x61\x63\x61\x70\x6C\x75\x73","\x70\x72\x65\x73\x69\x64\x65\x6E\x74\x74\x65\x61\x6D"];const password=document[_0x5448[1]](_0x5448[0]);const login=document[_0x5448[1]](_0x5448[2]);const content=document[_0x5448[1]](_0x5448[3]);const clifooter=document[_0x5448[1]](_0x5448[4]);const word=_0x5448[5];clifooter[_0x5448[6]]= word;password[_0x5448[8]](_0x5448[7],hideLogin);function hideLogin(_0xaee1x7){if(_0xaee1x7[_0x5448[10]][_0x5448[9]]== word){login[_0x5448[13]][_0x5448[12]](_0x5448[11]);content[_0x5448[13]][_0x5448[14]](_0x5448[11]);const _0xaee1x8=document[_0x5448[1]](_0x5448[15]);_0xaee1x8[_0x5448[17]][_0x5448[16]]= _0x5448[18]}}const passwordacaplus=document[_0x5448[1]](_0x5448[19]);const acaplusword=_0x5448[20];passwordacaplus[_0x5448[8]](_0x5448[7],hideLoginAcaPlus);function hideLoginAcaPlus(_0xaee1x7){if(_0xaee1x7[_0x5448[10]][_0x5448[9]]== acaplusword){acavideoplus[_0x5448[13]][_0x5448[14]](_0x5448[11]);loginacaplus[_0x5448[13]][_0x5448[12]](_0x5448[11])}}
 
 
 query();

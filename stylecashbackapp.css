@@ -184,7 +184,7 @@
 
     .appvideo h1{
         padding-bottom: 5px;
-        padding-top: 5px;
+        padding-top: 10px;
         font-size: 20px;
     }
 
@@ -269,11 +269,16 @@
         font-size: 20px;
     }
 
+    .storeimg{
+        max-width: 80%;
+    }
+
     .faq a{
         font-size: 30px;
     }
 
     .faq h2{
+        margin-top: 10px;
         font-size: 20px;
         padding-bottom: 10px;
     }
@@ -285,10 +290,15 @@
         margin-bottom: 20px;
     }
 
+    .faqlink{
+        max-width: 70%;
+        height: 200px;
+    }
+
     .appstore{
         width: 100%;
         padding: 0;
-       
+       overflow: hidden;
     }
 
     .store a{

@@ -198,7 +198,8 @@ header nav ul li a{
 
 .hidepage{
     position: absolute !important;
-    left: -500% !important;
+    left: -200% !important;
+    top: -200% !important;
 }
 
 
