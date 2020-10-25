@@ -100,7 +100,7 @@ body{
 .hidepage{
     position: absolute !important;
     left: -300% !important;
-    top: -300%;
+    top: -300% !important;
 }
 
 .wrap{
