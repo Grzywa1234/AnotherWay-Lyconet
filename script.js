@@ -4,67 +4,12 @@ navbar span styling
 const menuBtn = document.querySelector('.menuBtn1');
 const menuBtn2 = document.querySelector('.menuBtn2');
 const menuBtn3 = document.querySelector('.menuBtn3');
-const btnArr = [menuBtn, menuBtn2, menuBtn3]
-
-btnArr.forEach(btn => btn.addEventListener('mouseover', opacityOne))
-
-function opacityOne (e) {
-    e.target.firstChild.nextSibling.style.opacity = "1";
-}
-
-btnArr.forEach(btn => btn.addEventListener('mouseout', opacityZero))
-
-function opacityZero (e) {
-    e.target.firstChild.nextSibling.style.opacity = "0";
-}
-
-
-/*
-
-const arrone = document.querySelector('.arrone');
-const arrtwo = document.querySelector('.arrtwo');
-const arrthree = document.querySelector('.arrthree');
-
-
-menuBtn.addEventListener('mouseover', opacityArrOne);
-menuBtn.addEventListener('mouseout', opacityOneZero);
-menuBtn2.addEventListener('mouseover', opacityArrTwo);
-menuBtn2.addEventListener('mouseout', opacityTwoZero);
-menuBtn3.addEventListener('mouseover', opacityArrThree);
-menuBtn3.addEventListener('mouseout', opacityThreeZero);
-
-
-
-function opacityArrOne() {
-    arrone.style.opacity = '1';
-}
-
-function opacityArrTwo() {
-    arrtwo.style.opacity = '1';
-}
-
-function opacityArrThree() {
-    arrthree.style.opacity = '1';
-}
-
-function opacityOneZero(){
-    arrone.style.opacity = '0';
-}
-
-function opacityTwoZero(){
-    arrtwo.style.opacity = '0';
-}
-
-function opacityThreeZero(){
-    arrthree.style.opacity = '0';
-}
-*/
 
 /*
 menu
 */
-const showMenuBtn = document.querySelector('.fa-bars');
-const hideMenuBtn  = document.querySelector('.fa-times-circle');
+const showMenuBtn = document.querySelector('.hamburger');
+const hideMenuBtn  = document.querySelector('.hamburger__close');
 const menu = document.querySelector('.menu');
 
 function show() {
@@ -100,9 +45,7 @@ const homepageElems = [homepageWrap, homepagecbApp, homepagemlm];
 function hideHomepage () {
     homepage.forEach(div => div.classList.add("hidepage"))
     appTab.classList.remove("hidepage")
-    /*
-    appTab.style.display = "block";
-    */
+    
     homepage.forEach(div => div.classList.add("hide"))
     
 

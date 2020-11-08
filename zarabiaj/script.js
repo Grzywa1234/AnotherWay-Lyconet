@@ -1,3 +1,5 @@
+//loader
+
 function contentLoaded () {
     const timeOut = setTimeout(showPage, 200)
 }
@@ -10,11 +12,14 @@ function showPage () {
 /*
 navbar span & sub menu styling
  */
+
+
 const menuBtn = document.querySelector('.menuBtn1');
 const menuBtn2 = document.querySelector('.menuBtn2');
 const menuBtn3 = document.querySelector('.menuBtn3');
 const menuBtn4 = document.querySelector('.menuBtn4');
 const menuBtn5 = document.querySelector('.menuBtn5');
+
 const arrone = document.querySelector('.arrone');
 const arrtwo = document.querySelector('.arrtwo');
 const arrthree = document.querySelector('.arrthree');
@@ -24,58 +29,53 @@ const arrfive = document.querySelector('.arrfive');
 const subOne = document.querySelector('.sub1');
 const subTwo = document.querySelector('.sub2');
 const subThree = document.querySelector('.sub3');
-
 const subFive = document.querySelector('.sub5');
 
+const btnArr = [menuBtn, menuBtn2, menuBtn3, menuBtn4, menuBtn5]
+const subArr = [subOne, subTwo, subThree, subFive]
 
-function opacityArrOne() {
-    arrone.style.opacity = '1';
+
+function displaySubOne() {
     subOne.style.display = 'block';
 }
 
-function opacityArrTwo() {
-    arrtwo.style.opacity = '1';
+function displaySubTwo() {
     subTwo.style.display = 'block';
 }
 
-function opacityArrThree() {
-    arrthree.style.opacity = '1';
+function displaySubThree() {
     subThree.style.display = 'block';
 }
 
-function opacityArrFour() {
-    arrfour.style.opacity = '1';
+// doesn't exist yet 
+function displaySubFour() {
 }
 
-function opacityArrFive() {
-    arrfive.style.opacity = '1';    
+
+function displaySubFive() {
     subFive.style.display = 'block';
 }
 
-function opacityOneZero(){
-    arrone.style.opacity = '0';
+function hideSubOne(){
     subOne.style.display = 'none';
 }
 
-function opacityTwoZero(){
-    arrtwo.style.opacity = '0';
+function hideSubTwo(){
     subTwo.style.display = 'none';
 }
 
-function opacityThreeZero(){
-    arrthree.style.opacity = '0';
+function hideSubThree(){
     subThree.style.display = 'none';
 }
 
-function opacityFourZero(){
-    arrfour.style.opacity = '0';
+
+//doesn't exist yet 
+function hideSubFour(){
 }
 
-function opacityFiveZero(){
-    arrfive.style.opacity = '0';
+function hideSubFive(){
     subFive.style.display = 'none'
 }
-
 
 
 
@@ -90,18 +90,24 @@ const subBtn3 = document.querySelector('.subclose3');
 const subBtn5 = document.querySelector('.subclose5')
 const menu = document.querySelector('nav');
 
+//SUB MENU BUTTONS
+//sub menu 1 btns
 const sub1btn1 = document.querySelector('.sub1btn1');
 const sub1btn2 = document.querySelector('.sub1btn2');
+//sub menu 2 btns
 const sub2btn1 = document.querySelector('.sub2btn1');
 const sub2btn2 = document.querySelector('.sub2btn2');
+//sub menu 3 btns
 const sub3btn1 = document.querySelector('.sub3btn1');
 const sub3btn2 = document.querySelector('.sub3btn2');
 const sub3btn3 = document.querySelector('.sub3btn3');
 const sub3btn4 = document.querySelector('.sub3btn4');
 const sub3btn5 = document.querySelector('.sub3btn5');
-
+//sub menu 5 btns
 const sub5btn1 = document.querySelector('.sub5btn1');
 const sub5btn2 = document.querySelector('.sub5btn2');
+
+const subBtns = [sub1btn1, sub1btn2, sub2btn1, sub2btn2, sub3btn1, sub3btn2, sub3btn3, sub3btn4, sub3btn5, sub5btn1, sub5btn2]
 
 
 /* media queries for menu */
@@ -118,13 +124,6 @@ mql.addListener(function(e) {
     }
 });
 
-/* 
-maxql.addEventListener("change", function(e) {
-
-    if(e.matches){
-        queryBig()
-    }
-}); */
 
 maxql.addListener(function(e) {
 
@@ -154,6 +153,9 @@ function query() {
         menuBtn3.addEventListener('click', showSub3);
         menuBtn5.addEventListener('click', showSub5);
 
+        //hiding menu&submenu mobile nav 
+        subBtns.forEach(btn => btn.addEventListener('click', hideBoth))
+         /*
         sub1btn1.addEventListener('click', hideBoth);
         sub1btn2.addEventListener('click', hideBoth);
         sub2btn1.addEventListener('click', hideBoth);
@@ -165,7 +167,7 @@ function query() {
         sub3btn5.addEventListener('click', hideBoth);
         sub5btn1.addEventListener('click', hideBoth);
         sub5btn2.addEventListener('click', hideBoth);
-
+        */
 
         function showMenu() {
          menu.style.transform = 'translateX(100%)';
@@ -200,27 +202,26 @@ function query() {
             subFive.style.display = 'block';
         }
 
+        
+        menuBtn.removeEventListener('mouseover', displaySubOne);
+        menuBtn.removeEventListener('mouseout', hideSubOne);
+        menuBtn2.removeEventListener('mouseover', displaySubTwo);
+        menuBtn2.removeEventListener('mouseout', hideSubTwo);
+        menuBtn3.removeEventListener('mouseover', displaySubThree);
+        menuBtn3.removeEventListener('mouseout', hideSubThree);
+        menuBtn4.removeEventListener('mouseover', displaySubFour);
+        menuBtn4.removeEventListener('mouseout', hideSubFour);
+        menuBtn5.removeEventListener('mouseover', displaySubFive);
+        menuBtn5.removeEventListener('mouseout', hideSubFive);
 
-
-        menuBtn.removeEventListener('mouseover', opacityArrOne);
-        menuBtn.removeEventListener('mouseout', opacityOneZero);
-        menuBtn2.removeEventListener('mouseover', opacityArrTwo);
-        menuBtn2.removeEventListener('mouseout', opacityTwoZero);
-        menuBtn3.removeEventListener('mouseover', opacityArrThree);
-        menuBtn3.removeEventListener('mouseout', opacityThreeZero);
-        menuBtn4.removeEventListener('mouseover', opacityArrFour);
-        menuBtn4.removeEventListener('mouseout', opacityFourZero);
-        menuBtn5.removeEventListener('mouseover', opacityArrFive);
-        menuBtn5.removeEventListener('mouseout', opacityFiveZero);
-
-        subOne.removeEventListener('mouseover', opacityArrOne);
-        subOne.removeEventListener('mouseout', opacityOneZero);
-        subTwo.removeEventListener('mouseover', opacityArrTwo);
-        subTwo.removeEventListener('mouseout', opacityTwoZero);
-        subThree.removeEventListener('mouseover', opacityArrThree);
-        subThree.removeEventListener('mouseout', opacityThreeZero);
-        subFive.removeEventListener('mouseover', opacityArrThree);
-        subFive.removeEventListener('mouseout', opacityThreeZero);
+        subOne.removeEventListener('mouseover', displaySubOne);
+        subOne.removeEventListener('mouseout', hideSubOne);
+        subTwo.removeEventListener('mouseover', displaySubTwo);
+        subTwo.removeEventListener('mouseout', hideSubTwo);
+        subThree.removeEventListener('mouseover', displaySubThree);
+        subThree.removeEventListener('mouseout', hideSubThree);
+        subFive.removeEventListener('mouseover', displaySubThree);
+        subFive.removeEventListener('mouseout', hideSubThree);
 
 
     }
@@ -242,34 +243,37 @@ function queryBig(){
         subBtn2.style.display = 'none';
         subBtn3.style.display = 'none'; 
         subBtn5.style.display = 'none'; 
-        
-        
-        menuBtn.addEventListener('mouseover', opacityArrOne);
-        menuBtn.addEventListener('mouseout', opacityOneZero);
-        menuBtn2.addEventListener('mouseover', opacityArrTwo);
-        menuBtn2.addEventListener('mouseout', opacityTwoZero);
-        menuBtn3.addEventListener('mouseover', opacityArrThree);
-        menuBtn3.addEventListener('mouseout', opacityThreeZero);
-        menuBtn4.addEventListener('mouseover', opacityArrFour);
-        menuBtn4.addEventListener('mouseout', opacityFourZero);
-        menuBtn5.addEventListener('mouseover', opacityArrFive);
-        menuBtn5.addEventListener('mouseout', opacityFiveZero);
 
-        subOne.addEventListener('mouseover', opacityArrOne);
-        subOne.addEventListener('mouseout', opacityOneZero);
-        subTwo.addEventListener('mouseover', opacityArrTwo);
-        subTwo.addEventListener('mouseout', opacityTwoZero);
-        subThree.addEventListener('mouseover', opacityArrThree);
-        subThree.addEventListener('mouseout', opacityThreeZero);
-        subFive.addEventListener('mouseover', opacityArrFive);
-        subFive.addEventListener('mouseout', opacityFiveZero);
-
+        menuBtn.addEventListener('mouseover', displaySubOne);
+        menuBtn.addEventListener('mouseout', hideSubOne);
+        menuBtn2.addEventListener('mouseover', displaySubTwo);
+        menuBtn2.addEventListener('mouseout', hideSubTwo);
+        menuBtn3.addEventListener('mouseover', displaySubThree);
+        menuBtn3.addEventListener('mouseout', hideSubThree);
+        menuBtn4.addEventListener('mouseover', displaySubFour);
+        menuBtn4.addEventListener('mouseout', hideSubFour);
+        menuBtn5.addEventListener('mouseover', displaySubFive);
+        menuBtn5.addEventListener('mouseout', hideSubFive);
         
-        menuBtn.removeEventListener('click', opacityArrOne);
-        menuBtn2.removeEventListener('click', opacityArrTwo);
-        menuBtn3.removeEventListener('click', opacityArrThree);
-        menuBtn5.removeEventListener('click', opacityArrFive);
+        subOne.addEventListener('mouseover', displaySubOne);
+        subOne.addEventListener('mouseout', hideSubOne);
+        subTwo.addEventListener('mouseover', displaySubTwo);
+        subTwo.addEventListener('mouseout', hideSubTwo);
+        subThree.addEventListener('mouseover', displaySubThree);
+        subThree.addEventListener('mouseout', hideSubThree);
+        subFive.addEventListener('mouseover', displaySubFive);
+        subFive.addEventListener('mouseout', hideSubFive);
+        
 
+        menuBtn.removeEventListener('click', displaySubOne);
+        menuBtn2.removeEventListener('click', displaySubTwo);
+        menuBtn3.removeEventListener('click', displaySubThree);
+        menuBtn5.removeEventListener('click', displaySubFive);
+
+
+        subBtns.forEach(btn => btn.removeEventListener('click', hideBoth))
+
+        /*
         sub1btn1.removeEventListener('click', hideBoth);
         sub1btn2.removeEventListener('click', hideBoth);
         sub2btn1.removeEventListener('click', hideBoth);
@@ -281,7 +285,7 @@ function queryBig(){
         sub3btn5.removeEventListener('click', hideBoth);
         sub5btn1.removeEventListener('click', hideBoth);
         sub5btn2.removeEventListener('click', hideBoth);
-        
+        */
     }
 }
 

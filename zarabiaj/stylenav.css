@@ -66,18 +66,71 @@ header nav{
 .hamburger{
     width: 100px;
     height: 100px;
+    background-color: transparent;
+    border: none;
     float: right;
     display: none;
     cursor: pointer;
     transition: 1s;
+    position: relative;
+    overflow: hidden;
+}
+
+.hamburger__inner{
+    width: 60px;
+    height: 6px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    border-radius: 5px;
+    transition: .3s;
 }
 
 
-.hamburger:hover{
-    transform: rotate(360deg);
+.hamburger__inner::before{
+    content: "";
+    width: 60px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    border-radius: 5px;
+    top: 15px;
+    transition: .6s;
 }
 
+.hamburger__inner::after{
+    content: "";
+    width: 60px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    border-radius: 5px;
+    top: -15px;
+    transition: .6s;
+}
 
+.hamburger:hover .hamburger__inner{
+    background-color: transparent;
+}
+
+.hamburger:hover .hamburger__inner::before{
+    transform: rotate(30deg) translateX(-50%);
+}
+
+.hamburger:hover .hamburger__inner::after{
+    transform: rotate(-30deg) translateX(-50%)
+}
 
 .sub{
     position: absolute;
@@ -158,7 +211,6 @@ header nav ul li a{
     display: block;
 }
 
-
 .subarrow{
     width: 50px;
     height: 3px;
@@ -175,15 +227,26 @@ header nav ul li a{
     right: 720px;
 }
 
+.menuBtn1:hover > .arrone{
+    opacity: 1;
+}
+
 .arrtwo{
     right: 570px;
     top: 55px;
 }
 
+.menuBtn2:hover > .arrtwo{
+    opacity: 1;
+}
+
 .arrthree{
     right: 70px;
     top: 55px;
+}
 
+.menuBtn3:hover > .arrthree{
+    opacity: 1;
 }
 
 .arrfour{
@@ -191,9 +254,17 @@ header nav ul li a{
     right: 185px;
 }
 
+.menuBtn4:hover > .arrfour{
+    opacity: 1;
+}
+
 .arrfive{
     right: 370px;
     top: 55px;
+}
+
+.menuBtn5:hover > .arrfive{
+    opacity: 1;
 }
 
 .hidepage{
