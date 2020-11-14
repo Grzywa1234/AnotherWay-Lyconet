@@ -20,14 +20,14 @@
     background: black;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 50px;
+    font-size: 30px !important;
     color: #fff;
     width: 100%;
     margin: 0;
 }
 
 .acavidframe{
-    padding-top: 10px;
+    padding-top: 5px;
     display: flex;
     flex-direction: row;
     background: black;
@@ -48,10 +48,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 25%;
-}
-
-.acaplus4, .acaplus5, .acaplus6, .acaplus7{
-    display: none;
 }
 
 .acatxt{
@@ -79,15 +75,15 @@
     }    
 
     .acavidframe{
-        padding-bottom: 10vh;
+        padding-bottom: 5vh !important;
         background-color: black;
     }
 
     .acavideo h1{
         background: black;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-size: 30px;
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+        font-size: 20px !important;
     }
 
     .acatxt{

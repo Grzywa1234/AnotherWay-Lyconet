@@ -1,52 +1,35 @@
-/*
-navbar span styling
- */
 const menuBtn = document.querySelector('.menuBtn1');
 const menuBtn2 = document.querySelector('.menuBtn2');
 const menuBtn3 = document.querySelector('.menuBtn3');
-
-/*
-menu
-*/
-const showMenuBtn = document.querySelector('.hamburger');
-const hideMenuBtn  = document.querySelector('.hamburger__close');
+const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
 
-function show() {
-    menu.style.transform = "translateX(100%)"
+// hamburger animation 
+
+function animateMenu() {
+    hamburger.classList.toggle('hamburger--active')
+    menu.classList.toggle('menu--active')
 }
 
-function hide() {
-    menu.style.transform = "translateX(0)";
-}
+hamburger.addEventListener('click', animateMenu);
 
 
-menuBtn.addEventListener('click', hide);
-menuBtn2.addEventListener('click', hide);
-menuBtn3.addEventListener('click', hide);
-hideMenuBtn.addEventListener('click', hide);
-showMenuBtn.addEventListener('click', show);
-
-/*
-menu display
-*/
-
-const homepageWrap = document.querySelector('.wrap');
-const homepagecbApp = document.querySelector('.cbApp');
-const homepagemlm = document.querySelector('.mlm');
+const homepage = document.querySelector('.homepage')
 const appTab = document.querySelector('.cashbackapp');
-const homepage = [homepageWrap, homepagecbApp, homepagemlm]
 
-menuBtn2.addEventListener('click', hideHomepage)
+// page displaying 
+
 menuBtn.addEventListener('click', showHomepage)
+menuBtn2.addEventListener('click', hideHomepage)
 
-const homepageElems = [homepageWrap, homepagecbApp, homepagemlm];
 
 function hideHomepage () {
-    homepage.forEach(div => div.classList.add("hidepage"))
+    hamburger.classList.contains('hamburger--active') ? animateMenu() : console.log('') ;
+
+    homepage.classList.add("hidepage")
     appTab.classList.remove("hidepage")
     
-    homepage.forEach(div => div.classList.add("hide"))
+    homepage.classList.add("hide")
     
 
     // functions added to animate transitions between the menu pages
@@ -68,20 +51,22 @@ function hideHomepage () {
 
 
 function showHomepage () {
-    homepage.forEach(div => div.classList.remove("hidepage"))
+    hamburger.classList.contains('hamburger--active') ? animateMenu() : console.log('') ;
+
+    homepage.classList.remove("hidepage")
     appTab.classList.add("hidepage");
 
     
 
     // functions added to animate transitions between the menu pages
     function show () {
-        homepage.forEach(div => div.classList.add("show"))
+        homepage.classList.add("show")
         appTab.classList.add("hide")
     }
 
     function removeClass () {
-        homepage.forEach(div => div.classList.remove("show"))
-        homepage.forEach(div => div.classList.remove("hide"))
+        homepage.classList.remove("show")
+        homepage.classList.remove("hide")
     }
     
     setTimeout(show, 1);
@@ -178,7 +163,7 @@ startSlide();
 // loader
 
 function contentLoaded () {
-    const timeOut = setTimeout(showPage, 500)
+    const timeOut = setTimeout(showPage, 100)
 }
 
 function showPage () { 

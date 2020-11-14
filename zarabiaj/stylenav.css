@@ -2,7 +2,6 @@
     display: block; /*block*/
 }
 
-
 #loader {
     position: absolute;
     left: 50%;
@@ -32,7 +31,7 @@
   }
 
 header{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     padding: 0 100px;
@@ -56,12 +55,7 @@ header .logo{
     cursor: pointer;
 }
 
-header nav{
-    float: right;
-    line-height: 70px;
-    position: relative;
-    z-index: 1111;
-}
+
 
 .hamburger{
     width: 100px;
@@ -81,10 +75,7 @@ header nav{
     height: 6px;
     background-color: white;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
+    left: 5px;
     border-radius: 5px;
     transition: .3s;
 }
@@ -96,10 +87,7 @@ header nav{
     height: 5px;
     background-color: white;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
+    left: 0;
     border-radius: 5px;
     top: 15px;
     transition: .6s;
@@ -111,29 +99,38 @@ header nav{
     height: 5px;
     background-color: white;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
+    position: absolute;
+    left: 0;
     border-radius: 5px;
     top: -15px;
     transition: .6s;
 }
 
-.hamburger:hover .hamburger__inner{
+
+.hamburger--active .hamburger__inner{
     background-color: transparent;
 }
 
-.hamburger:hover .hamburger__inner::before{
-    transform: rotate(30deg) translateX(-50%);
+.hamburger--active .hamburger__inner:before {
+    transform: translateY(-15px) rotate(-45deg);
+    background-color: #f29533;
+  }
+  
+.hamburger--active .hamburger__inner:after {
+    transform: translateY(15px) rotate(45deg);
+    background-color: #f29533;
+  }
+
+header nav{
+    float: right;
+    line-height: 70px;
 }
 
-.hamburger:hover .hamburger__inner::after{
-    transform: rotate(-30deg) translateX(-50%)
+.sub-menu{
+    position: relative;
 }
 
 .sub{
-    position: absolute;
     display: block;
     border: 2px solid #f29533;
     border-radius: 10px;
@@ -145,32 +142,40 @@ header nav{
 .sub1{
     display: none;
     position: absolute;
-    right: 670px;
+    left: 50%;
+    transform: translateX(-50%);
     transition: .4s;
 }
 
 .sub2{
     display: none;
     position: absolute;
-    right: 500px;
     transition: .4s;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .sub3{
     display: none;
     position: absolute;
-    right: 0px;
     transition: .4s;
+    left: 50%;
+    transform: translateX(-55%);
 }
 
 .sub5{
-    display: none; /*none*/
+    display: none;
     position: absolute;
-    right: 260px;
     transition: .4s;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .subclose{
+    display: none;
+}
+
+.subclose1, .subclose2, .subclose3, .subclose5{
     display: none;
 }
 
@@ -178,6 +183,7 @@ header nav{
     height: 60px;
     text-align: center;
     line-height: 50px;
+    white-space: nowrap
 }
 
 .sub a:hover {
@@ -190,13 +196,14 @@ header nav ul{
     display: flex;
 }
 
-
+/* menu element */
 header nav ul li{
     list-style: none;
     display: block;
     margin: 0 20px;
 }
 
+/* menu element btn a */
 header nav ul li a{
     text-transform: none;
     text-decoration: none;
@@ -209,6 +216,7 @@ header nav ul li a{
     cursor: pointer;
     list-style: none;
     display: block;
+    position: relative;
 }
 
 .subarrow{
@@ -223,8 +231,9 @@ header nav ul li a{
 
 /*order mixed, arrthree is in place of arrfive and vice versa*/
 .arrone{
-    top: 55px;
-    right: 720px;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
 }
 
 .menuBtn1:hover > .arrone{
@@ -232,8 +241,9 @@ header nav ul li a{
 }
 
 .arrtwo{
-    right: 570px;
-    top: 55px;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
 }
 
 .menuBtn2:hover > .arrtwo{
@@ -241,8 +251,9 @@ header nav ul li a{
 }
 
 .arrthree{
-    right: 70px;
-    top: 55px;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
 }
 
 .menuBtn3:hover > .arrthree{
@@ -250,8 +261,9 @@ header nav ul li a{
 }
 
 .arrfour{
-    top: 55px;
-    right: 185px;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
 }
 
 .menuBtn4:hover > .arrfour{
@@ -259,8 +271,9 @@ header nav ul li a{
 }
 
 .arrfive{
-    right: 370px;
-    top: 55px;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
 }
 
 .menuBtn5:hover > .arrfive{
@@ -271,6 +284,20 @@ header nav ul li a{
     position: absolute !important;
     left: -200% !important;
     top: -200% !important;
+}
+
+/* mobile nav */
+
+.nav--active{
+    transform: translateX(100%);
+}
+
+.sub--active{
+    display: block !important;
+}
+
+.sub--inactive{
+
 }
 
 
@@ -287,33 +314,6 @@ header nav ul li a{
     .navul li a{
         line-height: 50px;
     }
-    
-    .arrone{
-        top: 42px;
-        right: 720px;
-    }
-    
-    .arrtwo{
-        right: 570px;
-        top: 42px;
-    }
-    
-    .arrthree{
-        right: 75px;
-        top: 42px;
-    
-    }
-    
-    .arrfour{
-        top: 42px;
-        right: 187px;
-    }
-    
-    .arrfive{
-        right: 370px;
-        top: 42px;
-    }
-    
 
 }
 
@@ -335,26 +335,26 @@ header nav ul li a{
     }
 
     nav{
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        top: -70px;
+        position: relative;
         left: -100%;
+        width: 100%;
+        min-height: 100vh;
         background: #2d3033;
         transition: 1s;
     }
 
     .navul{
-        display: block;
+        display: flex;
+        flex-direction: column;
         text-align: center;
     }
 
     .navul li{
-        margin: 30px 10px;
+        margin: 15px 10px;
     }
 
     .navul li a{
+        position: initial;
         border: 3px solid #f29533;
         border-radius: 10px;
         height: 40px;
@@ -370,24 +370,20 @@ header nav ul li a{
         display: none;
     }
 
-    .menuBtn6{
-        width: 100px;
-        height: 100px;
+
+    .sub-menu{
+        position: initial;
         transition: 1s;
     }
 
-    .menuBtn6:hover{
-        transform: rotate(360deg);
-    }
-
     .sub{
-        height: 100vh;
-        border: none;
         position: absolute;
         top: 0;
-        right: 0;
-        width: 100%;
+        left: 50%;
+        border: none;
+        width: 100vw;
         text-align: center;
+        height: 100vh;
     }
 
     .sub a:hover{
@@ -404,6 +400,7 @@ header nav ul li a{
 
     .sub3{
         display: none;
+        transform: translateX(-50%);
     }
 
     .sub5{
@@ -419,10 +416,8 @@ header nav ul li a{
     }
 
     .subclose1:hover, .subclose2:hover, .subclose3:hover, .subclose5:hover{
-        transform: rotate(360deg);
+        transform: scale(1.2);
     }
-
- 
 
 
 }
