@@ -131,7 +131,6 @@ header nav{
 }
 
 .sub{
-    display: block;
     border: 2px solid #f29533;
     border-radius: 10px;
     background: #2d3033;
@@ -159,8 +158,7 @@ header nav{
     display: none;
     position: absolute;
     transition: .4s;
-    left: 50%;
-    transform: translateX(-55%);
+    left: -140%;
 }
 
 .sub5{
@@ -314,6 +312,7 @@ header nav ul li a{
     .navul li a{
         line-height: 50px;
     }
+
 
 }
 

@@ -51,31 +51,29 @@ body{
 
 .arrow{
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -50px;
-    width: 0;
-    height: 0;
-    border-style: solid;
     transition: .2s;
+    position: absolute;
+    top: 40%;
+    width: 6vw;
+    height: 6vw;
+    transition: .5s;
 }
 
-#arrow-left{
-    left: 20px;
-    margin-left: 0px;
-    border-color: transparent #e68928 transparent transparent;
-    border-width: 30px 40px 30px 0;
+.arrow-left{
+    left: 10px;
 }
 
-#arrow-right{
-    right: 20px;
-    margin-right: 0px;
-    border-color: transparent transparent transparent #e68928;
-    border-width: 30px 0px 30px 40px;
+.arrow-right{
+    right: 10px;
+    transform: rotate(180deg);
 }
 
-#arrow-left:hover, #arrow-right:hover{
-    animation: scale 1s;
+.arrow-left:hover{
+    transform: scale(1.2);
+}
+
+.arrow-right:hover{
+    transform: scale(1.2) rotate(-180deg);
 }
 
 .cbApp{
@@ -279,15 +277,6 @@ body{
         width: 100%;
         overflow: visible;
     }
-    #arrow-left{
-        left: 20px;
-        margin-left: 0px;
-    }
-    
-    #arrow-right{
-        right: 20px;
-        margin-right: 0px;
-    }
 
     .appBox{
         margin-top: 30px;
@@ -370,17 +359,6 @@ body{
         width: 100%;
     }
 
-    #arrow-left{
-        left: 0;
-        margin-left: 30px;
-    }
-
-    
-    #arrow-right{
-        right: 0;
-        margin-right: 30px;
-    }
-
     .mlmtxt li{
         font-size: 20px;
     }
@@ -428,18 +406,12 @@ body{
     top: 70px;
     }
 
-    .arrow{
-        top: 60%;
+    .arrow-left{
+        top: 40%;
     }
 
-    #arrow-left{
-        margin-left: 0;
-        border-width: 15px 20px 15px 0;
-    }
-
-    #arrow-right{
-        margin-right: 0;
-        border-width: 15px 0px 15px 20px;
+    .arrow-right{    
+        top: 40%;
     }
 
     .cbApp{
@@ -451,7 +423,6 @@ body{
         width: 100%;
         margin-top: 30px;
     }
-
 
 
     .boxtxt h1, .boxtxt h2, .boxtxt h3{
@@ -565,7 +536,7 @@ body{
         transform: scale(1);
     }
     50%{
-        transform: scale(1.3);
+        transform: scale(1.2);
     }
     100%{
         transform: scale(1);
