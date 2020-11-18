@@ -70,15 +70,17 @@ function hamburgerShowMenu() {
             
     menu.classList.toggle('nav--active')
     hamburger.classList.toggle('hamburger--active')
+    hideSub()
     }
     
 hamburger.addEventListener('click', hamburgerShowMenu)
 
 
-// schow / hide mobile sub menus 
+// schow / hide sub menus (for main menu elements)
 
 function showSub(e) {
     e.target.nextElementSibling.classList.add('sub--active')
+    console.log(e.target)
 }
 
 function hideSub() {
@@ -181,6 +183,8 @@ function query() {
         menuBtnArr.forEach(btn => btn.addEventListener('click', showSub))
         
         subCloseBtns.forEach(btn => btn.addEventListener('click', hideSub))
+
+        subBtns.forEach(btn => btn.addEventListener('click', hideBoth))
         
         menuBtn.removeEventListener('mouseover', displaySubOne);
         menuBtn.removeEventListener('mouseout', hideSubOne);
@@ -302,23 +306,26 @@ homelogo.addEventListener('click', homepageContainer)
 */
 
 // 1st button
-sub1btn1.addEventListener('click', changeContainer1);
-sub1btn2.addEventListener('click', changeContainer2);
+sub1btn1.addEventListener('click', showContainer1);
+sub1btn2.addEventListener('click', showContainer2);
 
 //2nd button
-sub2btn1.addEventListener('click', changeContainer3);
-sub2btn2.addEventListener('click', changeContainer4);
+sub2btn1.addEventListener('click', showContainer3);
+sub2btn2.addEventListener('click', showContainer4);
+
+//4th button 
+menuBtn4.addEventListener('click', showContainer10)
 
 //5th button
-sub3btn1.addEventListener('click', changeContainer7);
-sub3btn2.addEventListener('click', changeContainer8);
-sub3btn3.addEventListener('click', changeContainer9);
-sub3btn4.addEventListener('click', changeContainer11);
-sub3btn5.addEventListener('click', changeContainer12);
+sub3btn1.addEventListener('click', showContainer7);
+sub3btn2.addEventListener('click', showContainer8);
+sub3btn3.addEventListener('click', showContainer9);
+sub3btn4.addEventListener('click', showContainer11);
+sub3btn5.addEventListener('click', showContainer12);
 
 //3rd button
-sub5btn1.addEventListener('click', changeContainer5);
-sub5btn2.addEventListener('click', changeContainer6);
+sub5btn1.addEventListener('click', showContainer5);
+sub5btn2.addEventListener('click', showContainer6);
 
 /* DO NOT REMOVE 
 
@@ -340,7 +347,9 @@ function homepageContainer() {
 }
 */
 
-function changeContainer1() {
+//
+
+function showContainer1() {
     contentArr[1].classList.remove("hidepage")
     const toHide = contentArr.slice();
     toHide.splice(1, 1)
@@ -354,7 +363,7 @@ function changeContainer1() {
     zoomVideoTwo.src = zoomVideoTwoSrc;
 }
 
-function changeContainer2() {
+function showContainer2() {
     contentArr[2].classList.remove("hidepage")
     const toHide = contentArr.slice();
     toHide.splice(2, 1)
@@ -370,7 +379,7 @@ function changeContainer2() {
     zoomVideoTwo.src = zoomVideoTwoSrc;
 }
 
-function changeContainer3() {
+function showContainer3() {
     contentArr[3].classList.remove("hidepage")
     const toHide = contentArr.slice();
     toHide.splice(3, 1)
@@ -386,7 +395,7 @@ function changeContainer3() {
     zoomVideoTwo.src = zoomVideoTwoSrc;
 }
 
-function changeContainer4() {
+function showContainer4() {
     contentArr[4].classList.remove("hidepage")
     const toHide = contentArr.slice();
     toHide.splice(4, 1)
@@ -402,7 +411,7 @@ function changeContainer4() {
     
 }
 
-function changeContainer5() {
+function showContainer5() {
     
     contentArr[5].classList.remove("hidepage")
     const toHide = contentArr.slice();
@@ -420,7 +429,7 @@ function changeContainer5() {
     zoomVideoTwo.src = zoomVideoTwoSrc;
 }
 
-function changeContainer6() {    
+function showContainer6() {    
     contentArr[6].classList.remove("hidepage")
     const toHide = contentArr.slice();
     toHide.splice(6, 1)
@@ -438,7 +447,7 @@ function changeContainer6() {
 
 }
 
-function changeContainer7() {
+function showContainer7() {
     contentArr[7].classList.remove("hidepage")
     const toHide = contentArr.slice();
     toHide.splice(7, 1)
@@ -456,7 +465,7 @@ function changeContainer7() {
 
 }
 
-function changeContainer8() {
+function showContainer8() {
     
     contentArr[8].classList.remove("hidepage")
     const toHide = contentArr.slice();
@@ -475,7 +484,7 @@ function changeContainer8() {
 
 }
 
-function changeContainer9() {
+function showContainer9() {
 
     contentArr[9].classList.remove("hidepage")
     const toHide = contentArr.slice();
@@ -493,7 +502,25 @@ function changeContainer9() {
     zoomVideoTwo.src = zoomVideoTwoSrc;
 }
 
-function changeContainer11() {
+function showContainer10() {
+
+    contentArr[10].classList.remove("hidepage")
+    const toHide = contentArr.slice();
+    toHide.splice(10, 1)
+    toHide.forEach(div => div.classList.add("hidepage"))
+    
+    marvid1.src = marvid1src;
+    marvid2.src = marvid2src;
+    marvid3.src = marvid3src;
+    marvid4.src = marvid4src;
+    acaiframe.src = acasrc;
+    // academyplus disabled
+    //acaplusiframe.src = acaplussrc;
+    zoomVideoOne.src = zoomVideoOneSrc;
+    zoomVideoTwo.src = zoomVideoTwoSrc;
+}
+
+function showContainer11() {
     
     contentArr[11].classList.remove("hidepage")
     const toHide = contentArr.slice();
@@ -509,7 +536,7 @@ function changeContainer11() {
     //acaplusiframe.src = acaplussrc;
 }
 
-function changeContainer12() {
+function showContainer12() {
     
     contentArr[12].classList.remove("hidepage")
     const toHide = contentArr.slice();
@@ -627,5 +654,6 @@ function changeVideo7 () {
 var _0xe2d9=["\x2E\x70\x61\x73\x73\x77\x6F\x72\x64","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x2E\x6C\x6F\x67\x69\x6E","\x2E\x63\x6F\x6E\x74\x65\x6E\x74","\x2E\x63\x6C\x69\x65\x6E\x74\x66\x6F\x6F\x74\x65\x72\x32\x70","\x41\x57\x30\x33\x2E\x30\x38\x2E\x32\x30\x31\x39","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x69\x6E\x70\x75\x74","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x76\x61\x6C\x75\x65","\x74\x61\x72\x67\x65\x74","\x68\x69\x64\x65\x70\x61\x67\x65","\x61\x64\x64","\x63\x6C\x61\x73\x73\x4C\x69\x73\x74","\x72\x65\x6D\x6F\x76\x65","\x68\x65\x61\x64\x65\x72","\x70\x6F\x73\x69\x74\x69\x6F\x6E","\x73\x74\x79\x6C\x65","\x66\x69\x78\x65\x64","\x2E\x70\x61\x73\x73\x77\x6F\x72\x64\x61\x63\x61\x70\x6C\x75\x73","\x70\x72\x65\x73\x69\x64\x65\x6E\x74\x74\x65\x61\x6D"];const password=document[_0xe2d9[1]](_0xe2d9[0]);const login=document[_0xe2d9[1]](_0xe2d9[2]);const content=document[_0xe2d9[1]](_0xe2d9[3]);const clifooter=document[_0xe2d9[1]](_0xe2d9[4]);const word=_0xe2d9[5];clifooter[_0xe2d9[6]]= word;password[_0xe2d9[8]](_0xe2d9[7],hideLogin);function hideLogin(_0x5aaax7){if(_0x5aaax7[_0xe2d9[10]][_0xe2d9[9]]== word){login[_0xe2d9[13]][_0xe2d9[12]](_0xe2d9[11]);content[_0xe2d9[13]][_0xe2d9[14]](_0xe2d9[11]);const _0x5aaax8=document[_0xe2d9[1]](_0xe2d9[15]);_0x5aaax8[_0xe2d9[17]][_0xe2d9[16]]= _0xe2d9[18]}}const passwordacaplus=document[_0xe2d9[1]](_0xe2d9[19]);const acaplusword=_0xe2d9[20];passwordacaplus[_0xe2d9[8]](_0xe2d9[7],hideLoginAcaPlus);function hideLoginAcaPlus(_0x5aaax7){if(_0x5aaax7[_0xe2d9[10]][_0xe2d9[9]]== acaplusword){acavideoplus[_0xe2d9[13]][_0xe2d9[14]](_0xe2d9[11]);loginacaplus[_0xe2d9[13]][_0xe2d9[12]](_0xe2d9[11])}}
 
 
+//media queries init
 query();
 queryBig();

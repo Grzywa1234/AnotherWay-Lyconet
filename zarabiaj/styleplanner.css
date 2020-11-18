@@ -1,0 +1,49 @@
+.content11{
+}
+
+:root{
+    --swiper-theme-color: #e68928 !important; 
+}
+
+.planner__content{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.swiper-container{
+    width: 40%;
+    margin: 20px;
+    height: 50vh;
+}
+
+.swiper-wrapper{
+
+}
+
+
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.planner__content__text{
+    width: 50%;
+    margin-right: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300px;
+}
+
+.planner__content__text__heading{
+    color: #e68928;
+    margin-bottom: 6vh;
+}
+
+.planner__content__text__para2{
+    font-weight: bold;
+}

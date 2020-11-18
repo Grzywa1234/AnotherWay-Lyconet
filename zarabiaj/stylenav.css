@@ -31,7 +31,7 @@
   }
 
 header{
-    position: fixed;
+    position: absolute; /* fixed */
     top: 0;
     left: 0;
     padding: 0 100px;
@@ -158,7 +158,7 @@ header nav{
     display: none;
     position: absolute;
     transition: .4s;
-    left: -140%;
+    left: -150%;
 }
 
 .sub5{

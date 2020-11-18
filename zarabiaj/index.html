@@ -10,27 +10,30 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./stylelogin.css">
+        <link rel="stylesheet" href="./stylenav.css">
         <link rel="stylesheet" href="./stylebody.css"> 
         <link rel="stylesheet" href="./styleregistermarketer.css">
-        <link rel="stylesheet" href="./stylenav.css">
         <link rel="stylesheet" href="./styleacademy.css">
         <link rel="stylesheet" href="./styleuc.css">
         <link rel="stylesheet" href="./stylebusiness.css">
+        <link rel="stylesheet" href="./styleplanner.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <link rel="icon" href="../img/8ball.png">
     </head>
 
     <body onload="contentLoaded()">
 
-        <div id="loader  hidepage"></div>
+        <div id="loader hidepage"></div>
 
-        <div class="login hidepage" id="login">
+        <div class="login " hidepage id="login">
             <p>Witamy w AW Academy</p>
             <img src="../img/AWlogo.svg">
             <p>Wpisz swój klucz do sukcesu:</p>
             <input class="password" type="password">
         </div>
         
-        <div class="content"  hidepage>
+        <div class="content " hidepage>
 
         <header>
 
@@ -71,7 +74,7 @@
                             <li><img class="subclose subclose5" src="../img/close.svg"></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="menuBtn4">Planer
+                    <li><a href="#" class="menuBtn4">Planner 2021
                         <span class="subarrow arrfour"></span></a></li>
 
                     <li class="sub-menu"><a href="#" class="menuBtn3">Lyconet
@@ -292,7 +295,7 @@
 
 
         
-        <div class="content10 klient hidepage">
+        <div class="content10 planner hidepage">
             <div class="underconstruction">
                 <div class="uc">
                     <p>Strona w budowie</p>
@@ -303,20 +306,87 @@
             </div>
         </div>
 
-        <div class="content11 hidepage">
-            <div class="underconstruction">
-                <div class="uc">
-                    <p>Strona w budowie</p>
-                    <img src="../img/AWlogo.svg">
-                    <p>Wszystko przychodzi we właściwym czasie.</p>
-                    <p>Bądź cierpliwy.</p>
+        <!--planner 2021-->
+        <div class="content11 planner hidepage">
+            <div class="planner__content">
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer.jpg"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer2.jpg"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer3.jpg"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer4.jpg"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer5.jpg"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer6.jpg"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer7.jpg"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer8.jpg"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer9.jpg"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                
+                    </div>
+                
+                <div class="planner__content__text">
+                    <h1 class="planner__content__text__heading">Uporządkuj swój dzień z planerem AW 2021!</h1>
+                    <p class="planner__content__text__para1">Aby wspomóc rozwój Twojego biznesu postanowiliśmy 
+                        stworzyć dedykowany planer. Pomoże Ci on w planowaniu 
+                        działań tak aby każda chwila na drodze do celu nie została 
+                        zmarnowana.
+                    </p>
+                    <p class="planner__content__text__para2">Cena: 108 PLN
+                    </p>
+                    <p class="planner__content__text__para3">Zamów u swojego Lidera lub 
+                        bezpośrednio robiąc przelew na konto bankowe: 
+                    </p>
+                    <p class="planner__content__text__para4">
+                        Bartosz Janik.........
+                    </p>
                 </div>
+            </div>
+            
+            <div class="footer">
+                <img class="footer__logo" src="../img/AWlogowhite.svg">
+                <p>copyright ©. all right reserved.</p>
             </div>
         </div>
 
-        <!--end content-->
+        <!-- end body -->
         </div>
+
+    <!--end content-->
+    </div>
 
     </body>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+        autoplay: {
+            delay: 3000,
+        }
+      })</script>
     </html>
