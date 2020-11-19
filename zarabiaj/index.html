@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./stylelogin.css">
         <link rel="stylesheet" href="./stylenav.css">
         <link rel="stylesheet" href="./stylebody.css"> 
@@ -316,10 +317,13 @@
                             <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer.jpg"></div>
                             <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer2.jpg"></div>
                             <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer3.jpg"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer.jpg"></div>
                             <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer4.jpg"></div>
                             <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer5.jpg"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer.jpg"></div>
                             <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer6.jpg"></div>
                             <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer7.jpg"></div>
+                            <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer.jpg"></div>
                             <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer8.jpg"></div>
                             <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer9.jpg"></div>
                         </div>
@@ -344,9 +348,9 @@
                     <p class="planner__content__text__para3">Zamów u swojego Lidera lub 
                         bezpośrednio robiąc przelew na konto bankowe: 
                     </p>
-                    <p class="planner__content__text__para4">
+                    <a class="planner__content__text__para4">
                         Bartosz Janik.........
-                    </p>
+                    </a>
                 </div>
             </div>
             
@@ -369,7 +373,10 @@
     <script>var mySwiper = new Swiper('.swiper-container', {
         // Optional parameters
         loop: true,
-      
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        observer: true,
+        observeParents: true,
         // If we need pagination
         pagination: {
           el: '.swiper-pagination',
