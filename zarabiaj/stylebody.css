@@ -1,18 +1,19 @@
 
 .content1{
-    position: relative;
-    top: 70px;
     display: flex; /*flex*/
     align-items: center;
     justify-content: center;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
     font-size: 40px;
-    height: 95vh;
+    padding-top: 20px;
+    height: 100vh;
     background-image: url('../img/awbackground.jpeg');
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
 }
 
 .content1 p{
@@ -20,16 +21,13 @@
     /*#e68928*/
     font-weight: 300px;
     font-size: 70px;
+    margin: 0;
 }
 
 .content1p1{
-    margin-bottom: 5vh;
-    margin-top: 5vh;
 }
 
 .content1p2{
-    margin-bottom: 5vh;
-    margin-top: 5vh;
 }
 
 .content1 img{
@@ -44,8 +42,8 @@
     background-color: black;
     display: flex;
     flex-direction: row;
-    margin: auto;
-    margin-top: 10px;
+    margin-bottom: 0;
+    padding-top: 10px;
     justify-content: center;
     align-items: center;
     
@@ -61,22 +59,15 @@
 }
 
 @media screen and (max-width: 1440px){
-    .content1{
-        top: 50px;
-    }
 
     .content1 p{
         font-size: 50px;
     }
     
     .content1p1{
-        margin-bottom: 5vh;
-        margin-top: 0;
     }
     
     .content1p2{
-        margin-bottom: 5vh;
-        margin-top: 5vh;
     }
 
     .content1 img{
@@ -96,8 +87,6 @@
     }
     
     .content1p1{
-        margin-top: 2vh;
-        padding-bottom: 10vh;
     }
     
     .content1p2{
@@ -111,9 +100,6 @@
         margin-top: 30vh;
     }
 
-    .content1{
-        height: calc(100vh - 70px);
-    }
 }
 
 

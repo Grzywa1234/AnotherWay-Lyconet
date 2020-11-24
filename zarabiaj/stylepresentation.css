@@ -1,0 +1,109 @@
+.content7{
+    min-height: 100vh;
+    padding-top: 70px;
+    background-color: black;
+}
+
+.presentation{
+
+}
+
+.presentation__header{
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.presentation__frame{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.presentation__frame__video{
+    width: 73vw;
+    height: 41vw;
+}
+
+.presentation__frame__nav{
+    width: 20%;
+    height: 41vw;
+}
+
+.presentation__frame__nav__list{
+    color: white;
+    height: 90%;
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.presentation__frame__nav__list__item{
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid #e68928;
+    cursor: pointer;
+}
+
+.presentation__frame__nav__list__item__btn{
+    width: 100%;
+    font-size: 20px;
+    transition: .3s;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.presentation__frame__nav__list__item:hover > .presentation__frame__nav__list__item__btn{
+    color: #e68928;
+}
+
+
+.presentation__frame__nav__sublist{
+    list-style: none;
+    padding-left: 0;
+    max-height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.presentation__frame__nav__sublist--active{
+    max-height: 300px;
+}
+
+.presentation__frame__nav__sublist__item__btn:hover{
+    color: #e68928;
+}
+
+
+@media screen and (max-width: 900px){
+
+    .presentation__header{
+        font-size: 20px;
+    }
+
+    .presentation__frame{
+        flex-direction: column;
+    }
+
+    .presentation__frame__video{
+        width: 100vw;
+        height: 56vw;
+    }
+    
+    .presentation__frame__nav{
+        width: 80%;
+        height: 35vh;
+    }
+
+    .presentation__frame__nav__list{
+
+    }
+
+}

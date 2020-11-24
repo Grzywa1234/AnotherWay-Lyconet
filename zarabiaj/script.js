@@ -185,6 +185,8 @@ function query() {
         subCloseBtns.forEach(btn => btn.addEventListener('click', hideSub))
 
         subBtns.forEach(btn => btn.addEventListener('click', hideBoth))
+
+        menuBtn4.addEventListener('click', hideBoth)
         
         menuBtn.removeEventListener('mouseover', displaySubOne);
         menuBtn.removeEventListener('mouseout', hideSubOne);
@@ -252,7 +254,8 @@ function queryBig(){
         menuBtn3.removeEventListener('click', displaySubThree);
         menuBtn5.removeEventListener('click', displaySubFive);
 
-        
+        menuBtn4.removeEventListener('click', hideBoth)
+
         subBtns.forEach(btn => btn.removeEventListener('click', hideBoth))
 
        
@@ -277,29 +280,6 @@ const content11 = document.querySelector('.content11')
 const content12 = document.querySelector('.content12')
 const contentArr = [content1, content2, content3, content4, content5, content6, content7, content8, content9, content10, content11, content12]
 
-// video 
-const acavideoplus = document.querySelector('.acavideoplus');
-const loginacaplus = document.querySelector('.loginacaplus');
-
-const marvid1 = document.querySelector('.marvid1');
-const marvid2 = document.querySelector('.marvid2');
-const marvid3 = document.querySelector('.marvid3');
-const marvid4 = document.querySelector('.marvid4');
-const acaiframe = document.querySelector('.acaiframe');
-// academy plus disabled 
-//const acaplusiframe = document.querySelector('.acaplusiframe');
-const zoomVideoOne = document.querySelector('.contener2__video1');
-const zoomVideoTwo = document.querySelector('.contener2__video2');
-
-// video src 
-const marvid1src = 'https://www.youtube-nocookie.com/embed/zBgT4LEHWlI';
-const marvid2src = 'https://www.youtube-nocookie.com/embed/Ask5hlhfk9Y';
-const marvid3src = 'https://www.youtube-nocookie.com/embed/u4t7yo95zbM';
-const marvid4src = 'https://www.youtube-nocookie.com/embed/K6efOvXOf8w';
-const acaplussrc = 'https://www.youtube-nocookie.com/embed/fyYIRUlbqLg';
-const acasrc = 'https://www.youtube-nocookie.com/embed/73texEQE3mg';
-const zoomVideoOneSrc = 'https://www.youtube-nocookie.com/embed/q4O51-2y2S8';
-const zoomVideoTwoSrc = 'https://www.youtube.com/embed/fMJKObJGpIk';
 
 /*
 homelogo.addEventListener('click', homepageContainer)
@@ -361,6 +341,7 @@ function showContainer1() {
     //acaplusiframe.src = acaplussrc;
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
+    voucherVideo.src = voucherSrc
 }
 
 function showContainer2() {
@@ -377,6 +358,7 @@ function showContainer2() {
     //acaplusiframe.src = acaplussrc;
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
+    voucherVideo.src = voucherSrc
 }
 
 function showContainer3() {
@@ -393,6 +375,7 @@ function showContainer3() {
     //acaplusiframe.src = acaplussrc;
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
+    voucherVideo.src = voucherSrc
 }
 
 function showContainer4() {
@@ -408,7 +391,7 @@ function showContainer4() {
     acaiframe.src = acasrc;
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
-    
+    voucherVideo.src = voucherSrc
 }
 
 function showContainer5() {
@@ -427,6 +410,7 @@ function showContainer5() {
     //acaplusiframe.src = acaplussrc;
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
+    voucherVideo.src = voucherSrc
 }
 
 function showContainer6() {    
@@ -444,7 +428,7 @@ function showContainer6() {
     //acaplusiframe.src = acaplussrc;
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
-
+    voucherVideo.src = voucherSrc
 }
 
 function showContainer7() {
@@ -462,7 +446,7 @@ function showContainer7() {
     //acaplusiframe.src = acaplussrc;
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
-
+    
 }
 
 function showContainer8() {
@@ -481,7 +465,7 @@ function showContainer8() {
     //acaplusiframe.src = acaplussrc;
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
-
+    voucherVideo.src = voucherSrc
 }
 
 function showContainer9() {
@@ -500,6 +484,7 @@ function showContainer9() {
     //acaplusiframe.src = acaplussrc;
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
+    voucherVideo.src = voucherSrc
 }
 
 function showContainer10() {
@@ -518,6 +503,7 @@ function showContainer10() {
     //acaplusiframe.src = acaplussrc;
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
+    voucherVideo.src = voucherSrc
 }
 
 function showContainer11() {
@@ -532,6 +518,7 @@ function showContainer11() {
     marvid3.src = marvid3src;
     marvid4.src = marvid4src;
     acaiframe.src = acasrc;
+    voucherVideo.src = voucherSrc
     // academyplus disabled
     //acaplusiframe.src = acaplussrc;
 }
@@ -552,7 +539,36 @@ function showContainer12() {
     //acaplusiframe.src = acaplussrc;
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
+    voucherVideo.src = voucherSrc
 }
+
+
+// video 
+const acavideoplus = document.querySelector('.acavideoplus');
+const loginacaplus = document.querySelector('.loginacaplus');
+
+const marvid1 = document.querySelector('.marvid1');
+const marvid2 = document.querySelector('.marvid2');
+const marvid3 = document.querySelector('.marvid3');
+const marvid4 = document.querySelector('.marvid4');
+const acaiframe = document.querySelector('.acaiframe');
+const voucherVideo = document.querySelector('.voucher__contener__video__frame')
+// academy plus disabled 
+//const acaplusiframe = document.querySelector('.acaplusiframe');
+const zoomVideoOne = document.querySelector('.contener2__video1');
+const zoomVideoTwo = document.querySelector('.contener2__video2');
+
+// video src 
+const marvid1src = 'https://www.youtube-nocookie.com/embed/zBgT4LEHWlI';
+const marvid2src = 'https://www.youtube-nocookie.com/embed/Ask5hlhfk9Y';
+const marvid3src = 'https://www.youtube-nocookie.com/embed/u4t7yo95zbM';
+const marvid4src = 'https://www.youtube-nocookie.com/embed/K6efOvXOf8w';
+const acaplussrc = 'https://www.youtube-nocookie.com/embed/fyYIRUlbqLg';
+const acasrc = 'https://www.youtube-nocookie.com/embed/73texEQE3mg';
+const zoomVideoOneSrc = 'https://www.youtube-nocookie.com/embed/q4O51-2y2S8';
+const zoomVideoTwoSrc = 'https://www.youtube.com/embed/fMJKObJGpIk';
+const voucherSrc = 'https://www.youtube-nocookie.com/embed/S21d8VCXqw0';
+
 
 /* Academy AW video change URL */
 
@@ -651,6 +667,77 @@ function changeVideo7 () {
     document.querySelector('.acaplusiframe').src = 'https://www.youtube-nocookie.com/embed/pSDgPzJXJa8';
 }
 */
+
+// business presentation Video
+
+const presBtn1 = document.querySelector('.presentation__frame__nav__list__item--video1')
+const presBtn1Sublist = document.querySelector('.presentation__frame__nav__sublist')
+const presBtn2 = document.querySelector('.presentation__frame__nav__list__item--video2')
+const presBtn3 = document.querySelector('.presentation__frame__nav__list__item--video3')
+
+const presIframe = document.querySelector('.presentation__frame__video')
+
+    //business presentation sub menu video
+const presSub = {
+    btn1: document.querySelector('.presentation__frame__nav__sublist__item__btn--first'),
+    btn2: document.querySelector('.presentation__frame__nav__sublist__item__btn--second'),
+    btn3: document.querySelector('.presentation__frame__nav__sublist__item__btn--third'),
+    btn4: document.querySelector('.presentation__frame__nav__sublist__item__btn--fourth'),
+    btn5: document.querySelector('.presentation__frame__nav__sublist__item__btn--fifth'),
+}
+const presSubBtn1 = document.querySelector('.presentation__frame__nav__sublist__item__btn--first')
+const presSubBtn2 = document.querySelector('.presentation__frame__nav__sublist__item__btn--second')
+const presSubBtn3 = document.querySelector('.presentation__frame__nav__sublist__item__btn--third')
+const presSubBtn4 = document.querySelector('.presentation__frame__nav__sublist__item__btn--fourth')
+const presSubBtn5 = document.querySelector('.presentation__frame__nav__sublist__item__btn--fifth')
+
+    //business presentation video src
+
+const presVid = {
+    vid1: 'https://www.youtube-nocookie.com/embed/FFreP1bVLLo',
+    vid2: 'https://www.youtube-nocookie.com/embed/m-AK124ioQY',
+    vid3: 'https://www.youtube-nocookie.com/embed/t3aylX9leEU',
+    vid4: 'https://www.youtube-nocookie.com/embed/hYzZxS7GnA0',
+    vid5: 'https://www.youtube-nocookie.com/embed/lKmn40bXf58',
+    followUp: 'https://www.youtube-nocookie.com/embed/qldaED6fdoo',
+    objections: 'https://www.youtube-nocookie.com/embed/bwL-RJT-mkI'
+}
+
+    // business presentation Video sublist 
+presBtn1.addEventListener('click', function() {
+    presBtn1Sublist.classList.toggle('presentation__frame__nav__sublist--active')
+})
+
+presSub.btn1.addEventListener('click', function() {
+    presIframe.src = presVid.vid1;
+})
+
+presSub.btn2.addEventListener('click', function() {
+    presIframe.src = presVid.vid2;
+})
+
+presSub.btn3.addEventListener('click', function() {
+    presIframe.src = presVid.vid3;
+})
+
+presSub.btn4.addEventListener('click', function() {
+    presIframe.src = presVid.vid4;
+})
+
+presSub.btn5.addEventListener('click', function() {
+    presIframe.src = presVid.vid5;
+})
+
+presBtn2.addEventListener('click', function() {
+    presIframe.src = presVid.followUp
+})
+
+presBtn3.addEventListener('click', function() {
+    presIframe.src = presVid.objections
+})
+
+
+
 var _0xe2d9=["\x2E\x70\x61\x73\x73\x77\x6F\x72\x64","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x2E\x6C\x6F\x67\x69\x6E","\x2E\x63\x6F\x6E\x74\x65\x6E\x74","\x2E\x63\x6C\x69\x65\x6E\x74\x66\x6F\x6F\x74\x65\x72\x32\x70","\x41\x57\x30\x33\x2E\x30\x38\x2E\x32\x30\x31\x39","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x69\x6E\x70\x75\x74","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x76\x61\x6C\x75\x65","\x74\x61\x72\x67\x65\x74","\x68\x69\x64\x65\x70\x61\x67\x65","\x61\x64\x64","\x63\x6C\x61\x73\x73\x4C\x69\x73\x74","\x72\x65\x6D\x6F\x76\x65","\x68\x65\x61\x64\x65\x72","\x70\x6F\x73\x69\x74\x69\x6F\x6E","\x73\x74\x79\x6C\x65","\x66\x69\x78\x65\x64","\x2E\x70\x61\x73\x73\x77\x6F\x72\x64\x61\x63\x61\x70\x6C\x75\x73","\x70\x72\x65\x73\x69\x64\x65\x6E\x74\x74\x65\x61\x6D"];const password=document[_0xe2d9[1]](_0xe2d9[0]);const login=document[_0xe2d9[1]](_0xe2d9[2]);const content=document[_0xe2d9[1]](_0xe2d9[3]);const clifooter=document[_0xe2d9[1]](_0xe2d9[4]);const word=_0xe2d9[5];clifooter[_0xe2d9[6]]= word;password[_0xe2d9[8]](_0xe2d9[7],hideLogin);function hideLogin(_0x5aaax7){if(_0x5aaax7[_0xe2d9[10]][_0xe2d9[9]]== word){login[_0xe2d9[13]][_0xe2d9[12]](_0xe2d9[11]);content[_0xe2d9[13]][_0xe2d9[14]](_0xe2d9[11]);const _0x5aaax8=document[_0xe2d9[1]](_0xe2d9[15]);_0x5aaax8[_0xe2d9[17]][_0xe2d9[16]]= _0xe2d9[18]}}const passwordacaplus=document[_0xe2d9[1]](_0xe2d9[19]);const acaplusword=_0xe2d9[20];passwordacaplus[_0xe2d9[8]](_0xe2d9[7],hideLoginAcaPlus);function hideLoginAcaPlus(_0x5aaax7){if(_0x5aaax7[_0xe2d9[10]][_0xe2d9[9]]== acaplusword){acavideoplus[_0xe2d9[13]][_0xe2d9[14]](_0xe2d9[11]);loginacaplus[_0xe2d9[13]][_0xe2d9[12]](_0xe2d9[11])}}
 
 

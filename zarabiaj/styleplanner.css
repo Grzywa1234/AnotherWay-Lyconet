@@ -1,4 +1,5 @@
 .content11{
+    padding-top: 30px;
 }
 
 :root{
@@ -17,6 +18,7 @@
     background-size: cover;
 }
 
+
 .swiper-container{
     width: 40%;
     margin: 20px;
@@ -33,6 +35,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.swiper-slide-img{
+    height: 250px;
 }
 
 
@@ -58,4 +65,57 @@
 
 .planner__content__text__para2{
     font-weight: bold;
+}
+
+
+@media screen and (max-width: 1400px){
+    .planner__content__text__heading{
+        font-size: 1.5em;
+    }
+
+    .planner__content__text p{
+        font-size: 1em;
+    }
+
+    .swiper-slide-img{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    .content11{
+        padding-top: 60px;
+    }
+
+    .planner__content{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-container{
+        width: 100%;
+    }
+
+    .swiper-slide-img{
+        height: 200px;
+    }
+    
+    .planner__content__text{
+        width: 95%;
+        margin: 0;
+    }
+
+    .planner__content__text__heading{
+        margin-bottom: 3vh;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .planner__content__text p{
+        width: 95%;
+        font-size: 1em;
+    }
+
 }
