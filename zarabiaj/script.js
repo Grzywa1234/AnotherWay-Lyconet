@@ -342,6 +342,7 @@ function showContainer1() {
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
     voucherVideo.src = voucherSrc
+    presIframe.src = presVid.vid1;
 }
 
 function showContainer2() {
@@ -359,6 +360,7 @@ function showContainer2() {
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
     voucherVideo.src = voucherSrc
+    presIframe.src = presVid.vid1;
 }
 
 function showContainer3() {
@@ -376,6 +378,7 @@ function showContainer3() {
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
     voucherVideo.src = voucherSrc
+    presIframe.src = presVid.vid1;
 }
 
 function showContainer4() {
@@ -392,6 +395,7 @@ function showContainer4() {
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
     voucherVideo.src = voucherSrc
+    presIframe.src = presVid.vid1;
 }
 
 function showContainer5() {
@@ -411,6 +415,7 @@ function showContainer5() {
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
     voucherVideo.src = voucherSrc
+    presIframe.src = presVid.vid1;
 }
 
 function showContainer6() {    
@@ -446,7 +451,7 @@ function showContainer7() {
     //acaplusiframe.src = acaplussrc;
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
-    
+    presIframe.src = presVid.vid1;
 }
 
 function showContainer8() {
@@ -466,6 +471,7 @@ function showContainer8() {
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
     voucherVideo.src = voucherSrc
+    presIframe.src = presVid.vid1;
 }
 
 function showContainer9() {
@@ -504,6 +510,7 @@ function showContainer10() {
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
     voucherVideo.src = voucherSrc
+    presIframe.src = presVid.vid1;
 }
 
 function showContainer11() {
@@ -521,6 +528,7 @@ function showContainer11() {
     voucherVideo.src = voucherSrc
     // academyplus disabled
     //acaplusiframe.src = acaplussrc;
+    presIframe.src = presVid.vid1;
 }
 
 function showContainer12() {
@@ -540,6 +548,7 @@ function showContainer12() {
     zoomVideoOne.src = zoomVideoOneSrc;
     zoomVideoTwo.src = zoomVideoTwoSrc;
     voucherVideo.src = voucherSrc
+    presIframe.src = presVid.vid1;
 }
 
 
@@ -685,11 +694,6 @@ const presSub = {
     btn4: document.querySelector('.presentation__frame__nav__sublist__item__btn--fourth'),
     btn5: document.querySelector('.presentation__frame__nav__sublist__item__btn--fifth'),
 }
-const presSubBtn1 = document.querySelector('.presentation__frame__nav__sublist__item__btn--first')
-const presSubBtn2 = document.querySelector('.presentation__frame__nav__sublist__item__btn--second')
-const presSubBtn3 = document.querySelector('.presentation__frame__nav__sublist__item__btn--third')
-const presSubBtn4 = document.querySelector('.presentation__frame__nav__sublist__item__btn--fourth')
-const presSubBtn5 = document.querySelector('.presentation__frame__nav__sublist__item__btn--fifth')
 
     //business presentation video src
 
@@ -736,9 +740,41 @@ presBtn3.addEventListener('click', function() {
     presIframe.src = presVid.objections
 })
 
+const password = document.querySelector('.password');
+const login = document.querySelector('.login');
+const content = document.querySelector('.content')
+const clifooter = document.querySelector('.clientfooter2p')
+const word = 'AW03.08.2019';
+clifooter.innerHTML = word;
+
+password.addEventListener('input', hideLogin)
+
+function hideLogin(e) {
+    if (e.target.value == word){
+        login.classList.add("hidepage");
+        content.classList.remove("hidepage");
+        const nav = document.querySelector("header")
+        nav.style.position = "fixed";
+    }
+}
 
 
-var _0xe2d9=["\x2E\x70\x61\x73\x73\x77\x6F\x72\x64","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x2E\x6C\x6F\x67\x69\x6E","\x2E\x63\x6F\x6E\x74\x65\x6E\x74","\x2E\x63\x6C\x69\x65\x6E\x74\x66\x6F\x6F\x74\x65\x72\x32\x70","\x41\x57\x30\x33\x2E\x30\x38\x2E\x32\x30\x31\x39","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x69\x6E\x70\x75\x74","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x76\x61\x6C\x75\x65","\x74\x61\x72\x67\x65\x74","\x68\x69\x64\x65\x70\x61\x67\x65","\x61\x64\x64","\x63\x6C\x61\x73\x73\x4C\x69\x73\x74","\x72\x65\x6D\x6F\x76\x65","\x68\x65\x61\x64\x65\x72","\x70\x6F\x73\x69\x74\x69\x6F\x6E","\x73\x74\x79\x6C\x65","\x66\x69\x78\x65\x64","\x2E\x70\x61\x73\x73\x77\x6F\x72\x64\x61\x63\x61\x70\x6C\x75\x73","\x70\x72\x65\x73\x69\x64\x65\x6E\x74\x74\x65\x61\x6D"];const password=document[_0xe2d9[1]](_0xe2d9[0]);const login=document[_0xe2d9[1]](_0xe2d9[2]);const content=document[_0xe2d9[1]](_0xe2d9[3]);const clifooter=document[_0xe2d9[1]](_0xe2d9[4]);const word=_0xe2d9[5];clifooter[_0xe2d9[6]]= word;password[_0xe2d9[8]](_0xe2d9[7],hideLogin);function hideLogin(_0x5aaax7){if(_0x5aaax7[_0xe2d9[10]][_0xe2d9[9]]== word){login[_0xe2d9[13]][_0xe2d9[12]](_0xe2d9[11]);content[_0xe2d9[13]][_0xe2d9[14]](_0xe2d9[11]);const _0x5aaax8=document[_0xe2d9[1]](_0xe2d9[15]);_0x5aaax8[_0xe2d9[17]][_0xe2d9[16]]= _0xe2d9[18]}}const passwordacaplus=document[_0xe2d9[1]](_0xe2d9[19]);const acaplusword=_0xe2d9[20];passwordacaplus[_0xe2d9[8]](_0xe2d9[7],hideLoginAcaPlus);function hideLoginAcaPlus(_0x5aaax7){if(_0x5aaax7[_0xe2d9[10]][_0xe2d9[9]]== acaplusword){acavideoplus[_0xe2d9[13]][_0xe2d9[14]](_0xe2d9[11]);loginacaplus[_0xe2d9[13]][_0xe2d9[12]](_0xe2d9[11])}}
+const passwordacaplus = document.querySelector('.passwordacaplus');
+const acaplusword = 'presidentteam';
+
+passwordacaplus.addEventListener('input', hideLoginAcaPlus);
+
+
+function hideLoginAcaPlus (e) {
+    if (e.target.value == acaplusword){
+        acavideoplus.classList.remove("hidepage");
+        loginacaplus.classList.add("hidepage");
+        e.target.blur()
+    }
+}
+
+//var _0xe2d9=["\x2E\x70\x61\x73\x73\x77\x6F\x72\x64","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x2E\x6C\x6F\x67\x69\x6E","\x2E\x63\x6F\x6E\x74\x65\x6E\x74","\x2E\x63\x6C\x69\x65\x6E\x74\x66\x6F\x6F\x74\x65\x72\x32\x70","\x41\x57\x30\x33\x2E\x30\x38\x2E\x32\x30\x31\x39","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x69\x6E\x70\x75\x74","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x76\x61\x6C\x75\x65","\x74\x61\x72\x67\x65\x74","\x68\x69\x64\x65\x70\x61\x67\x65","\x61\x64\x64","\x63\x6C\x61\x73\x73\x4C\x69\x73\x74","\x72\x65\x6D\x6F\x76\x65","\x68\x65\x61\x64\x65\x72","\x70\x6F\x73\x69\x74\x69\x6F\x6E","\x73\x74\x79\x6C\x65","\x66\x69\x78\x65\x64","\x2E\x70\x61\x73\x73\x77\x6F\x72\x64\x61\x63\x61\x70\x6C\x75\x73","\x70\x72\x65\x73\x69\x64\x65\x6E\x74\x74\x65\x61\x6D"];const password=document[_0xe2d9[1]](_0xe2d9[0]);const login=document[_0xe2d9[1]](_0xe2d9[2]);const content=document[_0xe2d9[1]](_0xe2d9[3]);const clifooter=document[_0xe2d9[1]](_0xe2d9[4]);const word=_0xe2d9[5];clifooter[_0xe2d9[6]]= word;password[_0xe2d9[8]](_0xe2d9[7],hideLogin);function hideLogin(_0x5aaax7){if(_0x5aaax7[_0xe2d9[10]][_0xe2d9[9]]== word){login[_0xe2d9[13]][_0xe2d9[12]](_0xe2d9[11]);content[_0xe2d9[13]][_0xe2d9[14]](_0xe2d9[11]);const _0x5aaax8=document[_0xe2d9[1]](_0xe2d9[15]);_0x5aaax8[_0xe2d9[17]][_0xe2d9[16]]= _0xe2d9[18]}}const passwordacaplus=document[_0xe2d9[1]](_0xe2d9[19]);const acaplusword=_0xe2d9[20];passwordacaplus[_0xe2d9[8]](_0xe2d9[7],hideLoginAcaPlus);function hideLoginAcaPlus(_0x5aaax7){if(_0x5aaax7[_0xe2d9[10]][_0xe2d9[9]]== acaplusword){acavideoplus[_0xe2d9[13]][_0xe2d9[14]](_0xe2d9[11]);loginacaplus[_0xe2d9[13]][_0xe2d9[12]](_0xe2d9[11])}}
+
 
 
 //media queries init

@@ -27,16 +27,16 @@
 
     <body onload="contentLoaded()">
 
-        <div id="loader hidepage"></div>
+        <div id="loader"></div>
 
-        <div class="login " hidepage id="login">
+        <div class="login hidepage"  id="login">
             <p>Witamy w AW Academy</p>
             <img src="../img/AWlogo.svg">
             <p>Wpisz swój klucz do sukcesu:</p>
             <input class="password" type="password">
         </div>
         
-        <div class="content " hidepage>
+        <div class="content hidepage">
 
         <header>
 
@@ -259,10 +259,7 @@
         <div class="content7 hidepage">
 
             <div class="presentation">
-
                 <h1 class="presentation__header">Korzystaj z wiedzy doświadczonych Liderów</h1>
-                
-
                 <div class="presentation__frame">
                     <iframe class="presentation__frame__video" src="https://www.youtube-nocookie.com/embed/FFreP1bVLLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="presentation__frame__nav">
@@ -280,10 +277,25 @@
                             <li class="presentation__frame__nav__list__item presentation__frame__nav__list__item--video3"><a class="presentation__frame__nav__list__item__btn">Rozbijanie obiekcji</a></li>
                         </ul>
                     </div>
-                    
                 </div>
-                
+            </div>
+
+            <div class="resources">
+                <h2 class="resources__header">Materiały do pobrania</h2>
+                <div class="resources__download">
+                    <a class="resources__download__pdf" href="https://drive.google.com/file/d/1MoCD636B992uXGokSor8M8SEViEX_nCq/view?usp=sharing" target="_blank">Pobierz prezentacje
+                        <img class="resources__download__pdf__img" src="../img/pptx.png">
+                    </a>
+                    <a class="resources__download__pptx" href="https://drive.google.com/file/d/1jbUdwyvwOIKUSQNRACpnzHxPp2UATIOg/view?usp=sharing" target="_blank">Pobierz PDF
+                        <img class="resources__download__pptx__img" src="../img/pdf.png">
+                    </a>
+                </div>
+            </div>
+
             
+            <div class="footer">
+                <img class="footer__logo" src="../img/AWlogowhite.svg">
+                <p>copyright ©. all right reserved.</p>
             </div>
         </div>
 
@@ -333,13 +345,10 @@
                             <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer.jpg"></div>
                             <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer2.jpg"></div>
                             <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer3.jpg"></div>
-                            <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer.jpg"></div>
                             <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer4.jpg"></div>
                             <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer5.jpg"></div>
-                            <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer.jpg"></div>
                             <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer6.jpg"></div>
                             <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer7.jpg"></div>
-                            <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer.jpg"></div>
                             <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer8.jpg"></div>
                             <div class="swiper-slide"><img class="swiper-slide-img" src="../img/planer/planer9.jpg"></div>
                         </div>
@@ -410,8 +419,5 @@
         scrollbar: {
           el: '.swiper-scrollbar',
         },
-        autoplay: {
-            delay: 3000,
-        }
       })</script>
     </html>

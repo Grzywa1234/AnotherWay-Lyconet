@@ -19,7 +19,7 @@ body{
 }
 
 .login {
-    display: none; /* flex!! */
+    display: flex; /* flex!! */
 
     flex-direction: column;
     align-items: center;

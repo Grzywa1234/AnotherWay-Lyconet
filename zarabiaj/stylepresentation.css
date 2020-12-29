@@ -81,6 +81,45 @@
     color: #e68928;
 }
 
+.resources{
+   width: 95%;
+   display: block;
+}
+
+.resources__header{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.resources__download{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.resources__download__pdf, .resources__download__pptx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px
+}
+
+.resources__download__pdf, .resources__download__pptx{
+    color: white;
+    margin: 20px;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.resources__download__pdf:hover, .resources__download__pptx:hover{
+    transform: scale(1.2);
+} 
+
 
 @media screen and (max-width: 900px){
 
@@ -102,8 +141,7 @@
         height: 35vh;
     }
 
-    .presentation__frame__nav__list{
-
+    .resources__download{
+        flex-direction: column;
     }
-
 }
