@@ -755,6 +755,7 @@ function hideLogin(e) {
         content.classList.remove("hidepage");
         const nav = document.querySelector("header")
         nav.style.position = "fixed";
+        e.target.blur()
     }
 }
 
